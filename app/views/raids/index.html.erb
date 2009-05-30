@@ -1,0 +1,40 @@
+<h1>Listing raids</h1>
+
+<table>
+  <tr>
+    <th>Instance</th>
+    <th>Raid time</th>
+    <th>Code</th>
+    <th>Password</th>
+    <th>Searchable</th>
+    <th>Protected</th>
+    <th>Creator</th>
+    <th>Min gear level</th>
+    <th>Tanks</th>
+    <th>Heals</th>
+    <th>Dps</th>
+  </tr>
+
+<% @raids.each do |raid| %>
+  <tr>
+    <td><%=h raid.instance.instance_name.name %></td>
+    <td><%=h raid.raid_time %></td>
+    <td><%=h raid.code %></td>
+    <td><%=h raid.password %></td>
+    <td><%=h raid.searchable %></td>
+    <td><%=h raid.protected %></td>
+    <td><%=h raid.creator_id %></td>
+    <td><%=h raid.min_gear_level %></td>
+    <td><%=h raid.tanks %></td>
+    <td><%=h raid.heals %></td>
+    <td><%=h raid.dps %></td>
+    <td><%= link_to 'Show', raid %></td>
+    <td><%= link_to 'Edit', edit_raid_path(raid) %></td>
+    <td><%= link_to 'Destroy', raid, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New raid', new_raid_path %>

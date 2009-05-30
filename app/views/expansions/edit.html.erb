@@ -1,0 +1,16 @@
+<h1>Editing expansion</h1>
+
+<% form_for(@expansion) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @expansion %> |
+<%= link_to 'Back', expansions_path %>

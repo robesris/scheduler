@@ -1,0 +1,58 @@
+<p>
+  <b>Instance:</b>
+  <%=h @raid.instance_id %>
+</p>
+
+<p>
+  <b>Raid time:</b>
+  <%=h @raid.raid_time %>
+</p>
+
+<p>
+  <b>Code:</b>
+  <%=h @raid.code %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%=h @raid.password %>
+</p>
+
+<p>
+  <b>Searchable:</b>
+  <%=h @raid.searchable %>
+</p>
+
+<p>
+  <b>Protected:</b>
+  <%=h @raid.protected %>
+</p>
+
+<p>
+  <b>Creator:</b>
+  <%=h @raid.creator_id %>
+</p>
+
+<p>
+  <b>Min gear level:</b>
+  <%=h @raid.min_gear_level %>
+</p>
+
+<p>
+  <b>Tanks:</b>
+  <%=h @raid.tanks %>
+</p>
+
+<p>
+  <b>Heals:</b>
+  <%=h @raid.heals %>
+</p>
+
+<p>
+  <b>Dps:</b>
+  <%=h @raid.dps %>
+</p>
+
+
+<%= link_to 'Edit', edit_raid_path(@raid) %> |
+<%= link_to 'Back', raids_path %>

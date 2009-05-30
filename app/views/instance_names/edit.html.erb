@@ -1,0 +1,16 @@
+<h1>Editing instance_name</h1>
+
+<% form_for(@instance_name) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @instance_name %> |
+<%= link_to 'Back', instance_names_path %>

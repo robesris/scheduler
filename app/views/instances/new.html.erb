@@ -1,0 +1,27 @@
+<h1>New instance</h1>
+
+<% form_for(@instance) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :instance_name_id %><br />
+    <%= f.text_field :instance_name_id %>
+  </p>
+  <p>
+    <%= f.label :size %><br />
+    <%= f.text_field :size %>
+  </p>
+  <p>
+    <%= f.label :expansion_id %><br />
+    <%= f.text_field :expansion_id %>
+  </p>
+  <p>
+    <%= f.label :level %><br />
+    <%= f.text_field :level %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', instances_path %>

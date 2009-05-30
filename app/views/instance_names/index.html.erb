@@ -1,0 +1,20 @@
+<h1>Listing instance_names</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+
+<% @instance_names.each do |instance_name| %>
+  <tr>
+    <td><%=h instance_name.name %></td>
+    <td><%= link_to 'Show', instance_name %></td>
+    <td><%= link_to 'Edit', edit_instance_name_path(instance_name) %></td>
+    <td><%= link_to 'Destroy', instance_name, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New instance_name', new_instance_name_path %>

@@ -1,0 +1,23 @@
+<p>
+  <b>Instance name:</b>
+  <%=h @instance.instance_name_id %>
+</p>
+
+<p>
+  <b>Size:</b>
+  <%=h @instance.size %>
+</p>
+
+<p>
+  <b>Expansion:</b>
+  <%=h @instance.expansion_id %>
+</p>
+
+<p>
+  <b>Level:</b>
+  <%=h @instance.level %>
+</p>
+
+
+<%= link_to 'Edit', edit_instance_path(@instance) %> |
+<%= link_to 'Back', instances_path %>

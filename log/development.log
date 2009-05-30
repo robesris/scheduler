@@ -1,0 +1,1738 @@
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-05-30 17:53:26) [GET]
+  [4;36;1mSQL (3.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed in 330ms (View: 33, DB: 3) | 200 OK [http://localhost/rails/info/properties]
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (86.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (124.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateRaids (20090530215611)
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE TABLE "raids" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090530215611')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("raids")[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-30 18:25:52) [GET]
+
+ActionController::RoutingError (No route matches "/instance_name" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-30 18:26:01) [GET]
+
+ActionController::RoutingError (No route matches "/instance_name/index" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateInstanceNames (20090530222150)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE TABLE "instance_names" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090530222150')[0m
+Migrating to CreateInstances (20090530222506)
+  [4;36;1mSQL (2.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateInstanceNames (20090530222150)
+Migrating to CreateInstances (20090530222506)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE TABLE "instances" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "instance_name_id" integer, "size" integer, "expansion_id" integer, "level" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090530222506')[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("instance_names")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("instances")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("raids")[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-30 18:28:08) [GET]
+
+ActionController::RoutingError (No route matches "/instance_name" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing InstanceNamesController#index (for 127.0.0.1 at 2009-05-30 18:28:11) [GET]
+
+NameError (uninitialized constant InstanceNamesController::InstanceNames):
+  app/controllers/instance_names_controller.rb:5:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (83.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing InstanceNamesController#show (for 127.0.0.1 at 2009-05-30 18:29:09) [GET]
+  Parameters: {"id"=>"index"}
+
+NameError (uninitialized constant InstanceNamesController::InstanceNames):
+  app/controllers/instance_names_controller.rb:16:in `show'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (75.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-30 18:29:26) [GET]
+
+ActionController::RoutingError (No route matches "/instance_name/index" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing InstanceNamesController#index (for 127.0.0.1 at 2009-05-30 18:29:35) [GET]
+
+NameError (uninitialized constant InstanceNamesController::InstanceNames):
+  app/controllers/instance_names_controller.rb:5:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (250.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing InstanceNamesController#new (for 127.0.0.1 at 2009-05-30 18:33:55) [GET]
+
+NameError (uninitialized constant InstanceNamesController::InstanceNames):
+  app/controllers/instance_names_controller.rb:27:in `new'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (88.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-30 18:34:03) [GET]
+
+ActionController::RoutingError (No route matches "/new/instance_names" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-30 18:34:49) [GET]
+
+ActionController::RoutingError (No route matches "/new/instances" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing InstancesController#index (for 127.0.0.1 at 2009-05-30 18:34:57) [GET]
+  [4;35;1mInstance Load (1.0ms)[0m   [0mSELECT * FROM "instances" [0m
+Rendering template within layouts/instances
+Rendering instances/index
+Completed in 203ms (View: 182, DB: 1) | 200 OK [http://localhost/instances]
+
+
+Processing InstanceNamesController#index (for 127.0.0.1 at 2009-05-30 18:35:06) [GET]
+
+NameError (uninitialized constant InstanceNamesController::InstanceNames):
+  app/controllers/instance_names_controller.rb:5:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (74.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-30 18:35:19) [GET]
+
+ActionController::RoutingError (No route matches "/instancenames" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-30 18:35:24) [GET]
+
+ActionController::RoutingError (No route matches "/instanceNames" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-30 18:36:55) [GET]
+
+ActionController::RoutingError (No route matches "/raids" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-30 18:37:00) [GET]
+
+ActionController::RoutingError (No route matches "/raid" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (2.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateInstances (20090530222506)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("instances")[0m
+
+
+Processing InstancesController#index (for 127.0.0.1 at 2009-05-30 18:43:20) [GET]
+  [4;36;1mInstance Load (2.0ms)[0m   [0;1mSELECT * FROM "instances" [0m
+Rendering template within layouts/instances
+Rendering instances/index
+Completed in 30ms (View: 4, DB: 2) | 200 OK [http://localhost/instances]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-30 18:43:20) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing InstancesController#new (for 127.0.0.1 at 2009-05-30 18:43:55) [GET]
+Rendering template within layouts/instances
+Rendering instances/new
+Completed in 43ms (View: 20, DB: 0) | 200 OK [http://localhost/instances/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-30 18:43:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing InstancesController#index (for 127.0.0.1 at 2009-05-30 18:44:06) [GET]
+  [4;35;1mInstance Load (1.0ms)[0m   [0mSELECT * FROM "instances" [0m
+Rendering template within layouts/instances
+Rendering instances/index
+Completed in 33ms (View: 5, DB: 1) | 200 OK [http://localhost/instances]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-30 18:44:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing InstanceNamesController#index (for 127.0.0.1 at 2009-05-30 18:45:40) [GET]
+  [4;36;1mInstanceName Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: instance_names: SELECT * FROM "instance_names" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: instance_names: SELECT * FROM "instance_names" ):
+  app/controllers/instance_names_controller.rb:5:in `index'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (257.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateInstances (20090530222506)
+Migrating to CreateInstanceNames (20090530224524)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE TABLE "instance_names" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090530224524')[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("instance_names")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("instances")[0m
+
+
+Processing InstanceNamesController#index (for 127.0.0.1 at 2009-05-30 18:46:13) [GET]
+  [4;35;1mInstanceName Load (2.0ms)[0m   [0mSELECT * FROM "instance_names" [0m
+Rendering template within layouts/instance_names
+Rendering instance_names/index
+Completed in 57ms (View: 32, DB: 2) | 200 OK [http://localhost/instance_names]
+
+
+Processing InstancesController#index (for 127.0.0.1 at 2009-05-30 18:46:28) [GET]
+  [4;36;1mInstance Load (1.0ms)[0m   [0;1mSELECT * FROM "instances" [0m
+Rendering template within layouts/instances
+Rendering instances/index
+Completed in 26ms (View: 4, DB: 1) | 200 OK [http://localhost/instances]
+
+
+Processing InstancesController#new (for 127.0.0.1 at 2009-05-30 18:46:31) [GET]
+Rendering template within layouts/instances
+Rendering instances/new
+Completed in 32ms (View: 12, DB: 0) | 200 OK [http://localhost/instances/new]
+
+
+Processing InstancesController#create (for 127.0.0.1 at 2009-05-30 18:47:11) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"3rJzo7u2YmzGsAOm5rbPnbQKjtgS7wSyajC/AHuesvU=", "instance"=>{"size"=>"25", "level"=>"80", "instance_name_id"=>"Ulduar", "expansion_id"=>"WOTLK"}}
+  [4;35;1mInstance Create (1.0ms)[0m   [0mINSERT INTO "instances" ("size", "created_at", "updated_at", "level", "instance_name_id", "expansion_id") VALUES(25, '2009-05-30 22:47:11', '2009-05-30 22:47:11', 80, 0, 0)[0m
+Redirected to http://localhost:3000/instances/1
+Completed in 371ms (DB: 1) | 302 Found [http://localhost/instances]
+
+
+Processing InstancesController#show (for 127.0.0.1 at 2009-05-30 18:47:12) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mInstance Load (1.0ms)[0m   [0;1mSELECT * FROM "instances" WHERE ("instances"."id" = 1) [0m
+Rendering template within layouts/instances
+Rendering instances/show
+Completed in 43ms (View: 17, DB: 1) | 200 OK [http://localhost/instances/1]
+
+
+Processing InstancesController#index (for 127.0.0.1 at 2009-05-30 18:47:20) [GET]
+  [4;35;1mInstance Load (2.0ms)[0m   [0mSELECT * FROM "instances" [0m
+Rendering template within layouts/instances
+Rendering instances/index
+Completed in 33ms (View: 11, DB: 2) | 200 OK [http://localhost/instances]
+
+
+Processing InstanceNamesController#index (for 127.0.0.1 at 2009-05-30 18:47:27) [GET]
+  [4;36;1mInstanceName Load (1.0ms)[0m   [0;1mSELECT * FROM "instance_names" [0m
+Rendering template within layouts/instance_names
+Rendering instance_names/index
+Completed in 29ms (View: 5, DB: 1) | 200 OK [http://localhost/instance_names]
+
+
+Processing InstanceNamesController#new (for 127.0.0.1 at 2009-05-30 18:47:29) [GET]
+Rendering template within layouts/instance_names
+Rendering instance_names/new
+Completed in 39ms (View: 17, DB: 0) | 200 OK [http://localhost/instance_names/new]
+
+
+Processing InstanceNamesController#create (for 127.0.0.1 at 2009-05-30 18:47:35) [POST]
+  Parameters: {"commit"=>"Create", "instance_name"=>{"name"=>"Ulduar"}, "authenticity_token"=>"3rJzo7u2YmzGsAOm5rbPnbQKjtgS7wSyajC/AHuesvU="}
+  [4;35;1mInstanceName Create (1.0ms)[0m   [0mINSERT INTO "instance_names" ("name", "created_at", "updated_at") VALUES('Ulduar', '2009-05-30 22:47:35', '2009-05-30 22:47:35')[0m
+Redirected to http://localhost:3000/instance_names/1
+Completed in 242ms (DB: 1) | 302 Found [http://localhost/instance_names]
+
+
+Processing InstanceNamesController#show (for 127.0.0.1 at 2009-05-30 18:47:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mInstanceName Load (1.0ms)[0m   [0;1mSELECT * FROM "instance_names" WHERE ("instance_names"."id" = 1) [0m
+Rendering template within layouts/instance_names
+Rendering instance_names/show
+Completed in 36ms (View: 12, DB: 1) | 200 OK [http://localhost/instance_names/1]
+
+
+Processing InstanceNamesController#edit (for 127.0.0.1 at 2009-05-30 18:47:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mInstanceName Load (1.0ms)[0m   [0mSELECT * FROM "instance_names" WHERE ("instance_names"."id" = 1) [0m
+Rendering template within layouts/instance_names
+Rendering instance_names/edit
+Completed in 43ms (View: 19, DB: 1) | 200 OK [http://localhost/instance_names/1/edit]
+
+
+Processing InstanceNamesController#index (for 127.0.0.1 at 2009-05-30 18:47:40) [GET]
+  [4;36;1mInstanceName Load (1.0ms)[0m   [0;1mSELECT * FROM "instance_names" [0m
+Rendering template within layouts/instance_names
+Rendering instance_names/index
+Completed in 32ms (View: 11, DB: 1) | 200 OK [http://localhost/instance_names]
+
+
+Processing InstanceNamesController#new (for 127.0.0.1 at 2009-05-30 18:47:43) [GET]
+Rendering template within layouts/instance_names
+Rendering instance_names/new
+Completed in 34ms (View: 9, DB: 0) | 200 OK [http://localhost/instance_names/new]
+
+
+Processing InstanceNamesController#create (for 127.0.0.1 at 2009-05-30 18:47:48) [POST]
+  Parameters: {"commit"=>"Create", "instance_name"=>{"name"=>"Obsidian Sanctum"}, "authenticity_token"=>"3rJzo7u2YmzGsAOm5rbPnbQKjtgS7wSyajC/AHuesvU="}
+  [4;35;1mInstanceName Create (1.0ms)[0m   [0mINSERT INTO "instance_names" ("name", "created_at", "updated_at") VALUES('Obsidian Sanctum', '2009-05-30 22:47:48', '2009-05-30 22:47:48')[0m
+Redirected to http://localhost:3000/instance_names/2
+Completed in 198ms (DB: 1) | 302 Found [http://localhost/instance_names]
+
+
+Processing InstanceNamesController#show (for 127.0.0.1 at 2009-05-30 18:47:49) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mInstanceName Load (1.0ms)[0m   [0;1mSELECT * FROM "instance_names" WHERE ("instance_names"."id" = 2) [0m
+Rendering template within layouts/instance_names
+Rendering instance_names/show
+Completed in 35ms (View: 8, DB: 1) | 200 OK [http://localhost/instance_names/2]
+
+
+Processing InstanceNamesController#index (for 127.0.0.1 at 2009-05-30 18:47:51) [GET]
+  [4;35;1mInstanceName Load (1.0ms)[0m   [0mSELECT * FROM "instance_names" [0m
+Rendering template within layouts/instance_names
+Rendering instance_names/index
+Completed in 33ms (View: 12, DB: 1) | 200 OK [http://localhost/instance_names]
+
+
+Processing InstanceNamesController#new (for 127.0.0.1 at 2009-05-30 18:47:52) [GET]
+Rendering template within layouts/instance_names
+Rendering instance_names/new
+Completed in 30ms (View: 8, DB: 0) | 200 OK [http://localhost/instance_names/new]
+
+
+Processing InstanceNamesController#create (for 127.0.0.1 at 2009-05-30 18:48:03) [POST]
+  Parameters: {"commit"=>"Create", "instance_name"=>{"name"=>"Eye of Eternity"}, "authenticity_token"=>"3rJzo7u2YmzGsAOm5rbPnbQKjtgS7wSyajC/AHuesvU="}
+  [4;36;1mInstanceName Create (1.0ms)[0m   [0;1mINSERT INTO "instance_names" ("name", "created_at", "updated_at") VALUES('Eye of Eternity', '2009-05-30 22:48:03', '2009-05-30 22:48:03')[0m
+Redirected to http://localhost:3000/instance_names/3
+Completed in 265ms (DB: 1) | 302 Found [http://localhost/instance_names]
+
+
+Processing InstanceNamesController#show (for 127.0.0.1 at 2009-05-30 18:48:03) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mInstanceName Load (0.0ms)[0m   [0mSELECT * FROM "instance_names" WHERE ("instance_names"."id" = 3) [0m
+Rendering template within layouts/instance_names
+Rendering instance_names/show
+Completed in 34ms (View: 6, DB: 0) | 200 OK [http://localhost/instance_names/3]
+
+
+Processing InstancesController#index (for 127.0.0.1 at 2009-05-30 18:48:07) [GET]
+  [4;36;1mInstance Load (1.0ms)[0m   [0;1mSELECT * FROM "instances" [0m
+Rendering template within layouts/instances
+Rendering instances/index
+Completed in 33ms (View: 13, DB: 1) | 200 OK [http://localhost/instances]
+
+
+Processing InstancesController#new (for 127.0.0.1 at 2009-05-30 18:48:12) [GET]
+Rendering template within layouts/instances
+Rendering instances/new
+Completed in 37ms (View: 12, DB: 0) | 200 OK [http://localhost/instances/new]
+
+
+Processing InstancesController#create (for 127.0.0.1 at 2009-05-30 18:48:24) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"3rJzo7u2YmzGsAOm5rbPnbQKjtgS7wSyajC/AHuesvU=", "instance"=>{"size"=>"25", "level"=>"80", "instance_name_id"=>"Eye of Eternity", "expansion_id"=>"WOTLK"}}
+  [4;35;1mInstance Create (1.0ms)[0m   [0mINSERT INTO "instances" ("size", "created_at", "updated_at", "level", "instance_name_id", "expansion_id") VALUES(25, '2009-05-30 22:48:24', '2009-05-30 22:48:24', 80, 0, 0)[0m
+Redirected to http://localhost:3000/instances/2
+Completed in 164ms (DB: 1) | 302 Found [http://localhost/instances]
+
+
+Processing InstancesController#show (for 127.0.0.1 at 2009-05-30 18:48:25) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mInstance Load (0.0ms)[0m   [0;1mSELECT * FROM "instances" WHERE ("instances"."id" = 2) [0m
+Rendering template within layouts/instances
+Rendering instances/show
+Completed in 31ms (View: 7, DB: 0) | 200 OK [http://localhost/instances/2]
+
+
+Processing InstancesController#edit (for 127.0.0.1 at 2009-05-30 18:48:39) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mInstance Load (1.0ms)[0m   [0mSELECT * FROM "instances" WHERE ("instances"."id" = 2) [0m
+Rendering template within layouts/instances
+Rendering instances/edit
+Completed in 42ms (View: 18, DB: 1) | 200 OK [http://localhost/instances/2/edit]
+
+
+Processing InstancesController#update (for 127.0.0.1 at 2009-05-30 18:48:43) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"3rJzo7u2YmzGsAOm5rbPnbQKjtgS7wSyajC/AHuesvU=", "id"=>"2", "instance"=>{"size"=>"25", "level"=>"80", "instance_name_id"=>"1", "expansion_id"=>"0"}}
+  [4;36;1mInstance Load (1.0ms)[0m   [0;1mSELECT * FROM "instances" WHERE ("instances"."id" = 2) [0m
+  [4;35;1mInstance Update (44.0ms)[0m   [0mUPDATE "instances" SET "updated_at" = '2009-05-30 22:48:43', "instance_name_id" = 1 WHERE "id" = 2[0m
+Redirected to http://localhost:3000/instances/2
+Completed in 288ms (DB: 45) | 302 Found [http://localhost/instances/2]
+
+
+Processing InstancesController#show (for 127.0.0.1 at 2009-05-30 18:48:43) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mInstance Load (0.0ms)[0m   [0;1mSELECT * FROM "instances" WHERE ("instances"."id" = 2) [0m
+Rendering template within layouts/instances
+Rendering instances/show
+Completed in 35ms (View: 7, DB: 0) | 200 OK [http://localhost/instances/2]
+
+
+Processing InstancesController#index (for 127.0.0.1 at 2009-05-30 18:48:50) [GET]
+  [4;35;1mInstance Load (1.0ms)[0m   [0mSELECT * FROM "instances" [0m
+Rendering template within layouts/instances
+Rendering instances/index
+Completed in 40ms (View: 13, DB: 1) | 200 OK [http://localhost/instances]
+
+
+Processing InstancesController#edit (for 127.0.0.1 at 2009-05-30 18:51:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mInstance Load (1.0ms)[0m   [0;1mSELECT * FROM "instances" WHERE ("instances"."id" = 1) [0m
+Rendering template within layouts/instances
+Rendering instances/edit
+Completed in 237ms (View: 11, DB: 1) | 200 OK [http://localhost/instances/1/edit]
+
+
+Processing InstancesController#update (for 127.0.0.1 at 2009-05-30 18:51:28) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"3rJzo7u2YmzGsAOm5rbPnbQKjtgS7wSyajC/AHuesvU=", "id"=>"1", "instance"=>{"size"=>"25", "level"=>"80", "instance_name_id"=>"Ulduar", "expansion_id"=>"0"}}
+  [4;35;1mInstance Load (1.0ms)[0m   [0mSELECT * FROM "instances" WHERE ("instances"."id" = 1) [0m
+Redirected to http://localhost:3000/instances/1
+Completed in 39ms (DB: 1) | 302 Found [http://localhost/instances/1]
+
+
+Processing InstancesController#show (for 127.0.0.1 at 2009-05-30 18:51:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mInstance Load (1.0ms)[0m   [0;1mSELECT * FROM "instances" WHERE ("instances"."id" = 1) [0m
+Rendering template within layouts/instances
+Rendering instances/show
+Completed in 32ms (View: 7, DB: 1) | 200 OK [http://localhost/instances/1]
+
+
+Processing InstancesController#edit (for 127.0.0.1 at 2009-05-30 18:54:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mInstance Load (0.0ms)[0m   [0mSELECT * FROM "instances" WHERE ("instances"."id" = 1) [0m
+Rendering template within layouts/instances
+Rendering instances/edit
+Completed in 35ms (View: 11, DB: 0) | 200 OK [http://localhost/instances/1/edit]
+
+
+Processing InstancesController#update (for 127.0.0.1 at 2009-05-30 18:54:49) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"3rJzo7u2YmzGsAOm5rbPnbQKjtgS7wSyajC/AHuesvU=", "id"=>"1", "instance"=>{"size"=>"25", "level"=>"80", "instance_name_id"=>"Ulduar", "expansion_id"=>"0"}}
+  [4;36;1mInstance Load (1.0ms)[0m   [0;1mSELECT * FROM "instances" WHERE ("instances"."id" = 1) [0m
+Redirected to http://localhost:3000/instances/1
+Completed in 31ms (DB: 1) | 302 Found [http://localhost/instances/1]
+
+
+Processing InstancesController#show (for 127.0.0.1 at 2009-05-30 18:54:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mInstance Load (1.0ms)[0m   [0mSELECT * FROM "instances" WHERE ("instances"."id" = 1) [0m
+Rendering template within layouts/instances
+Rendering instances/show
+Completed in 38ms (View: 8, DB: 1) | 200 OK [http://localhost/instances/1]
+
+
+Processing InstancesController#index (for 127.0.0.1 at 2009-05-30 18:54:52) [GET]
+  [4;36;1mInstance Load (1.0ms)[0m   [0;1mSELECT * FROM "instances" [0m
+Rendering template within layouts/instances
+Rendering instances/index
+Completed in 41ms (View: 11, DB: 1) | 200 OK [http://localhost/instances]
+
+
+Processing InstanceNamesController#index (for 127.0.0.1 at 2009-05-30 18:54:59) [GET]
+  [4;35;1mInstanceName Load (1.0ms)[0m   [0mSELECT * FROM "instance_names" [0m
+Rendering template within layouts/instance_names
+Rendering instance_names/index
+Completed in 38ms (View: 13, DB: 1) | 200 OK [http://localhost/instance_names]
+
+
+Processing InstanceNamesController#edit (for 127.0.0.1 at 2009-05-30 18:55:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mInstanceName Load (1.0ms)[0m   [0;1mSELECT * FROM "instance_names" WHERE ("instance_names"."id" = 1) [0m
+Rendering template within layouts/instance_names
+Rendering instance_names/edit
+Completed in 29ms (View: 8, DB: 1) | 200 OK [http://localhost/instance_names/1/edit]
+
+
+Processing InstanceNamesController#index (for 127.0.0.1 at 2009-05-30 18:55:06) [GET]
+  [4;35;1mInstanceName Load (1.0ms)[0m   [0mSELECT * FROM "instance_names" [0m
+Rendering template within layouts/instance_names
+Rendering instance_names/index
+Completed in 33ms (View: 12, DB: 1) | 200 OK [http://localhost/instance_names]
+
+
+Processing InstancesController#index (for 127.0.0.1 at 2009-05-30 18:55:12) [GET]
+  [4;36;1mInstance Load (2.0ms)[0m   [0;1mSELECT * FROM "instances" [0m
+Rendering template within layouts/instances
+Rendering instances/index
+Completed in 36ms (View: 12, DB: 2) | 200 OK [http://localhost/instances]
+
+
+Processing InstanceNamesController#index (for 127.0.0.1 at 2009-05-30 18:55:20) [GET]
+  [4;35;1mInstanceName Load (1.0ms)[0m   [0mSELECT * FROM "instance_names" [0m
+Rendering template within layouts/instance_names
+Rendering instance_names/index
+Completed in 36ms (View: 12, DB: 1) | 200 OK [http://localhost/instance_names]
+
+
+Processing InstanceNamesController#show (for 127.0.0.1 at 2009-05-30 18:55:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mInstanceName Load (1.0ms)[0m   [0;1mSELECT * FROM "instance_names" WHERE ("instance_names"."id" = 1) [0m
+Rendering template within layouts/instance_names
+Rendering instance_names/show
+Completed in 42ms (View: 9, DB: 1) | 200 OK [http://localhost/instance_names/1]
+
+
+Processing InstanceNamesController#index (for 127.0.0.1 at 2009-05-30 18:55:25) [GET]
+  [4;35;1mInstanceName Load (1.0ms)[0m   [0mSELECT * FROM "instance_names" [0m
+Rendering template within layouts/instance_names
+Rendering instance_names/index
+Completed in 41ms (View: 13, DB: 1) | 200 OK [http://localhost/instance_names]
+
+
+Processing InstanceNamesController#show (for 127.0.0.1 at 2009-05-30 18:55:28) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mInstanceName Load (0.0ms)[0m   [0;1mSELECT * FROM "instance_names" WHERE ("instance_names"."id" = 3) [0m
+Rendering template within layouts/instance_names
+Rendering instance_names/show
+Completed in 31ms (View: 7, DB: 0) | 200 OK [http://localhost/instance_names/3]
+
+
+Processing InstanceNamesController#index (for 127.0.0.1 at 2009-05-30 18:55:30) [GET]
+  [4;35;1mInstanceName Load (1.0ms)[0m   [0mSELECT * FROM "instance_names" [0m
+Rendering template within layouts/instance_names
+Rendering instance_names/index
+Completed in 39ms (View: 15, DB: 1) | 200 OK [http://localhost/instance_names]
+
+
+Processing InstancesController#index (for 127.0.0.1 at 2009-05-30 18:56:02) [GET]
+  [4;36;1mInstance Load (2.0ms)[0m   [0;1mSELECT * FROM "instances" [0m
+Rendering template within layouts/instances
+Rendering instances/index
+Completed in 39ms (View: 15, DB: 2) | 200 OK [http://localhost/instances]
+
+
+Processing InstancesController#index (for 127.0.0.1 at 2009-05-30 18:58:11) [GET]
+  [4;36;1mInstance Load (2.0ms)[0m   [0;1mSELECT * FROM "instances" [0m
+Rendering template within layouts/instances
+Rendering instances/index
+Completed in 124ms (View: 41, DB: 2) | 200 OK [http://localhost/instances]
+
+
+Processing InstancesController#edit (for 127.0.0.1 at 2009-05-30 18:58:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mInstance Load (1.0ms)[0m   [0mSELECT * FROM "instances" WHERE ("instances"."id" = 1) [0m
+Rendering template within layouts/instances
+Rendering instances/edit
+Completed in 140ms (View: 21, DB: 1) | 200 OK [http://localhost/instances/1/edit]
+
+
+Processing InstancesController#update (for 127.0.0.1 at 2009-05-30 18:58:19) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"3rJzo7u2YmzGsAOm5rbPnbQKjtgS7wSyajC/AHuesvU=", "id"=>"1", "instance"=>{"size"=>"25", "level"=>"80", "instance_name_id"=>"1", "expansion_id"=>"0"}}
+  [4;36;1mInstance Load (0.0ms)[0m   [0;1mSELECT * FROM "instances" WHERE ("instances"."id" = 1) [0m
+  [4;35;1mInstance Update (1.0ms)[0m   [0mUPDATE "instances" SET "updated_at" = '2009-05-30 22:58:19', "instance_name_id" = 1 WHERE "id" = 1[0m
+Redirected to http://localhost:3000/instances/1
+Completed in 254ms (DB: 1) | 302 Found [http://localhost/instances/1]
+
+
+Processing InstancesController#show (for 127.0.0.1 at 2009-05-30 18:58:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mInstance Load (1.0ms)[0m   [0;1mSELECT * FROM "instances" WHERE ("instances"."id" = 1) [0m
+Rendering template within layouts/instances
+Rendering instances/show
+Completed in 45ms (View: 16, DB: 1) | 200 OK [http://localhost/instances/1]
+
+
+Processing InstancesController#index (for 127.0.0.1 at 2009-05-30 18:58:22) [GET]
+  [4;35;1mInstance Load (2.0ms)[0m   [0mSELECT * FROM "instances" [0m
+Rendering template within layouts/instances
+Rendering instances/index
+Completed in 48ms (View: 19, DB: 2) | 200 OK [http://localhost/instances]
+
+
+Processing InstancesController#edit (for 127.0.0.1 at 2009-05-30 18:58:26) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mInstance Load (1.0ms)[0m   [0;1mSELECT * FROM "instances" WHERE ("instances"."id" = 2) [0m
+Rendering template within layouts/instances
+Rendering instances/edit
+Completed in 38ms (View: 13, DB: 1) | 200 OK [http://localhost/instances/2/edit]
+
+
+Processing InstancesController#update (for 127.0.0.1 at 2009-05-30 18:58:31) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"3rJzo7u2YmzGsAOm5rbPnbQKjtgS7wSyajC/AHuesvU=", "id"=>"2", "instance"=>{"size"=>"25", "level"=>"80", "instance_name_id"=>"2", "expansion_id"=>"0"}}
+  [4;35;1mInstance Load (0.0ms)[0m   [0mSELECT * FROM "instances" WHERE ("instances"."id" = 2) [0m
+  [4;36;1mInstance Update (1.0ms)[0m   [0;1mUPDATE "instances" SET "updated_at" = '2009-05-30 22:58:31', "instance_name_id" = 2 WHERE "id" = 2[0m
+Redirected to http://localhost:3000/instances/2
+Completed in 221ms (DB: 1) | 302 Found [http://localhost/instances/2]
+
+
+Processing InstancesController#show (for 127.0.0.1 at 2009-05-30 18:58:31) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mInstance Load (1.0ms)[0m   [0mSELECT * FROM "instances" WHERE ("instances"."id" = 2) [0m
+Rendering template within layouts/instances
+Rendering instances/show
+Completed in 40ms (View: 10, DB: 1) | 200 OK [http://localhost/instances/2]
+
+
+Processing InstancesController#index (for 127.0.0.1 at 2009-05-30 19:00:39) [GET]
+  [4;36;1mInstance Load (1.0ms)[0m   [0;1mSELECT * FROM "instances" [0m
+Rendering template within layouts/instances
+Rendering instances/index
+  [4;35;1mInstanceName Load (1.0ms)[0m   [0mSELECT * FROM "instance_names" WHERE ("instance_names"."id" = 1) [0m
+  [4;36;1mInstanceName Load (0.0ms)[0m   [0;1mSELECT * FROM "instance_names" WHERE ("instance_names"."id" = 2) [0m
+Completed in 94ms (View: 70, DB: 2) | 200 OK [http://localhost/instances]
+
+
+Processing InstancesController#index (for 127.0.0.1 at 2009-05-30 19:00:56) [GET]
+  [4;35;1mInstance Load (1.0ms)[0m   [0mSELECT * FROM "instances" [0m
+Rendering template within layouts/instances
+Rendering instances/index
+  [4;36;1mInstanceName Load (1.0ms)[0m   [0;1mSELECT * FROM "instance_names" WHERE ("instance_names"."id" = 1) [0m
+  [4;35;1mInstanceName Load (1.0ms)[0m   [0mSELECT * FROM "instance_names" WHERE ("instance_names"."id" = 2) [0m
+Completed in 67ms (View: 43, DB: 3) | 200 OK [http://localhost/instances]
+
+
+Processing InstancesController#index (for 127.0.0.1 at 2009-05-30 19:03:08) [GET]
+  [4;36;1mInstance Load (1.0ms)[0m   [0;1mSELECT * FROM "instances" [0m
+Rendering template within layouts/instances
+Rendering instances/index
+  [4;35;1mInstanceName Load (1.0ms)[0m   [0mSELECT * FROM "instance_names" WHERE ("instance_names"."id" = 1) [0m
+
+ActionView::TemplateError (undefined method `name' for #<Instance:0x7f2fd01c>) on line #19 of app/views/instances/index.html.erb:
+16:     <td><%=h instance.instance_name.name %></td>
+17:     <td><%=h instance.size %></td>
+18:     <td><%=h instance.expansion_id %></td>
+19:     <td><%=h instance.name %></td>
+20:     <td><%=h instance.level %></td>
+21:     <td><%= link_to 'Show', instance %></td>
+22:     <td><%= link_to 'Edit', edit_instance_path(instance) %></td>
+
+    app/views/instances/index.html.erb:19
+    app/views/instances/index.html.erb:13:in `each'
+    app/views/instances/index.html.erb:13
+    app/controllers/instances_controller.rb:7:in `index'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (111.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing InstancesController#index (for 127.0.0.1 at 2009-05-30 19:03:22) [GET]
+  [4;36;1mInstance Load (0.0ms)[0m   [0;1mSELECT * FROM "instances" [0m
+Rendering template within layouts/instances
+Rendering instances/index
+  [4;35;1mInstanceName Load (1.0ms)[0m   [0mSELECT * FROM "instance_names" WHERE ("instance_names"."id" = 1) [0m
+
+ActionView::TemplateError (undefined method `exoansion_name' for #<Instance:0x7f16711c>) on line #19 of app/views/instances/index.html.erb:
+16:     <td><%=h instance.instance_name.name %></td>
+17:     <td><%=h instance.size %></td>
+18:     <td><%=h instance.expansion_id %></td>
+19:     <td><%=h instance.exoansion_name.name %></td>
+20:     <td><%=h instance.level %></td>
+21:     <td><%= link_to 'Show', instance %></td>
+22:     <td><%= link_to 'Edit', edit_instance_path(instance) %></td>
+
+    app/views/instances/index.html.erb:19
+    app/views/instances/index.html.erb:13:in `each'
+    app/views/instances/index.html.erb:13
+    app/controllers/instances_controller.rb:7:in `index'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (266.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing InstancesController#index (for 127.0.0.1 at 2009-05-30 19:03:33) [GET]
+  [4;36;1mInstance Load (1.0ms)[0m   [0;1mSELECT * FROM "instances" [0m
+Rendering template within layouts/instances
+Rendering instances/index
+  [4;35;1mInstanceName Load (0.0ms)[0m   [0mSELECT * FROM "instance_names" WHERE ("instance_names"."id" = 1) [0m
+
+ActionView::TemplateError (undefined method `expansion_name' for #<Instance:0x7f2a3210>) on line #19 of app/views/instances/index.html.erb:
+16:     <td><%=h instance.instance_name.name %></td>
+17:     <td><%=h instance.size %></td>
+18:     <td><%=h instance.expansion_id %></td>
+19:     <td><%=h instance.expansion_name.name %></td>
+20:     <td><%=h instance.level %></td>
+21:     <td><%= link_to 'Show', instance %></td>
+22:     <td><%= link_to 'Edit', edit_instance_path(instance) %></td>
+
+    app/views/instances/index.html.erb:19
+    app/views/instances/index.html.erb:13:in `each'
+    app/views/instances/index.html.erb:13
+    app/controllers/instances_controller.rb:7:in `index'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (111.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing InstancesController#index (for 127.0.0.1 at 2009-05-30 19:03:46) [GET]
+  [4;36;1mInstance Load (2.0ms)[0m   [0;1mSELECT * FROM "instances" [0m
+Rendering template within layouts/instances
+Rendering instances/index
+  [4;35;1mInstanceName Load (1.0ms)[0m   [0mSELECT * FROM "instance_names" WHERE ("instance_names"."id" = 1) [0m
+
+ActionView::TemplateError (undefined method `name' for 0:Fixnum) on line #19 of app/views/instances/index.html.erb:
+16:     <td><%=h instance.instance_name.name %></td>
+17:     <td><%=h instance.size %></td>
+18:     <td><%=h instance.expansion_id %></td>
+19:     <td><%=h instance.expansion_id.name %></td>
+20:     <td><%=h instance.level %></td>
+21:     <td><%= link_to 'Show', instance %></td>
+22:     <td><%= link_to 'Edit', edit_instance_path(instance) %></td>
+
+    app/views/instances/index.html.erb:19
+    app/views/instances/index.html.erb:13:in `each'
+    app/views/instances/index.html.erb:13
+    app/controllers/instances_controller.rb:7:in `index'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (278.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing InstancesController#index (for 127.0.0.1 at 2009-05-30 19:04:28) [GET]
+  [4;36;1mInstance Load (2.0ms)[0m   [0;1mSELECT * FROM "instances" [0m
+Rendering template within layouts/instances
+Rendering instances/index
+  [4;35;1mInstanceName Load (1.0ms)[0m   [0mSELECT * FROM "instance_names" WHERE ("instance_names"."id" = 1) [0m
+
+ActionView::TemplateError (undefined method `name' for 0:Fixnum) on line #19 of app/views/instances/index.html.erb:
+16:     <td><%=h instance.instance_name.name %></td>
+17:     <td><%=h instance.size %></td>
+18:     <td><%=h instance.expansion_id %></td>
+19:     <td><%=h instance.expansion_id.name %></td>
+20:     <td><%=h instance.level %></td>
+21:     <td><%= link_to 'Show', instance %></td>
+22:     <td><%= link_to 'Edit', edit_instance_path(instance) %></td>
+
+    app/views/instances/index.html.erb:19
+    app/views/instances/index.html.erb:13:in `each'
+    app/views/instances/index.html.erb:13
+    app/controllers/instances_controller.rb:7:in `index'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (108.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing InstancesController#index (for 127.0.0.1 at 2009-05-30 19:04:31) [GET]
+  [4;36;1mInstance Load (1.0ms)[0m   [0;1mSELECT * FROM "instances" [0m
+Rendering template within layouts/instances
+Rendering instances/index
+  [4;35;1mInstanceName Load (1.0ms)[0m   [0mSELECT * FROM "instance_names" WHERE ("instance_names"."id" = 1) [0m
+
+ActionView::TemplateError (undefined method `name' for 0:Fixnum) on line #19 of app/views/instances/index.html.erb:
+16:     <td><%=h instance.instance_name.name %></td>
+17:     <td><%=h instance.size %></td>
+18:     <td><%=h instance.expansion_id %></td>
+19:     <td><%=h instance.expansion_id.name %></td>
+20:     <td><%=h instance.level %></td>
+21:     <td><%= link_to 'Show', instance %></td>
+22:     <td><%= link_to 'Edit', edit_instance_path(instance) %></td>
+
+    app/views/instances/index.html.erb:19
+    app/views/instances/index.html.erb:13:in `each'
+    app/views/instances/index.html.erb:13
+    app/controllers/instances_controller.rb:7:in `index'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (288.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing InstancesController#index (for 127.0.0.1 at 2009-05-30 19:05:15) [GET]
+  [4;36;1mInstance Load (1.0ms)[0m   [0;1mSELECT * FROM "instances" [0m
+Rendering template within layouts/instances
+Rendering instances/index
+  [4;35;1mInstanceName Load (0.0ms)[0m   [0mSELECT * FROM "instance_names" WHERE ("instance_names"."id" = 1) [0m
+
+ActionView::TemplateError (uninitialized constant Instance::ExpansionName) on line #19 of app/views/instances/index.html.erb:
+16:     <td><%=h instance.instance_name.name %></td>
+17:     <td><%=h instance.size %></td>
+18:     <td><%=h instance.expansion_id %></td>
+19:     <td><%=h instance.expansion_name %></td>
+20:     <td><%=h instance.level %></td>
+21:     <td><%= link_to 'Show', instance %></td>
+22:     <td><%= link_to 'Edit', edit_instance_path(instance) %></td>
+
+    app/views/instances/index.html.erb:19
+    app/views/instances/index.html.erb:13:in `each'
+    app/views/instances/index.html.erb:13
+    app/controllers/instances_controller.rb:7:in `index'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (121.0ms)
+Rendered rescues/_request_and_response (10.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing InstancesController#index (for 127.0.0.1 at 2009-05-30 19:05:32) [GET]
+  [4;36;1mInstance Load (1.0ms)[0m   [0;1mSELECT * FROM "instances" [0m
+Rendering template within layouts/instances
+Rendering instances/index
+  [4;35;1mInstanceName Load (1.0ms)[0m   [0mSELECT * FROM "instance_names" WHERE ("instance_names"."id" = 1) [0m
+
+ActionView::TemplateError (undefined method `expansion' for #<Instance:0x7f0d6be4>) on line #19 of app/views/instances/index.html.erb:
+16:     <td><%=h instance.instance_name.name %></td>
+17:     <td><%=h instance.size %></td>
+18:     <td><%=h instance.expansion_id %></td>
+19:     <td><%=h instance.expansion.name %></td>
+20:     <td><%=h instance.level %></td>
+21:     <td><%= link_to 'Show', instance %></td>
+22:     <td><%= link_to 'Edit', edit_instance_path(instance) %></td>
+
+    app/views/instances/index.html.erb:19
+    app/views/instances/index.html.erb:13:in `each'
+    app/views/instances/index.html.erb:13
+    app/controllers/instances_controller.rb:7:in `index'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (114.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing InstancesController#index (for 127.0.0.1 at 2009-05-30 19:05:44) [GET]
+  [4;36;1mInstance Load (2.0ms)[0m   [0;1mSELECT * FROM "instances" [0m
+Rendering template within layouts/instances
+Rendering instances/index
+  [4;35;1mInstanceName Load (0.0ms)[0m   [0mSELECT * FROM "instance_names" WHERE ("instance_names"."id" = 1) [0m
+
+ActionView::TemplateError (uninitialized constant Instance::ExpansionName) on line #19 of app/views/instances/index.html.erb:
+16:     <td><%=h instance.instance_name.name %></td>
+17:     <td><%=h instance.size %></td>
+18:     <td><%=h instance.expansion_id %></td>
+19:     <td><%=h instance.expansion_name.name %></td>
+20:     <td><%=h instance.level %></td>
+21:     <td><%= link_to 'Show', instance %></td>
+22:     <td><%= link_to 'Edit', edit_instance_path(instance) %></td>
+
+    app/views/instances/index.html.erb:19
+    app/views/instances/index.html.erb:13:in `each'
+    app/views/instances/index.html.erb:13
+    app/controllers/instances_controller.rb:7:in `index'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (123.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing InstancesController#index (for 127.0.0.1 at 2009-05-30 19:06:02) [GET]
+  [4;36;1mInstance Load (1.0ms)[0m   [0;1mSELECT * FROM "instances" [0m
+Rendering template within layouts/instances
+Rendering instances/index
+  [4;35;1mInstanceName Load (1.0ms)[0m   [0mSELECT * FROM "instance_names" WHERE ("instance_names"."id" = 1) [0m
+
+ActionView::TemplateError (Could not find table 'expansions') on line #19 of app/views/instances/index.html.erb:
+16:     <td><%=h instance.instance_name.name %></td>
+17:     <td><%=h instance.size %></td>
+18:     <td><%=h instance.expansion_id %></td>
+19:     <td><%=h instance.expansion.name %></td>
+20:     <td><%=h instance.level %></td>
+21:     <td><%= link_to 'Show', instance %></td>
+22:     <td><%= link_to 'Edit', edit_instance_path(instance) %></td>
+
+    app/views/instances/index.html.erb:19
+    app/views/instances/index.html.erb:13:in `each'
+    app/views/instances/index.html.erb:13
+    app/controllers/instances_controller.rb:7:in `index'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (140.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateInstances (20090530222506)
+Migrating to CreateInstanceNames (20090530224524)
+Migrating to CreateExpansions (20090530230235)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE TABLE "expansions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090530230235')[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("expansions")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("instance_names")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("instances")[0m
+
+
+Processing InstancesController#index (for 127.0.0.1 at 2009-05-30 19:07:06) [GET]
+  [4;36;1mInstance Load (1.0ms)[0m   [0;1mSELECT * FROM "instances" [0m
+Rendering template within layouts/instances
+Rendering instances/index
+  [4;35;1mInstanceName Load (1.0ms)[0m   [0mSELECT * FROM "instance_names" WHERE ("instance_names"."id" = 1) [0m
+  [4;36;1mExpansion Load (0.0ms)[0m   [0;1mSELECT * FROM "expansions" WHERE ("expansions"."id" = 0) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #19 of app/views/instances/index.html.erb:
+16:     <td><%=h instance.instance_name.name %></td>
+17:     <td><%=h instance.size %></td>
+18:     <td><%=h instance.expansion_id %></td>
+19:     <td><%=h instance.expansion.name %></td>
+20:     <td><%=h instance.level %></td>
+21:     <td><%= link_to 'Show', instance %></td>
+22:     <td><%= link_to 'Edit', edit_instance_path(instance) %></td>
+
+    app/views/instances/index.html.erb:19
+    app/views/instances/index.html.erb:13:in `each'
+    app/views/instances/index.html.erb:13
+    app/controllers/instances_controller.rb:7:in `index'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (277.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing InstancesController#index (for 127.0.0.1 at 2009-05-30 19:07:31) [GET]
+  [4;35;1mInstance Load (1.0ms)[0m   [0mSELECT * FROM "instances" [0m
+Rendering template within layouts/instances
+Rendering instances/index
+  [4;36;1mInstanceName Load (1.0ms)[0m   [0;1mSELECT * FROM "instance_names" WHERE ("instance_names"."id" = 1) [0m
+
+ActionView::TemplateError (undefined method `expansion_name' for #<Instance:0x7f299490>) on line #19 of app/views/instances/index.html.erb:
+16:     <td><%=h instance.instance_name.name %></td>
+17:     <td><%=h instance.size %></td>
+18:     <td><%=h instance.expansion_id %></td>
+19:     <td><%=h instance.expansion_name.name %></td>
+20:     <td><%=h instance.level %></td>
+21:     <td><%= link_to 'Show', instance %></td>
+22:     <td><%= link_to 'Edit', edit_instance_path(instance) %></td>
+
+    app/views/instances/index.html.erb:19
+    app/views/instances/index.html.erb:13:in `each'
+    app/views/instances/index.html.erb:13
+    app/controllers/instances_controller.rb:7:in `index'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (112.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing InstancesController#index (for 127.0.0.1 at 2009-05-30 19:07:44) [GET]
+  [4;35;1mInstance Load (1.0ms)[0m   [0mSELECT * FROM "instances" [0m
+Rendering template within layouts/instances
+Rendering instances/index
+  [4;36;1mInstanceName Load (1.0ms)[0m   [0;1mSELECT * FROM "instance_names" WHERE ("instance_names"."id" = 1) [0m
+  [4;35;1mExpansion Load (0.0ms)[0m   [0mSELECT * FROM "expansions" WHERE ("expansions"."id" = 0) [0m
+  [4;36;1mInstanceName Load (1.0ms)[0m   [0;1mSELECT * FROM "instance_names" WHERE ("instance_names"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "expansions" WHERE ("expansions"."id" = 0) [0m
+Completed in 88ms (View: 63, DB: 3) | 200 OK [http://localhost/instances]
+
+
+Processing InstancesController#index (for 127.0.0.1 at 2009-05-30 19:07:56) [GET]
+  [4;36;1mInstance Load (1.0ms)[0m   [0;1mSELECT * FROM "instances" [0m
+Rendering template within layouts/instances
+Rendering instances/index
+  [4;35;1mInstanceName Load (1.0ms)[0m   [0mSELECT * FROM "instance_names" WHERE ("instance_names"."id" = 1) [0m
+  [4;36;1mExpansion Load (1.0ms)[0m   [0;1mSELECT * FROM "expansions" WHERE ("expansions"."id" = 0) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #19 of app/views/instances/index.html.erb:
+16:     <td><%=h instance.instance_name.name %></td>
+17:     <td><%=h instance.size %></td>
+18:     <td><%=h instance.expansion_id %></td>
+19:     <td><%=h instance.expansion.name %></td>
+20:     <td><%=h instance.level %></td>
+21:     <td><%= link_to 'Show', instance %></td>
+22:     <td><%= link_to 'Edit', edit_instance_path(instance) %></td>
+
+    app/views/instances/index.html.erb:19
+    app/views/instances/index.html.erb:13:in `each'
+    app/views/instances/index.html.erb:13
+    app/controllers/instances_controller.rb:7:in `index'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (117.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ExpansionsController#index (for 127.0.0.1 at 2009-05-30 19:08:02) [GET]
+  [4;35;1mExpansion Load (1.0ms)[0m   [0mSELECT * FROM "expansions" [0m
+Rendering template within layouts/expansions
+Rendering expansions/index
+Completed in 49ms (View: 27, DB: 1) | 200 OK [http://localhost/expansions]
+
+
+Processing ExpansionsController#new (for 127.0.0.1 at 2009-05-30 19:08:06) [GET]
+Rendering template within layouts/expansions
+Rendering expansions/new
+Completed in 40ms (View: 16, DB: 0) | 200 OK [http://localhost/expansions/new]
+
+
+Processing ExpansionsController#create (for 127.0.0.1 at 2009-05-30 19:08:20) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"3rJzo7u2YmzGsAOm5rbPnbQKjtgS7wSyajC/AHuesvU=", "expansion"=>{"name"=>"The Wrath of the Lich King"}}
+  [4;36;1mExpansion Create (2.0ms)[0m   [0;1mINSERT INTO "expansions" ("name", "created_at", "updated_at") VALUES('The Wrath of the Lich King', '2009-05-30 23:08:20', '2009-05-30 23:08:20')[0m
+Redirected to http://localhost:3000/expansions/1
+Completed in 157ms (DB: 2) | 302 Found [http://localhost/expansions]
+
+
+Processing ExpansionsController#show (for 127.0.0.1 at 2009-05-30 19:08:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mExpansion Load (0.0ms)[0m   [0mSELECT * FROM "expansions" WHERE ("expansions"."id" = 1) [0m
+Rendering template within layouts/expansions
+Rendering expansions/show
+Completed in 37ms (View: 13, DB: 0) | 200 OK [http://localhost/expansions/1]
+
+
+Processing ExpansionsController#index (for 127.0.0.1 at 2009-05-30 19:08:22) [GET]
+  [4;36;1mExpansion Load (1.0ms)[0m   [0;1mSELECT * FROM "expansions" [0m
+Rendering template within layouts/expansions
+Rendering expansions/index
+Completed in 34ms (View: 11, DB: 1) | 200 OK [http://localhost/expansions]
+
+
+Processing ExpansionsController#new (for 127.0.0.1 at 2009-05-30 19:08:25) [GET]
+Rendering template within layouts/expansions
+Rendering expansions/new
+Completed in 32ms (View: 9, DB: 0) | 200 OK [http://localhost/expansions/new]
+
+
+Processing ExpansionsController#create (for 127.0.0.1 at 2009-05-30 19:08:31) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"3rJzo7u2YmzGsAOm5rbPnbQKjtgS7wSyajC/AHuesvU=", "expansion"=>{"name"=>"The Burning Crusade"}}
+  [4;35;1mExpansion Create (2.0ms)[0m   [0mINSERT INTO "expansions" ("name", "created_at", "updated_at") VALUES('The Burning Crusade', '2009-05-30 23:08:32', '2009-05-30 23:08:32')[0m
+Redirected to http://localhost:3000/expansions/2
+Completed in 237ms (DB: 2) | 302 Found [http://localhost/expansions]
+
+
+Processing ExpansionsController#show (for 127.0.0.1 at 2009-05-30 19:08:32) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mExpansion Load (0.0ms)[0m   [0;1mSELECT * FROM "expansions" WHERE ("expansions"."id" = 2) [0m
+Rendering template within layouts/expansions
+Rendering expansions/show
+Completed in 37ms (View: 7, DB: 0) | 200 OK [http://localhost/expansions/2]
+
+
+Processing InstancesController#index (for 127.0.0.1 at 2009-05-30 19:08:38) [GET]
+  [4;35;1mInstance Load (1.0ms)[0m   [0mSELECT * FROM "instances" [0m
+Rendering template within layouts/instances
+Rendering instances/index
+  [4;36;1mInstanceName Load (1.0ms)[0m   [0;1mSELECT * FROM "instance_names" WHERE ("instance_names"."id" = 1) [0m
+  [4;35;1mExpansion Load (1.0ms)[0m   [0mSELECT * FROM "expansions" WHERE ("expansions"."id" = 0) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #19 of app/views/instances/index.html.erb:
+16:     <td><%=h instance.instance_name.name %></td>
+17:     <td><%=h instance.size %></td>
+18:     <td><%=h instance.expansion_id %></td>
+19:     <td><%=h instance.expansion.name %></td>
+20:     <td><%=h instance.level %></td>
+21:     <td><%= link_to 'Show', instance %></td>
+22:     <td><%= link_to 'Edit', edit_instance_path(instance) %></td>
+
+    app/views/instances/index.html.erb:19
+    app/views/instances/index.html.erb:13:in `each'
+    app/views/instances/index.html.erb:13
+    app/controllers/instances_controller.rb:7:in `index'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (113.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing InstancesController#show (for 127.0.0.1 at 2009-05-30 19:08:54) [GET]
+  Parameters: {"id"=>"show"}
+  [4;36;1mInstance Load (0.0ms)[0m   [0;1mSELECT * FROM "instances" WHERE ("instances"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Instance with ID=show):
+  app/controllers/instances_controller.rb:16:in `show'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (233.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-30 19:09:05) [GET]
+
+ActionController::RoutingError (No route matches "/show/instances" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing InstancesController#index (for 127.0.0.1 at 2009-05-30 19:09:15) [GET]
+  [4;35;1mInstance Load (2.0ms)[0m   [0mSELECT * FROM "instances" [0m
+Rendering template within layouts/instances
+Rendering instances/index
+  [4;36;1mInstanceName Load (0.0ms)[0m   [0;1mSELECT * FROM "instance_names" WHERE ("instance_names"."id" = 1) [0m
+  [4;35;1mExpansion Load (0.0ms)[0m   [0mSELECT * FROM "expansions" WHERE ("expansions"."id" = 0) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.name) on line #19 of app/views/instances/index.html.erb:
+16:     <td><%=h instance.instance_name.name %></td>
+17:     <td><%=h instance.size %></td>
+18:     <td><%=h instance.expansion_id %></td>
+19:     <td><%=h instance.expansion.name %></td>
+20:     <td><%=h instance.level %></td>
+21:     <td><%= link_to 'Show', instance %></td>
+22:     <td><%= link_to 'Edit', edit_instance_path(instance) %></td>
+
+    app/views/instances/index.html.erb:19
+    app/views/instances/index.html.erb:13:in `each'
+    app/views/instances/index.html.erb:13
+    app/controllers/instances_controller.rb:7:in `index'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (106.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing InstancesController#show (for 127.0.0.1 at 2009-05-30 19:09:21) [GET]
+  Parameters: {"id"=>"edit"}
+  [4;36;1mInstance Load (0.0ms)[0m   [0;1mSELECT * FROM "instances" WHERE ("instances"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Instance with ID=edit):
+  app/controllers/instances_controller.rb:16:in `show'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing InstancesController#index (for 127.0.0.1 at 2009-05-30 19:09:51) [GET]
+  [4;35;1mInstance Load (2.0ms)[0m   [0mSELECT * FROM "instances" [0m
+Rendering template within layouts/instances
+Rendering instances/index
+  [4;36;1mInstanceName Load (1.0ms)[0m   [0;1mSELECT * FROM "instance_names" WHERE ("instance_names"."id" = 1) [0m
+  [4;35;1mInstanceName Load (1.0ms)[0m   [0mSELECT * FROM "instance_names" WHERE ("instance_names"."id" = 2) [0m
+Completed in 252ms (View: 42, DB: 4) | 200 OK [http://localhost/instances]
+
+
+Processing InstancesController#edit (for 127.0.0.1 at 2009-05-30 19:09:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mInstance Load (1.0ms)[0m   [0;1mSELECT * FROM "instances" WHERE ("instances"."id" = 1) [0m
+Rendering template within layouts/instances
+Rendering instances/edit
+Completed in 41ms (View: 10, DB: 1) | 200 OK [http://localhost/instances/1/edit]
+
+
+Processing InstancesController#update (for 127.0.0.1 at 2009-05-30 19:10:00) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"3rJzo7u2YmzGsAOm5rbPnbQKjtgS7wSyajC/AHuesvU=", "id"=>"1", "instance"=>{"size"=>"25", "level"=>"80", "instance_name_id"=>"1", "expansion_id"=>"1"}}
+  [4;35;1mInstance Load (1.0ms)[0m   [0mSELECT * FROM "instances" WHERE ("instances"."id" = 1) [0m
+  [4;36;1mInstance Update (1.0ms)[0m   [0;1mUPDATE "instances" SET "updated_at" = '2009-05-30 23:10:00', "expansion_id" = 1 WHERE "id" = 1[0m
+Redirected to http://localhost:3000/instances/1
+Completed in 325ms (DB: 2) | 302 Found [http://localhost/instances/1]
+
+
+Processing InstancesController#show (for 127.0.0.1 at 2009-05-30 19:10:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mInstance Load (1.0ms)[0m   [0mSELECT * FROM "instances" WHERE ("instances"."id" = 1) [0m
+Rendering template within layouts/instances
+Rendering instances/show
+Completed in 45ms (View: 10, DB: 1) | 200 OK [http://localhost/instances/1]
+
+
+Processing InstancesController#index (for 127.0.0.1 at 2009-05-30 19:10:03) [GET]
+  [4;36;1mInstance Load (2.0ms)[0m   [0;1mSELECT * FROM "instances" [0m
+Rendering template within layouts/instances
+Rendering instances/index
+  [4;35;1mInstanceName Load (1.0ms)[0m   [0mSELECT * FROM "instance_names" WHERE ("instance_names"."id" = 1) [0m
+  [4;36;1mInstanceName Load (0.0ms)[0m   [0;1mSELECT * FROM "instance_names" WHERE ("instance_names"."id" = 2) [0m
+Completed in 62ms (View: 38, DB: 3) | 200 OK [http://localhost/instances]
+
+
+Processing InstancesController#edit (for 127.0.0.1 at 2009-05-30 19:10:08) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mInstance Load (2.0ms)[0m   [0mSELECT * FROM "instances" WHERE ("instances"."id" = 2) [0m
+Rendering template within layouts/instances
+Rendering instances/edit
+Completed in 46ms (View: 19, DB: 2) | 200 OK [http://localhost/instances/2/edit]
+
+
+Processing InstancesController#update (for 127.0.0.1 at 2009-05-30 19:10:11) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"3rJzo7u2YmzGsAOm5rbPnbQKjtgS7wSyajC/AHuesvU=", "id"=>"2", "instance"=>{"size"=>"25", "level"=>"80", "instance_name_id"=>"2", "expansion_id"=>"1"}}
+  [4;36;1mInstance Load (0.0ms)[0m   [0;1mSELECT * FROM "instances" WHERE ("instances"."id" = 2) [0m
+  [4;35;1mInstance Update (1.0ms)[0m   [0mUPDATE "instances" SET "updated_at" = '2009-05-30 23:10:11', "expansion_id" = 1 WHERE "id" = 2[0m
+Redirected to http://localhost:3000/instances/2
+Completed in 349ms (DB: 1) | 302 Found [http://localhost/instances/2]
+
+
+Processing InstancesController#show (for 127.0.0.1 at 2009-05-30 19:10:12) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mInstance Load (1.0ms)[0m   [0;1mSELECT * FROM "instances" WHERE ("instances"."id" = 2) [0m
+Rendering template within layouts/instances
+Rendering instances/show
+Completed in 50ms (View: 18, DB: 1) | 200 OK [http://localhost/instances/2]
+
+
+Processing InstancesController#index (for 127.0.0.1 at 2009-05-30 19:10:17) [GET]
+  [4;35;1mInstance Load (2.0ms)[0m   [0mSELECT * FROM "instances" [0m
+Rendering template within layouts/instances
+Rendering instances/index
+  [4;36;1mInstanceName Load (1.0ms)[0m   [0;1mSELECT * FROM "instance_names" WHERE ("instance_names"."id" = 1) [0m
+  [4;35;1mExpansion Load (0.0ms)[0m   [0mSELECT * FROM "expansions" WHERE ("expansions"."id" = 1) [0m
+  [4;36;1mInstanceName Load (0.0ms)[0m   [0;1mSELECT * FROM "instance_names" WHERE ("instance_names"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "expansions" WHERE ("expansions"."id" = 1) [0m
+Completed in 92ms (View: 67, DB: 3) | 200 OK [http://localhost/instances]
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateInstances (20090530222506)
+Migrating to CreateInstanceNames (20090530224524)
+Migrating to CreateExpansions (20090530230235)
+Migrating to CreateRaids (20090530233123)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mCREATE TABLE "raids" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "instance_id" integer, "raid_time" datetime, "code" varchar(255), "password" varchar(255), "searchable" boolean, "protected" boolean, "creator_id" integer, "min_gear_level" integer, "tanks" integer, "heals" integer, "dps" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090530233123')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (2.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("expansions")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("instance_names")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mPRAGMA index_list("instances")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("raids")[0m
+
+
+Processing RaidsController#index (for 127.0.0.1 at 2009-05-30 19:37:16) [GET]
+  [4;36;1mRaid Load (1.0ms)[0m   [0;1mSELECT * FROM "raids" [0m
+Rendering template within layouts/raids
+Rendering raids/index
+Completed in 52ms (View: 31, DB: 1) | 200 OK [http://localhost/raids]
+
+
+Processing RaidsController#new (for 127.0.0.1 at 2009-05-30 19:37:26) [GET]
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 1070ms (View: 1046, DB: 0) | 200 OK [http://localhost/raids/new]
+
+
+Processing RaidsController#create (for 127.0.0.1 at 2009-05-30 19:38:24) [POST]
+  Parameters: {"commit"=>"Create", "raid"=>{"heals"=>"6", "tanks"=>"3", "raid_time(1i)"=>"2009", "raid_time(2i)"=>"6", "searchable"=>"1", "code"=>"11111111", "raid_time(3i)"=>"10", "min_gear_level"=>"2000", "raid_time(4i)"=>"23", "instance_id"=>"1", "raid_time(5i)"=>"37", "creator_id"=>"Rexerengeti", "dps"=>"16", "protected"=>"0", "password"=>""}, "authenticity_token"=>"3rJzo7u2YmzGsAOm5rbPnbQKjtgS7wSyajC/AHuesvU="}
+  [4;35;1mRaid Create (2.0ms)[0m   [0mINSERT INTO "raids" ("tanks", "heals", "created_at", "code", "searchable", "instance_id", "min_gear_level", "updated_at", "creator_id", "raid_time", "protected", "dps", "password") VALUES(3, 6, '2009-05-30 23:38:24', '11111111', 't', 1, 2000, '2009-05-30 23:38:24', 0, '2009-06-10 23:37:00', 'f', 16, '')[0m
+Redirected to http://localhost:3000/raids/1
+Completed in 148ms (DB: 2) | 302 Found [http://localhost/raids]
+
+
+Processing RaidsController#show (for 127.0.0.1 at 2009-05-30 19:38:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRaid Load (1.0ms)[0m   [0;1mSELECT * FROM "raids" WHERE ("raids"."id" = 1) [0m
+Rendering template within layouts/raids
+Rendering raids/show
+Completed in 43ms (View: 16, DB: 1) | 200 OK [http://localhost/raids/1]
+
+
+Processing RaidsController#index (for 127.0.0.1 at 2009-05-30 19:39:03) [GET]
+  [4;35;1mRaid Load (1.0ms)[0m   [0mSELECT * FROM "raids" [0m
+Rendering template within layouts/raids
+Rendering raids/index
+  [4;36;1mInstance Load (0.0ms)[0m   [0;1mSELECT * FROM "instances" WHERE ("instances"."id" = 1) [0m
+
+ActionView::TemplateError (undefined method `name' for "#<Instance:0x7f014670>":Instance) on line #20 of app/views/raids/index.html.erb:
+17: 
+18: <% @raids.each do |raid| %>
+19:   <tr>
+20:     <td><%=h raid.instance.name %></td>
+21:     <td><%=h raid.raid_time %></td>
+22:     <td><%=h raid.code %></td>
+23:     <td><%=h raid.password %></td>
+
+    app/views/raids/index.html.erb:20
+    app/views/raids/index.html.erb:18:in `each'
+    app/views/raids/index.html.erb:18
+    app/controllers/raids_controller.rb:7:in `index'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (112.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaidsController#index (for 127.0.0.1 at 2009-05-30 19:39:16) [GET]
+  [4;35;1mRaid Load (2.0ms)[0m   [0mSELECT * FROM "raids" [0m
+Rendering template within layouts/raids
+Rendering raids/index
+  [4;36;1mInstance Load (1.0ms)[0m   [0;1mSELECT * FROM "instances" WHERE ("instances"."id" = 1) [0m
+  [4;35;1mInstanceName Load (1.0ms)[0m   [0mSELECT * FROM "instance_names" WHERE ("instance_names"."id" = 1) [0m
+Completed in 90ms (View: 66, DB: 4) | 200 OK [http://localhost/raids]
+
+
+Processing RaidsController#edit (for 127.0.0.1 at 2009-05-30 19:39:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRaid Load (1.0ms)[0m   [0;1mSELECT * FROM "raids" WHERE ("raids"."id" = 1) [0m
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 73ms (View: 48, DB: 1) | 200 OK [http://localhost/raids/1/edit]
