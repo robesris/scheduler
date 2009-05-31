@@ -1,0 +1,16 @@
+<h1>Editing role_types</h1>
+
+<% form_for(@role_types) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @role_types %> |
+<%= link_to 'Back', role_types_path %>

@@ -9,7 +9,28 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090530233123) do
+ActiveRecord::Schema.define(:version => 20090531203457) do
+
+  create_table "character_raid", :id => false, :force => true do |t|
+    t.integer "character_id", :null => false
+    t.integer "raid_id",      :null => false
+  end
+
+  create_table "character_role", :id => false, :force => true do |t|
+    t.integer "character_id", :null => false
+    t.integer "role_id",      :null => false
+  end
+
+  create_table "characters", :force => true do |t|
+    t.string   "name"
+    t.integer  "faction_id"
+    t.integer  "race_id"
+    t.integer  "class_id"
+    t.integer  "level"
+    t.integer  "gear_score"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "expansions", :force => true do |t|
     t.string   "name"
@@ -44,6 +65,27 @@ ActiveRecord::Schema.define(:version => 20090530233123) do
     t.integer  "tanks"
     t.integer  "heals"
     t.integer  "dps"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.datetime "raid_end_time"
+    t.integer  "realm_id"
+  end
+
+  create_table "realms", :force => true do |t|
+    t.string   "name"
+    t.integer  "region_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "regions", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "role_types", :force => true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

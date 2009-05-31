@@ -1736,3 +1736,56 @@ Processing RaidsController#edit (for 127.0.0.1 at 2009-05-30 19:39:28) [GET]
 Rendering template within layouts/raids
 Rendering raids/edit
 Completed in 73ms (View: 48, DB: 1) | 200 OK [http://localhost/raids/1/edit]
+  [4;36;1mSQL (2.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateInstances (20090530222506)
+Migrating to CreateInstanceNames (20090530224524)
+Migrating to CreateExpansions (20090530230235)
+Migrating to CreateRaids (20090530233123)
+Migrating to AddRaidEndTimeToRaid (20090531201449)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mALTER TABLE "raids" ADD "raid_end_time" datetime[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090531201449')[0m
+Migrating to AddRealmIdToRaid (20090531201614)
+  [4;35;1mSQL (3.0ms)[0m   [0mALTER TABLE "raids" ADD "realm_id" integer[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090531201614')[0m
+Migrating to CreateRealms (20090531201813)
+  [4;35;1mSQL (12.0ms)[0m   [0mCREATE TABLE "realms" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "region_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090531201813')[0m
+Migrating to CreateRegions (20090531201901)
+  [4;35;1mSQL (3.0ms)[0m   [0mCREATE TABLE "regions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090531201901')[0m
+Migrating to CreateCharacters (20090531202321)
+  [4;35;1mSQL (3.0ms)[0m   [0mCREATE TABLE "characters" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "faction_id" integer, "race_id" integer, "class_id" integer, "level" integer, "gear_score" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090531202321')[0m
+Migrating to CreateRoleTypes (20090531202438)
+  [4;35;1mSQL (6.0ms)[0m   [0mCREATE TABLE "role_types" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090531202438')[0m
+Migrating to CreateCharacterRole (20090531203102)
+  [4;35;1mSQL (4.0ms)[0m   [0mCREATE TABLE "character_role" ("character_id" integer NOT NULL, "role_id" integer NOT NULL) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090531203102')[0m
+Migrating to CreateCharacterRaid (20090531203457)
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE TABLE "character_raid" ("character_id" integer NOT NULL, "raid_id" integer NOT NULL) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090531203457')[0m
+  [4;35;1mSQL (2.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("character_raid")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mPRAGMA index_list("character_role")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("characters")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("expansions")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mPRAGMA index_list("instance_names")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("instances")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("raids")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("realms")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("regions")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("role_types")[0m

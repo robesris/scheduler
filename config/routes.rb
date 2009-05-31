@@ -1,4 +1,12 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :role_types
+
+  map.resources :characters
+
+  map.resources :regions
+
+  map.resources :realms
+
   map.resources :raids
 
   map.resources :expansions

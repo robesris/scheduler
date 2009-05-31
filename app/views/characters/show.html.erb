@@ -1,0 +1,33 @@
+<p>
+  <b>Name:</b>
+  <%=h @character.name %>
+</p>
+
+<p>
+  <b>Faction:</b>
+  <%=h @character.faction_id %>
+</p>
+
+<p>
+  <b>Race:</b>
+  <%=h @character.race_id %>
+</p>
+
+<p>
+  <b>Class:</b>
+  <%=h @character.class_id %>
+</p>
+
+<p>
+  <b>Level:</b>
+  <%=h @character.level %>
+</p>
+
+<p>
+  <b>Gear score:</b>
+  <%=h @character.gear_score %>
+</p>
+
+
+<%= link_to 'Edit', edit_character_path(@character) %> |
+<%= link_to 'Back', characters_path %>

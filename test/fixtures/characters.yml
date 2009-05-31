@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  faction_id: 1
+  race_id: 1
+  class_id: 1
+  level: 1
+  gear_score: 1
+
+two:
+  name: MyString
+  faction_id: 1
+  race_id: 1
+  class_id: 1
+  level: 1
+  gear_score: 1
