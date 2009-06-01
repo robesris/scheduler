@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090531204234) do
+ActiveRecord::Schema.define(:version => 20090601220357) do
 
   create_table "character_raid", :id => false, :force => true do |t|
     t.integer "character_id", :null => false
@@ -33,6 +33,12 @@ ActiveRecord::Schema.define(:version => 20090531204234) do
   end
 
   create_table "expansions", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "factions", :force => true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
