@@ -1,5 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :role_types
+  map.resources :roles
 
   map.resources :characters
 

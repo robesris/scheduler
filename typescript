@@ -1,0 +1,21 @@
+Script started on Sun May 31 16:53:37 2009
+]0;~/rails_sites/rex_raid
+[32mRob@shinchanii [33m~/rails_sites/rex_raid[0m
+$ ps
+      PID    PPID    PGID     WINPID  TTY  UID    STIME COMMAND
+      272       1     272        272  con 1004 15:53:03 /usr/bin/bash
+      564     272     564       1296  con 1004 16:06:23 /usr/bin/ruby
+     2268       1    2268       2268  con 1004 16:06:45 /usr/bin/bash
+I     276    2268     276       3952  con 1004 16:53:26 /usr/bin/script
+      376     276     276        376  con 1004 16:53:26 /usr/bin/script
+     2624     376    2624       2596    0 1004 16:53:26 /usr/bin/sh
+I    3572    2624    3572       3152    0 1004 16:53:37 /usr/bin/script
+     2292    3572    3572       2292    0 1004 16:53:37 /usr/bin/script
+     2908    2292    2908       2356    1 1004 16:53:37 /usr/bin/sh
+     3804    2908    3804       3296    1 1004 16:53:44 /usr/bin/ps
+]0;~/rails_sites/rex_raid
+[32mRob@shinchanii [33m~/rails_sites/rex_raid[0m
+$ exit
+exit
+
+Script done on Sun May 31 16:54:02 2009

@@ -1789,3 +1789,132 @@ Migrating to CreateCharacterRaid (20090531203457)
   [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("realms")[0m
   [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("regions")[0m
   [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("role_types")[0m
+  [4;36;1mSQL (21.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateInstances (20090530222506)
+Migrating to CreateInstanceNames (20090530224524)
+Migrating to CreateExpansions (20090530230235)
+Migrating to CreateRaids (20090530233123)
+Migrating to AddRaidEndTimeToRaid (20090531201449)
+Migrating to AddRealmIdToRaid (20090531201614)
+Migrating to CreateRealms (20090531201813)
+Migrating to CreateRegions (20090531201901)
+Migrating to CreateCharacters (20090531202321)
+Migrating to CreateCharacterRole (20090531203102)
+Migrating to CreateCharacterRaid (20090531203457)
+Migrating to CreateRoles (20090531204234)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mCREATE TABLE "roles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090531204234')[0m
+  [4;35;1mSQL (14.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (2.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mPRAGMA index_list("character_raid")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mPRAGMA index_list("character_role")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("characters")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("expansions")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("instance_names")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("instances")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mPRAGMA index_list("raids")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("realms")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("regions")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mPRAGMA index_list("role_types")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("roles")[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (63.0ms)[0m   [0;1mCREATE TABLE "character_raid" ("character_id" integer NOT NULL, "raid_id" integer NOT NULL) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (134.0ms)[0m   [0;1mCREATE TABLE "character_role" ("character_id" integer NOT NULL, "role_id" integer NOT NULL) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (183.0ms)[0m   [0;1mCREATE TABLE "characters" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "faction_id" integer, "race_id" integer, "class_id" integer, "level" integer, "gear_score" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (165.0ms)[0m   [0;1mCREATE TABLE "expansions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (2.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (117.0ms)[0m   [0;1mCREATE TABLE "instance_names" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (115.0ms)[0m   [0;1mCREATE TABLE "instances" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "instance_name_id" integer, "size" integer, "expansion_id" integer, "level" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (2.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (645.0ms)[0m   [0;1mCREATE TABLE "raids" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "instance_id" integer, "raid_time" datetime, "code" varchar(255), "password" varchar(255), "searchable" boolean, "protected" boolean, "creator_id" integer, "min_gear_level" integer, "tanks" integer, "heals" integer, "dps" integer, "created_at" datetime, "updated_at" datetime, "raid_end_time" datetime, "realm_id" integer) [0m
+  [4;35;1mSQL (2.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (175.0ms)[0m   [0;1mCREATE TABLE "realms" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "region_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (351.0ms)[0m   [0;1mCREATE TABLE "regions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (2.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (153.0ms)[0m   [0;1mCREATE TABLE "role_types" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (2.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (192.0ms)[0m   [0;1mCREATE TABLE "roles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (205.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (175.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (147.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090531204234')[0m
+  [4;35;1mSQL (127.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090530222506')[0m
+  [4;36;1mSQL (449.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090530224524')[0m
+  [4;35;1mSQL (158.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090530230235')[0m
+  [4;36;1mSQL (352.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090530233123')[0m
+  [4;35;1mSQL (170.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090531201449')[0m
+  [4;36;1mSQL (147.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090531201614')[0m
+  [4;35;1mSQL (185.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090531201813')[0m
+  [4;36;1mSQL (536.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090531201901')[0m
+  [4;35;1mSQL (135.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090531202321')[0m
+  [4;36;1mSQL (390.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090531203102')[0m
+  [4;35;1mSQL (372.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090531203457')[0m

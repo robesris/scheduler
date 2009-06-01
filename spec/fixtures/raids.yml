@@ -1,0 +1,29 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  instance_id: 1
+  raid_time: 2009-06-01 00:43:02
+  raid_end_time: 2009-06-01 00:43:02
+  code: MyString
+  password: MyString
+  searchable: false
+  protected: false
+  creator_id: 1
+  min_gear_level: 1
+  tanks: 1
+  heals: 1
+  dps: 1
+
+two:
+  instance_id: 1
+  raid_time: 2009-06-01 00:43:02
+  raid_end_time: 2009-06-01 00:43:02
+  code: MyString
+  password: MyString
+  searchable: false
+  protected: false
+  creator_id: 1
+  min_gear_level: 1
+  tanks: 1
+  heals: 1
+  dps: 1

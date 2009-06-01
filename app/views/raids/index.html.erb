@@ -4,6 +4,7 @@
   <tr>
     <th>Instance</th>
     <th>Raid time</th>
+    <th>Raid end time</th>
     <th>Code</th>
     <th>Password</th>
     <th>Searchable</th>
@@ -17,8 +18,9 @@
 
 <% @raids.each do |raid| %>
   <tr>
-    <td><%=h raid.instance.instance_name.name %></td>
+    <td><%=h raid.instance_id %></td>
     <td><%=h raid.raid_time %></td>
+    <td><%=h raid.raid_end_time %></td>
     <td><%=h raid.code %></td>
     <td><%=h raid.password %></td>
     <td><%=h raid.searchable %></td>
