@@ -9,7 +9,10 @@ describe Raid do
     @alliance_faction ||= mock_model(Faction, stubs)
   end
   
-  def mock_horde_character(stubs={ :id => 1, :faction_id => 1, :faction => horde_faction })
+  def mock_horde_character(stubs={ :id => 1,
+                                   :name => "Rexerengeti",
+                                   :faction_id => 1, 
+                                   :faction => horde_faction })
     @mock_horde_character ||= mock_model(Character, stubs)
   end
   
@@ -92,8 +95,13 @@ describe Raid do
   describe "raid signups" do
     it "should allow a Horde player to signup to a non-full, non-class-restricted raid" do
       @r.attributes = @open_raid_attributes
+      Character.should_receive(:find_by_name).
+                with(@mock_horde_character.name).
+                and_return(@mock_horde_character)
       @r.should_receive(:full?).and_return(false)
-      @r.signup(@mock_horde_character)
+      lambda {
+        @r.signup(@mock_horde_character.name)
+      }.should change(@r.characters, :size).by(1)
     end
   end
 end

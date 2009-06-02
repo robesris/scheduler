@@ -1403,3 +1403,1999 @@ options: {}
 
 ') LIMIT 1[0m
   [4;35;1mRaid Create (1.0ms)[0m   [0mINSERT INTO "raids" ("tanks", "heals", "realm_id", "created_at", "code", "searchable", "instance_id", "min_gear_level", "updated_at", "creator_id", "raid_time", "protected", "dps", "raid_end_time", "password") VALUES(2, 3, NULL, '2009-06-01 23:35:48', '1234abcd', 't', 1, 2000, '2009-06-01 23:35:48', 1, '2009-06-06 23:35:48', 'f', 5, '2009-06-07 02:35:48', 'mynewraid')[0m
+  [4;36;1mCharacter Load (3.0ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."name" = '--- &id003 !ruby/object:Character 
+mock_proxy: !ruby/object:Spec::Mocks::Proxy 
+ already_proxied_respond_to: false
+ error_generator: &id001 !ruby/object:Spec::Mocks::ErrorGenerator 
+ name: Character_1
+ opts: {}
+
+ target: *id003
+ expectation_ordering: &id002 !ruby/object:Spec::Mocks::OrderGroup 
+ error_generator: *id001
+ ordering: []
+
+ expectations: []
+
+ messages_received: []
+
+ name: Character_1
+ options: 
+ :null_object: false
+ proxied_methods: 
+ - :to_param
+ - :id
+ stubs: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :id
+ symbol_to_throw: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :faction
+ symbol_to_throw: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :new_record?
+ symbol_to_throw: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :faction_id
+ symbol_to_throw: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :errors
+ symbol_to_throw: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :to_param
+ symbol_to_throw: 
+ target: *id003
+name: Character_1
+options: {}
+
+') LIMIT 1[0m
+  [4;35;1mRaid Create (43.0ms)[0m   [0mINSERT INTO "raids" ("tanks", "heals", "realm_id", "created_at", "code", "searchable", "instance_id", "min_gear_level", "updated_at", "creator_id", "raid_time", "protected", "dps", "raid_end_time", "password") VALUES(2, 3, NULL, '2009-06-01 23:37:27', '1234abcd', 't', 1, 2000, '2009-06-01 23:37:27', 1, '2009-06-06 23:37:26', 'f', 5, '2009-06-07 02:37:26', 'mynewraid')[0m
+  [4;36;1mCharacter Load (4.0ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."name" = '--- &id003 !ruby/object:Character 
+mock_proxy: !ruby/object:Spec::Mocks::Proxy 
+ already_proxied_respond_to: false
+ error_generator: &id001 !ruby/object:Spec::Mocks::ErrorGenerator 
+ name: Character_1
+ opts: {}
+
+ target: *id003
+ expectation_ordering: &id002 !ruby/object:Spec::Mocks::OrderGroup 
+ error_generator: *id001
+ ordering: []
+
+ expectations: []
+
+ messages_received: []
+
+ name: Character_1
+ options: 
+ :null_object: false
+ proxied_methods: 
+ - :to_param
+ - :id
+ stubs: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :id
+ symbol_to_throw: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :faction
+ symbol_to_throw: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :new_record?
+ symbol_to_throw: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :faction_id
+ symbol_to_throw: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :errors
+ symbol_to_throw: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :to_param
+ symbol_to_throw: 
+ target: *id003
+name: Character_1
+options: {}
+
+') LIMIT 1[0m
+  [4;35;1mRaid Create (12.0ms)[0m   [0mINSERT INTO "raids" ("tanks", "heals", "realm_id", "created_at", "code", "searchable", "instance_id", "min_gear_level", "updated_at", "creator_id", "raid_time", "protected", "dps", "raid_end_time", "password") VALUES(2, 3, NULL, '2009-06-01 23:38:16', '1234abcd', 't', 1, 2000, '2009-06-01 23:38:16', 1, '2009-06-06 23:38:15', 'f', 5, '2009-06-07 02:38:15', 'mynewraid')[0m
+  [4;36;1mCharacter Load (0.0ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."name" = '--- &id003 !ruby/object:Character 
+mock_proxy: !ruby/object:Spec::Mocks::Proxy 
+ already_proxied_respond_to: false
+ error_generator: &id001 !ruby/object:Spec::Mocks::ErrorGenerator 
+ name: Character_1
+ opts: {}
+
+ target: *id003
+ expectation_ordering: &id002 !ruby/object:Spec::Mocks::OrderGroup 
+ error_generator: *id001
+ ordering: []
+
+ expectations: []
+
+ messages_received: []
+
+ name: Character_1
+ options: 
+ :null_object: false
+ proxied_methods: 
+ - :to_param
+ - :id
+ stubs: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :id
+ symbol_to_throw: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :faction
+ symbol_to_throw: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :new_record?
+ symbol_to_throw: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :faction_id
+ symbol_to_throw: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :errors
+ symbol_to_throw: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :to_param
+ symbol_to_throw: 
+ target: *id003
+name: Character_1
+options: {}
+
+') LIMIT 1[0m
+  [4;35;1mRaid Create (1.0ms)[0m   [0mINSERT INTO "raids" ("tanks", "heals", "realm_id", "created_at", "code", "searchable", "instance_id", "min_gear_level", "updated_at", "creator_id", "raid_time", "protected", "dps", "raid_end_time", "password") VALUES(2, 3, NULL, '2009-06-01 23:39:33', '1234abcd', 't', 1, 2000, '2009-06-01 23:39:33', 1, '2009-06-06 23:39:33', 'f', 5, '2009-06-07 02:39:33', 'mynewraid')[0m
+  [4;36;1mCharacter Load (0.0ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."name" = '--- &id003 !ruby/object:Character 
+mock_proxy: !ruby/object:Spec::Mocks::Proxy 
+ already_proxied_respond_to: false
+ error_generator: &id001 !ruby/object:Spec::Mocks::ErrorGenerator 
+ name: Character_1
+ opts: {}
+
+ target: *id003
+ expectation_ordering: &id002 !ruby/object:Spec::Mocks::OrderGroup 
+ error_generator: *id001
+ ordering: []
+
+ expectations: []
+
+ messages_received: []
+
+ name: Character_1
+ options: 
+ :null_object: false
+ proxied_methods: 
+ - :to_param
+ - :id
+ stubs: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :id
+ symbol_to_throw: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :faction
+ symbol_to_throw: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :new_record?
+ symbol_to_throw: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :faction_id
+ symbol_to_throw: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :errors
+ symbol_to_throw: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :to_param
+ symbol_to_throw: 
+ target: *id003
+name: Character_1
+options: {}
+
+') LIMIT 1[0m
+  [4;35;1mRaid Create (1.0ms)[0m   [0mINSERT INTO "raids" ("tanks", "heals", "realm_id", "created_at", "code", "searchable", "instance_id", "min_gear_level", "updated_at", "creator_id", "raid_time", "protected", "dps", "raid_end_time", "password") VALUES(2, 3, NULL, '2009-06-01 23:40:20', '1234abcd', 't', 1, 2000, '2009-06-01 23:40:20', 1, '2009-06-06 23:40:20', 'f', 5, '2009-06-07 02:40:20', 'mynewraid')[0m
+Rendering raids/edit.html.erb
+Rendering raids/show.html.erb
+Rendering raids/index.html.erb
+Rendering raids/new.html.erb
+
+
+Processing RaidsController#destroy (for 0.0.0.0 at 2009-06-02 02:59:38) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/raids
+Completed in 6ms (DB: 0) | 302 Found [http://test.host/raids/37]
+
+
+Processing RaidsController#destroy (for 0.0.0.0 at 2009-06-02 02:59:38) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-06-02 02:59:38) [PUT]
+  Parameters: {"raid"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/raids/37?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-06-02 02:59:38) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-06-02 02:59:38) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-06-02 02:59:38) [PUT]
+  Parameters: {"raid"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/raids/37?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-06-02 02:59:38) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids/1012
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-06-02 02:59:38) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids/1013
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-06-02 02:59:38) [POST]
+  Parameters: {"raid"=>{"these"=>"params"}}
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/raids?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-06-02 02:59:38) [POST]
+  Parameters: {"raid"=>{}}
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids?]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-06-02 02:59:38) [POST]
+  Parameters: {"raid"=>{"these"=>"params"}}
+Redirected to http://test.host/raids/1016
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/raids?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-06-02 02:59:38) [POST]
+  Parameters: {"raid"=>{}}
+Redirected to http://test.host/raids/1017
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids?]
+
+
+Processing RaidsController#edit (for 0.0.0.0 at 2009-06-02 02:59:38) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/raids/37/edit]
+
+
+Processing RaidsController#new (for 0.0.0.0 at 2009-06-02 02:59:38) [GET]
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/raids/new]
+
+
+Processing RaidsController#show (for 0.0.0.0 at 2009-06-02 02:59:38) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37]
+
+
+Processing RaidsController#index (for 0.0.0.0 at 2009-06-02 02:59:38) [GET]
+Rendering template within layouts/raids
+Rendering raids/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids]
+Rendering factions/show.html.erb
+  [4;36;1mFaction Create (1.0ms)[0m   [0;1mINSERT INTO "factions" ("name", "created_at", "updated_at") VALUES('value for name', '2009-06-02 06:59:38', '2009-06-02 06:59:38')[0m
+Rendering factions/index.html.erb
+Rendering factions/new.html.erb
+
+
+Processing FactionsController#destroy (for 0.0.0.0 at 2009-06-02 02:59:38) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/factions
+Completed in 6ms (DB: 0) | 302 Found [http://test.host/factions/37]
+
+
+Processing FactionsController#destroy (for 0.0.0.0 at 2009-06-02 02:59:38) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-06-02 02:59:38) [PUT]
+  Parameters: {"id"=>"37", "faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/factions/37?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-06-02 02:59:38) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-06-02 02:59:38) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-06-02 02:59:38) [PUT]
+  Parameters: {"id"=>"37", "faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-06-02 02:59:38) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions/1032
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-06-02 02:59:38) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions/1033
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-06-02 02:59:38) [POST]
+  Parameters: {"faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/factions?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-06-02 02:59:38) [POST]
+  Parameters: {"faction"=>{}}
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/factions?]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-06-02 02:59:38) [POST]
+  Parameters: {"faction"=>{"these"=>"params"}}
+Redirected to http://test.host/factions/1036
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/factions?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-06-02 02:59:38) [POST]
+  Parameters: {"faction"=>{}}
+Redirected to http://test.host/factions/1037
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/factions?]
+
+
+Processing FactionsController#edit (for 0.0.0.0 at 2009-06-02 02:59:38) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/factions/37/edit]
+
+
+Processing FactionsController#new (for 0.0.0.0 at 2009-06-02 02:59:38) [GET]
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/factions/new]
+
+
+Processing FactionsController#show (for 0.0.0.0 at 2009-06-02 02:59:38) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/factions
+Rendering factions/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/factions/37]
+
+
+Processing FactionsController#index (for 0.0.0.0 at 2009-06-02 02:59:38) [GET]
+Rendering template within layouts/factions
+Rendering factions/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/factions]
+Rendering factions/edit.html.erb
+  [4;35;1mCharacter Load (1.0ms)[0m   [0mSELECT * FROM "characters" WHERE ("characters"."name" = '--- &id003 !ruby/object:Character 
+mock_proxy: !ruby/object:Spec::Mocks::Proxy 
+ already_proxied_respond_to: false
+ error_generator: &id001 !ruby/object:Spec::Mocks::ErrorGenerator 
+ name: Character_1
+ opts: {}
+
+ target: *id003
+ expectation_ordering: &id002 !ruby/object:Spec::Mocks::OrderGroup 
+ error_generator: *id001
+ ordering: []
+
+ expectations: []
+
+ messages_received: []
+
+ name: Character_1
+ options: 
+ :null_object: false
+ proxied_methods: 
+ - :to_param
+ - :id
+ stubs: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :id
+ symbol_to_throw: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :faction
+ symbol_to_throw: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :new_record?
+ symbol_to_throw: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :faction_id
+ symbol_to_throw: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :errors
+ symbol_to_throw: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :to_param
+ symbol_to_throw: 
+ target: *id003
+name: Character_1
+options: {}
+
+') LIMIT 1[0m
+  [4;36;1mRaid Create (1.0ms)[0m   [0;1mINSERT INTO "raids" ("tanks", "heals", "realm_id", "created_at", "code", "searchable", "instance_id", "min_gear_level", "updated_at", "creator_id", "raid_time", "protected", "dps", "raid_end_time", "password") VALUES(2, 3, NULL, '2009-06-02 06:59:38', '1234abcd', 't', 1, 2000, '2009-06-02 06:59:38', 1, '2009-06-07 06:59:38', 'f', 5, '2009-06-07 09:59:38', 'mynewraid')[0m
+  [4;36;1mCharacter Load (0.0ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."name" = '--- &id003 !ruby/object:Character 
+mock_proxy: !ruby/object:Spec::Mocks::Proxy 
+ already_proxied_respond_to: false
+ error_generator: &id001 !ruby/object:Spec::Mocks::ErrorGenerator 
+ name: Character_1
+ opts: {}
+
+ target: *id003
+ expectation_ordering: &id002 !ruby/object:Spec::Mocks::OrderGroup 
+ error_generator: *id001
+ ordering: []
+
+ expectations: []
+
+ messages_received: []
+
+ name: Character_1
+ options: 
+ :null_object: false
+ proxied_methods: 
+ - :to_param
+ - :id
+ stubs: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :id
+ symbol_to_throw: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :faction
+ symbol_to_throw: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :new_record?
+ symbol_to_throw: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :faction_id
+ symbol_to_throw: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :errors
+ symbol_to_throw: 
+ - !ruby/object:Spec::Mocks::MessageExpectation 
+ actual_received_count: 0
+ args_expectation: !ruby/object:Spec::Mocks::ArgumentExpectation 
+ args: 
+ - !ruby/object:Spec::Mocks::ArgumentMatchers::AnyArgsMatcher {}
+
+ match_any_args: true
+ matchers: 
+ matchers_block: 
+ args_to_yield: []
+
+ args_to_yield_were_cloned: false
+ at_least: 
+ at_most: 
+ consecutive: false
+ error_generator: *id001
+ exception_to_raise: 
+ expected_from: /usr/lib/ruby/gems/1.8/gems/rspec-1.2.6/lib/spec/mocks/mock.rb:55:in `assign_stubs''
+ expected_received_count: :any
+ failed_fast: 
+ method_block: 
+ order_group: *id002
+ return_block: !ruby/object:Proc {}
+
+ sym: :to_param
+ symbol_to_throw: 
+ target: *id003
+name: Character_1
+options: {}
+
+') LIMIT 1[0m
+  [4;35;1mRaid Create (2.0ms)[0m   [0mINSERT INTO "raids" ("tanks", "heals", "realm_id", "created_at", "code", "searchable", "instance_id", "min_gear_level", "updated_at", "creator_id", "raid_time", "protected", "dps", "raid_end_time", "password") VALUES(2, 3, NULL, '2009-06-02 07:01:15', '1234abcd', 't', 1, 2000, '2009-06-02 07:01:15', 1, '2009-06-07 07:01:15', 'f', 5, '2009-06-07 10:01:15', 'mynewraid')[0m
+  [4;36;1mCharacter Load (1.0ms)[0m   [0;1mSELECT * FROM "characters" WHERE ("characters"."name" = 'Rexerengeti') LIMIT 1[0m
+  [4;35;1mRaid Create (1.0ms)[0m   [0mINSERT INTO "raids" ("tanks", "heals", "realm_id", "created_at", "code", "searchable", "instance_id", "min_gear_level", "updated_at", "creator_id", "raid_time", "protected", "dps", "raid_end_time", "password") VALUES(2, 3, NULL, '2009-06-02 07:04:02', '1234abcd', 't', 1, 2000, '2009-06-02 07:04:02', 1, '2009-06-07 07:04:02', 'f', 5, '2009-06-07 10:04:02', 'mynewraid')[0m
+  [4;36;1mRaid Create (1.0ms)[0m   [0;1mINSERT INTO "raids" ("tanks", "heals", "realm_id", "created_at", "code", "searchable", "instance_id", "min_gear_level", "updated_at", "creator_id", "raid_time", "protected", "dps", "raid_end_time", "password") VALUES(2, 3, NULL, '2009-06-02 07:11:31', '1234abcd', 't', 1, 2000, '2009-06-02 07:11:31', 1, '2009-06-07 07:11:31', 'f', 5, '2009-06-07 10:11:31', 'mynewraid')[0m
+Rendering raids/edit.html.erb
+Rendering raids/show.html.erb
+Rendering raids/index.html.erb
+Rendering raids/new.html.erb
+
+
+Processing RaidsController#destroy (for 0.0.0.0 at 2009-06-02 03:12:02) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/raids
+Completed in 6ms (DB: 0) | 302 Found [http://test.host/raids/37]
+
+
+Processing RaidsController#destroy (for 0.0.0.0 at 2009-06-02 03:12:02) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-06-02 03:12:02) [PUT]
+  Parameters: {"raid"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-06-02 03:12:02) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-06-02 03:12:02) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-06-02 03:12:02) [PUT]
+  Parameters: {"raid"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-06-02 03:12:02) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids/1012
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-06-02 03:12:02) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids/1013
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-06-02 03:12:02) [POST]
+  Parameters: {"raid"=>{"these"=>"params"}}
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/raids?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-06-02 03:12:02) [POST]
+  Parameters: {"raid"=>{}}
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/raids?]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-06-02 03:12:02) [POST]
+  Parameters: {"raid"=>{"these"=>"params"}}
+Redirected to http://test.host/raids/1016
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-06-02 03:12:02) [POST]
+  Parameters: {"raid"=>{}}
+Redirected to http://test.host/raids/1017
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/raids?]
+
+
+Processing RaidsController#edit (for 0.0.0.0 at 2009-06-02 03:12:02) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/raids/37/edit]
+
+
+Processing RaidsController#new (for 0.0.0.0 at 2009-06-02 03:12:02) [GET]
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/raids/new]
+
+
+Processing RaidsController#show (for 0.0.0.0 at 2009-06-02 03:12:02) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/raids/37]
+
+
+Processing RaidsController#index (for 0.0.0.0 at 2009-06-02 03:12:02) [GET]
+Rendering template within layouts/raids
+Rendering raids/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/raids]
+Rendering factions/show.html.erb
+  [4;36;1mFaction Create (2.0ms)[0m   [0;1mINSERT INTO "factions" ("name", "created_at", "updated_at") VALUES('value for name', '2009-06-02 07:12:02', '2009-06-02 07:12:02')[0m
+Rendering factions/index.html.erb
+Rendering factions/new.html.erb
+
+
+Processing FactionsController#destroy (for 0.0.0.0 at 2009-06-02 03:12:02) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/factions
+Completed in 7ms (DB: 0) | 302 Found [http://test.host/factions/37]
+
+
+Processing FactionsController#destroy (for 0.0.0.0 at 2009-06-02 03:12:02) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-06-02 03:12:02) [PUT]
+  Parameters: {"id"=>"37", "faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-06-02 03:12:02) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-06-02 03:12:02) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-06-02 03:12:02) [PUT]
+  Parameters: {"id"=>"37", "faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/factions/37?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-06-02 03:12:02) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions/1032
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-06-02 03:12:03) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions/1033
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-06-02 03:12:03) [POST]
+  Parameters: {"faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/factions?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-06-02 03:12:03) [POST]
+  Parameters: {"faction"=>{}}
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/factions?]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-06-02 03:12:03) [POST]
+  Parameters: {"faction"=>{"these"=>"params"}}
+Redirected to http://test.host/factions/1036
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-06-02 03:12:03) [POST]
+  Parameters: {"faction"=>{}}
+Redirected to http://test.host/factions/1037
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/factions?]
+
+
+Processing FactionsController#edit (for 0.0.0.0 at 2009-06-02 03:12:03) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/factions/37/edit]
+
+
+Processing FactionsController#new (for 0.0.0.0 at 2009-06-02 03:12:03) [GET]
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/factions/new]
+
+
+Processing FactionsController#show (for 0.0.0.0 at 2009-06-02 03:12:03) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/factions
+Rendering factions/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/factions/37]
+
+
+Processing FactionsController#index (for 0.0.0.0 at 2009-06-02 03:12:03) [GET]
+Rendering template within layouts/factions
+Rendering factions/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions]
+Rendering factions/edit.html.erb
+  [4;35;1mRaid Create (2.0ms)[0m   [0mINSERT INTO "raids" ("tanks", "heals", "realm_id", "created_at", "code", "searchable", "instance_id", "min_gear_level", "updated_at", "creator_id", "raid_time", "protected", "dps", "raid_end_time", "password") VALUES(2, 3, NULL, '2009-06-02 07:12:03', '1234abcd', 't', 1, 2000, '2009-06-02 07:12:03', 1, '2009-06-07 07:12:03', 'f', 5, '2009-06-07 10:12:03', 'mynewraid')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mRaid Create (2.0ms)[0m   [0mINSERT INTO "raids" ("tanks", "heals", "realm_id", "created_at", "code", "searchable", "instance_id", "min_gear_level", "updated_at", "creator_id", "raid_time", "protected", "dps", "raid_end_time", "password") VALUES(2, 3, NULL, '2009-06-02 07:13:41', '1234abcd', 't', 1, 2000, '2009-06-02 07:13:41', 1, '2009-06-07 07:13:41', 'f', 5, '2009-06-07 10:13:41', 'mynewraid')[0m
+  [4;36;1mRaid Create (1.0ms)[0m   [0;1mINSERT INTO "raids" ("tanks", "heals", "realm_id", "created_at", "code", "searchable", "instance_id", "min_gear_level", "updated_at", "creator_id", "raid_time", "protected", "dps", "raid_end_time", "password") VALUES(2, 3, NULL, '2009-06-02 07:17:07', '1234abcd', 't', 1, 2000, '2009-06-02 07:17:07', 1, '2009-06-07 07:17:07', 'f', 5, '2009-06-07 10:17:07', 'mynewraid')[0m
+  [4;36;1mRaid Create (1.0ms)[0m   [0;1mINSERT INTO "raids" ("tanks", "heals", "realm_id", "created_at", "code", "searchable", "instance_id", "min_gear_level", "updated_at", "creator_id", "raid_time", "protected", "dps", "raid_end_time", "password") VALUES(2, 3, NULL, '2009-06-02 07:20:00', '1234abcd', 't', 1, 2000, '2009-06-02 07:20:00', 1, '2009-06-07 07:20:00', 'f', 5, '2009-06-07 10:20:00', 'mynewraid')[0m
+Rendering raids/edit.html.erb
+Rendering raids/show.html.erb
+Rendering raids/index.html.erb
+Rendering raids/new.html.erb
+
+
+Processing RaidsController#destroy (for 0.0.0.0 at 2009-06-02 03:20:31) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/raids
+Completed in 8ms (DB: 0) | 302 Found [http://test.host/raids/37]
+
+
+Processing RaidsController#destroy (for 0.0.0.0 at 2009-06-02 03:20:31) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-06-02 03:20:31) [PUT]
+  Parameters: {"raid"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 3ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-06-02 03:20:31) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-06-02 03:20:31) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-06-02 03:20:31) [PUT]
+  Parameters: {"raid"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/raids/37?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-06-02 03:20:31) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids/1012
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-06-02 03:20:31) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids/1013
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-06-02 03:20:31) [POST]
+  Parameters: {"raid"=>{"these"=>"params"}}
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/raids?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-06-02 03:20:31) [POST]
+  Parameters: {"raid"=>{}}
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/raids?]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-06-02 03:20:31) [POST]
+  Parameters: {"raid"=>{"these"=>"params"}}
+Redirected to http://test.host/raids/1016
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/raids?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-06-02 03:20:31) [POST]
+  Parameters: {"raid"=>{}}
+Redirected to http://test.host/raids/1017
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/raids?]
+
+
+Processing RaidsController#edit (for 0.0.0.0 at 2009-06-02 03:20:31) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/raids/37/edit]
+
+
+Processing RaidsController#new (for 0.0.0.0 at 2009-06-02 03:20:31) [GET]
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/raids/new]
+
+
+Processing RaidsController#show (for 0.0.0.0 at 2009-06-02 03:20:31) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/raids/37]
+
+
+Processing RaidsController#index (for 0.0.0.0 at 2009-06-02 03:20:31) [GET]
+Rendering template within layouts/raids
+Rendering raids/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/raids]
+Rendering factions/show.html.erb
+  [4;36;1mFaction Create (5.0ms)[0m   [0;1mINSERT INTO "factions" ("name", "created_at", "updated_at") VALUES('value for name', '2009-06-02 07:20:31', '2009-06-02 07:20:31')[0m
+Rendering factions/index.html.erb
+Rendering factions/new.html.erb
+
+
+Processing FactionsController#destroy (for 0.0.0.0 at 2009-06-02 03:20:31) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/factions
+Completed in 8ms (DB: 0) | 302 Found [http://test.host/factions/37]
+
+
+Processing FactionsController#destroy (for 0.0.0.0 at 2009-06-02 03:20:31) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-06-02 03:20:31) [PUT]
+  Parameters: {"id"=>"37", "faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/factions/37?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-06-02 03:20:31) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-06-02 03:20:31) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-06-02 03:20:31) [PUT]
+  Parameters: {"id"=>"37", "faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/factions/37?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-06-02 03:20:32) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions/1032
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-06-02 03:20:32) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions/1033
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-06-02 03:20:32) [POST]
+  Parameters: {"faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/factions?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-06-02 03:20:32) [POST]
+  Parameters: {"faction"=>{}}
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/factions?]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-06-02 03:20:32) [POST]
+  Parameters: {"faction"=>{"these"=>"params"}}
+Redirected to http://test.host/factions/1036
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/factions?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-06-02 03:20:32) [POST]
+  Parameters: {"faction"=>{}}
+Redirected to http://test.host/factions/1037
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/factions?]
+
+
+Processing FactionsController#edit (for 0.0.0.0 at 2009-06-02 03:20:32) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37/edit]
+
+
+Processing FactionsController#new (for 0.0.0.0 at 2009-06-02 03:20:32) [GET]
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/factions/new]
+
+
+Processing FactionsController#show (for 0.0.0.0 at 2009-06-02 03:20:32) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/factions
+Rendering factions/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/factions/37]
+
+
+Processing FactionsController#index (for 0.0.0.0 at 2009-06-02 03:20:32) [GET]
+Rendering template within layouts/factions
+Rendering factions/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/factions]
+Rendering factions/edit.html.erb
+  [4;35;1mRaid Create (2.0ms)[0m   [0mINSERT INTO "raids" ("tanks", "heals", "realm_id", "created_at", "code", "searchable", "instance_id", "min_gear_level", "updated_at", "creator_id", "raid_time", "protected", "dps", "raid_end_time", "password") VALUES(2, 3, NULL, '2009-06-02 07:20:32', '1234abcd', 't', 1, 2000, '2009-06-02 07:20:32', 1, '2009-06-07 07:20:32', 'f', 5, '2009-06-07 10:20:32', 'mynewraid')[0m
+  [4;36;1mRaid Create (1.0ms)[0m   [0;1mINSERT INTO "raids" ("tanks", "heals", "realm_id", "created_at", "code", "searchable", "instance_id", "min_gear_level", "updated_at", "creator_id", "raid_time", "protected", "dps", "raid_end_time", "password") VALUES(2, 3, NULL, '2009-06-02 07:22:24', '1234abcd', 't', 1, 2000, '2009-06-02 07:22:24', 1, '2009-06-07 07:22:23', 'f', 5, '2009-06-07 10:22:23', 'mynewraid')[0m
+  [4;36;1mRaid Create (8.0ms)[0m   [0;1mINSERT INTO "raids" ("tanks", "heals", "realm_id", "created_at", "code", "searchable", "instance_id", "min_gear_level", "updated_at", "creator_id", "raid_time", "protected", "dps", "raid_end_time", "password") VALUES(2, 3, NULL, '2009-06-02 07:22:54', '1234abcd', 't', 1, 2000, '2009-06-02 07:22:54', 1, '2009-06-07 07:22:53', 'f', 5, '2009-06-07 10:22:53', 'mynewraid')[0m
+  [4;36;1mRaid Create (2.0ms)[0m   [0;1mINSERT INTO "raids" ("tanks", "heals", "realm_id", "created_at", "code", "searchable", "instance_id", "min_gear_level", "updated_at", "creator_id", "raid_time", "protected", "dps", "raid_end_time", "password") VALUES(2, 3, NULL, '2009-06-02 07:33:05', '1234abcd', 't', 1, 2000, '2009-06-02 07:33:05', 1, '2009-06-07 07:33:05', 'f', 5, '2009-06-07 10:33:05', 'mynewraid')[0m
+  [4;36;1mRaid Create (1.0ms)[0m   [0;1mINSERT INTO "raids" ("tanks", "heals", "realm_id", "created_at", "code", "searchable", "instance_id", "min_gear_level", "updated_at", "creator_id", "raid_time", "protected", "dps", "raid_end_time", "password") VALUES(2, 3, NULL, '2009-06-02 07:33:54', '1234abcd', 't', 1, 2000, '2009-06-02 07:33:54', 1, '2009-06-07 07:33:54', 'f', 5, '2009-06-07 10:33:54', 'mynewraid')[0m
+  [4;36;1mRaid Create (1.0ms)[0m   [0;1mINSERT INTO "raids" ("tanks", "heals", "realm_id", "created_at", "code", "searchable", "instance_id", "min_gear_level", "updated_at", "creator_id", "raid_time", "protected", "dps", "raid_end_time", "password") VALUES(2, 3, NULL, '2009-06-02 07:36:22', '1234abcd', 't', 1, 2000, '2009-06-02 07:36:22', 1, '2009-06-07 07:36:21', 'f', 5, '2009-06-07 10:36:21', 'mynewraid')[0m
+Rendering raids/edit.html.erb
+Rendering raids/show.html.erb
+Rendering raids/index.html.erb
+Rendering raids/new.html.erb
+
+
+Processing RaidsController#destroy (for 0.0.0.0 at 2009-06-02 03:36:52) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/raids
+Completed in 6ms (DB: 0) | 302 Found [http://test.host/raids/37]
+
+
+Processing RaidsController#destroy (for 0.0.0.0 at 2009-06-02 03:36:52) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-06-02 03:36:52) [PUT]
+  Parameters: {"raid"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/raids/37?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-06-02 03:36:52) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-06-02 03:36:52) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-06-02 03:36:52) [PUT]
+  Parameters: {"raid"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/raids/37?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-06-02 03:36:52) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids/1012
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-06-02 03:36:52) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids/1013
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-06-02 03:36:52) [POST]
+  Parameters: {"raid"=>{"these"=>"params"}}
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-06-02 03:36:52) [POST]
+  Parameters: {"raid"=>{}}
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/raids?]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-06-02 03:36:52) [POST]
+  Parameters: {"raid"=>{"these"=>"params"}}
+Redirected to http://test.host/raids/1016
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/raids?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-06-02 03:36:52) [POST]
+  Parameters: {"raid"=>{}}
+Redirected to http://test.host/raids/1017
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/raids?]
+
+
+Processing RaidsController#edit (for 0.0.0.0 at 2009-06-02 03:36:52) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/raids/37/edit]
+
+
+Processing RaidsController#new (for 0.0.0.0 at 2009-06-02 03:36:52) [GET]
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/raids/new]
+
+
+Processing RaidsController#show (for 0.0.0.0 at 2009-06-02 03:36:52) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37]
+
+
+Processing RaidsController#index (for 0.0.0.0 at 2009-06-02 03:36:52) [GET]
+Rendering template within layouts/raids
+Rendering raids/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/raids]
+Rendering factions/show.html.erb
+  [4;36;1mFaction Create (2.0ms)[0m   [0;1mINSERT INTO "factions" ("name", "created_at", "updated_at") VALUES('value for name', '2009-06-02 07:36:52', '2009-06-02 07:36:52')[0m
+Rendering factions/index.html.erb
+Rendering factions/new.html.erb
+
+
+Processing FactionsController#destroy (for 0.0.0.0 at 2009-06-02 03:36:53) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/factions
+Completed in 9ms (DB: 0) | 302 Found [http://test.host/factions/37]
+
+
+Processing FactionsController#destroy (for 0.0.0.0 at 2009-06-02 03:36:53) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-06-02 03:36:53) [PUT]
+  Parameters: {"id"=>"37", "faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/factions/37?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-06-02 03:36:53) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-06-02 03:36:53) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-06-02 03:36:53) [PUT]
+  Parameters: {"id"=>"37", "faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/factions/37?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-06-02 03:36:53) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions/1032
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-06-02 03:36:53) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions/1033
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-06-02 03:36:53) [POST]
+  Parameters: {"faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/factions?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-06-02 03:36:53) [POST]
+  Parameters: {"faction"=>{}}
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/factions?]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-06-02 03:36:53) [POST]
+  Parameters: {"faction"=>{"these"=>"params"}}
+Redirected to http://test.host/factions/1036
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/factions?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-06-02 03:36:53) [POST]
+  Parameters: {"faction"=>{}}
+Redirected to http://test.host/factions/1037
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/factions?]
+
+
+Processing FactionsController#edit (for 0.0.0.0 at 2009-06-02 03:36:53) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37/edit]
+
+
+Processing FactionsController#new (for 0.0.0.0 at 2009-06-02 03:36:53) [GET]
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/new]
+
+
+Processing FactionsController#show (for 0.0.0.0 at 2009-06-02 03:36:53) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/factions
+Rendering factions/show
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37]
+
+
+Processing FactionsController#index (for 0.0.0.0 at 2009-06-02 03:36:53) [GET]
+Rendering template within layouts/factions
+Rendering factions/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/factions]
+Rendering factions/edit.html.erb
+  [4;35;1mRaid Create (2.0ms)[0m   [0mINSERT INTO "raids" ("tanks", "heals", "realm_id", "created_at", "code", "searchable", "instance_id", "min_gear_level", "updated_at", "creator_id", "raid_time", "protected", "dps", "raid_end_time", "password") VALUES(2, 3, NULL, '2009-06-02 07:36:53', '1234abcd', 't', 1, 2000, '2009-06-02 07:36:53', 1, '2009-06-07 07:36:53', 'f', 5, '2009-06-07 10:36:53', 'mynewraid')[0m
