@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090601220357) do
+ActiveRecord::Schema.define(:version => 20090603054515) do
 
   create_table "character_raid", :id => false, :force => true do |t|
     t.integer "character_id", :null => false
@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(:version => 20090601220357) do
     t.integer  "gear_score"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "realm_id"
   end
 
   create_table "expansions", :force => true do |t|

@@ -44,4 +44,27 @@ Spec::Runner.configure do |config|
   # == Notes
   # 
   # For more information take a look at Spec::Runner::Configuration and Spec::Runner
+  
+  def horde_faction(stubs={ :id => 1, :name => "Horde" })
+    @horde_faction ||= mock_model(Faction, stubs)
+  end
+  
+  def alliance_faction(stubs={ :id => 2, :name => "Alliance" })
+    @alliance_faction ||= mock_model(Faction, stubs)
+  end
+  
+  def gorefiend_realm(stubs={ :id => 1, :name => "Gorefiend" })
+    @gorefiend_realm ||= mock_model(Realm, stubs)
+  end
+  
+  def mock_horde_character(stubs={ :id => 1,
+                                   :name => "Rexerengeti",
+                                   :faction_id => 1,
+                                   :faction => horde_faction })
+    @mock_horde_character ||= mock_model(Character, stubs)
+  end
+  
+  def mock_alliance_character(stubs={ :id => 2, :faction_id => 2, :faction => alliance_faction })
+    @mock_alliance_character ||= mock_model(Character, stubs)
+  end
 end

@@ -1,24 +1,6 @@
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe Raid do
-  def horde_faction(stubs={ :id => 1, :name => "Horde" })
-    @horde_faction ||= mock_model(Faction, stubs)
-  end
-  
-  def alliance_faction(stubs={ :id => 2, :name => "Alliance" })
-    @alliance_faction ||= mock_model(Faction, stubs)
-  end
-  
-  def mock_horde_character(stubs={ :id => 1,
-                                   :name => "Rexerengeti",
-                                   :faction_id => 1, 
-                                   :faction => horde_faction })
-    @mock_horde_character ||= mock_model(Character, stubs)
-  end
-  
-  def mock_alliance_character(stubs={ :id => 2, :faction_id => 2, :faction => alliance_faction })
-    @mock_alliance_character ||= mock_model(Character, stubs)
-  end
   
   before(:each) do
     @r = Raid.new
