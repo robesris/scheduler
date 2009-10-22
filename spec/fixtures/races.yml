@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  ability: MyString
+  faction_id: 1
+
+two:
+  name: MyString
+  ability: MyString
+  faction_id: 1

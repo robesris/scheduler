@@ -16,6 +16,8 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :instance_names
 
   map.resources :instances
+  
+  map.resources :races
 
   # The priority is based upon order of creation: first created -> highest priority.
 

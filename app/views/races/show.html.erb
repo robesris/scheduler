@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @race.name %>
+</p>
+
+<p>
+  <b>Ability:</b>
+  <%=h @race.ability %>
+</p>
+
+<p>
+  <b>Faction:</b>
+  <%=h @race.faction_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_race_path(@race) %> |
+<%= link_to 'Back', races_path %>

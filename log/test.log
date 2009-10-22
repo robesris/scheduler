@@ -4734,3 +4734,4270 @@ Rendering characters/new.html.erb
   [4;36;1mCharacter Create (2.0ms)[0m   [0;1mINSERT INTO "characters" ("name", "race_id", "created_at", "updated_at", "class_id", "level", "gear_score", "faction_id") VALUES(NULL, NULL, '2009-06-03 06:57:45', '2009-06-03 06:57:45', NULL, NULL, NULL, NULL)[0m
   [4;36;1mCharacter Create (1.0ms)[0m   [0;1mINSERT INTO "characters" ("name", "race_id", "created_at", "updated_at", "class_id", "level", "gear_score", "faction_id") VALUES(NULL, NULL, '2009-06-03 06:58:48', '2009-06-03 06:58:48', NULL, NULL, NULL, NULL)[0m
   [4;36;1mCharacter Create (1.0ms)[0m   [0;1mINSERT INTO "characters" ("name", "race_id", "created_at", "updated_at", "class_id", "level", "gear_score", "faction_id") VALUES(NULL, NULL, '2009-06-03 07:00:11', '2009-06-03 07:00:11', NULL, NULL, NULL, NULL)[0m
+Rendering raids/show.html.erb
+Rendering raids/new.html.erb
+Rendering raids/index.html.erb
+Rendering raids/edit.html.erb
+Rendering factions/show.html.erb
+Rendering factions/new.html.erb
+Rendering factions/index.html.erb
+Rendering factions/edit.html.erb
+Rendering characters/show.html.erb
+Rendering characters/new.html.erb
+Rendering characters/index.html.erb
+Rendering characters/edit.html.erb
+  [4;36;1mRaid Create (0.5ms)[0m   [0;1mINSERT INTO "raids" ("tanks", "heals", "realm_id", "created_at", "code", "searchable", "instance_id", "min_gear_level", "updated_at", "creator_id", "raid_time", "protected", "dps", "raid_end_time", "password") VALUES(2, 3, NULL, '2009-10-22 17:42:00', '1234abcd', 't', 1, 2000, '2009-10-22 17:42:00', 1, '2009-10-27 17:42:00', 'f', 5, '2009-10-27 20:42:00', 'mynewraid')[0m
+  [4;35;1mFaction Create (0.3ms)[0m   [0mINSERT INTO "factions" ("name", "created_at", "updated_at") VALUES('value for name', '2009-10-22 17:42:00', '2009-10-22 17:42:00')[0m
+  [4;36;1mCharacter Create (0.3ms)[0m   [0;1mINSERT INTO "characters" ("name", "race_id", "realm_id", "created_at", "updated_at", "class_id", "level", "gear_score", "faction_id") VALUES(NULL, NULL, NULL, '2009-10-22 17:42:00', '2009-10-22 17:42:00', NULL, NULL, NULL, NULL)[0m
+
+
+Processing RaidsController#destroy (for 0.0.0.0 at 2009-10-22 13:42:17) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/raids
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/raids/37]
+
+
+Processing RaidsController#destroy (for 0.0.0.0 at 2009-10-22 13:42:17) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 13:42:17) [PUT]
+  Parameters: {"raid"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 13:42:17) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 13:42:17) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 13:42:17) [PUT]
+  Parameters: {"raid"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 13:42:17) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids/1022
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 13:42:17) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids/1023
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 13:42:17) [POST]
+  Parameters: {"raid"=>{"these"=>"params"}}
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 13:42:17) [POST]
+  Parameters: {"raid"=>{}}
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids?]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 13:42:17) [POST]
+  Parameters: {"raid"=>{"these"=>"params"}}
+Redirected to http://test.host/raids/1026
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 13:42:17) [POST]
+  Parameters: {"raid"=>{}}
+Redirected to http://test.host/raids/1027
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids?]
+
+
+Processing RaidsController#edit (for 0.0.0.0 at 2009-10-22 13:42:17) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37/edit]
+
+
+Processing RaidsController#new (for 0.0.0.0 at 2009-10-22 13:42:17) [GET]
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/new]
+
+
+Processing RaidsController#show (for 0.0.0.0 at 2009-10-22 13:42:17) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37]
+
+
+Processing RaidsController#index (for 0.0.0.0 at 2009-10-22 13:42:17) [GET]
+Rendering template within layouts/raids
+Rendering raids/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids]
+
+
+Processing FactionsController#destroy (for 0.0.0.0 at 2009-10-22 13:42:17) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/factions
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/factions/37]
+
+
+Processing FactionsController#destroy (for 0.0.0.0 at 2009-10-22 13:42:18) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 13:42:18) [PUT]
+  Parameters: {"id"=>"37", "faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 13:42:18) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 13:42:18) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 13:42:18) [PUT]
+  Parameters: {"id"=>"37", "faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 13:42:18) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions/1038
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 13:42:18) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions/1039
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 13:42:18) [POST]
+  Parameters: {"faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 13:42:18) [POST]
+  Parameters: {"faction"=>{}}
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions?]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 13:42:18) [POST]
+  Parameters: {"faction"=>{"these"=>"params"}}
+Redirected to http://test.host/factions/1042
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 13:42:18) [POST]
+  Parameters: {"faction"=>{}}
+Redirected to http://test.host/factions/1043
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions?]
+
+
+Processing FactionsController#edit (for 0.0.0.0 at 2009-10-22 13:42:18) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37/edit]
+
+
+Processing FactionsController#new (for 0.0.0.0 at 2009-10-22 13:42:18) [GET]
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/new]
+
+
+Processing FactionsController#show (for 0.0.0.0 at 2009-10-22 13:42:18) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/factions
+Rendering factions/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37]
+
+
+Processing FactionsController#index (for 0.0.0.0 at 2009-10-22 13:42:18) [GET]
+Rendering template within layouts/factions
+Rendering factions/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions]
+
+
+Processing CharactersController#destroy (for 0.0.0.0 at 2009-10-22 13:42:18) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/characters
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/characters/37]
+
+
+Processing CharactersController#destroy (for 0.0.0.0 at 2009-10-22 13:42:18) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/characters
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 13:42:18) [PUT]
+  Parameters: {"character"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37?character%5Bthese%5D=params]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 13:42:18) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 13:42:18) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 13:42:18) [PUT]
+  Parameters: {"character"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37?character%5Bthese%5D=params]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 13:42:18) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/characters/1054
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 13:42:18) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/characters/1055
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters/1]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 13:42:18) [POST]
+  Parameters: {"character"=>{"these"=>"params"}}
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters?character%5Bthese%5D=params]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 13:42:18) [POST]
+  Parameters: {"character"=>{}}
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters?]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 13:42:18) [POST]
+  Parameters: {"character"=>{"these"=>"params"}}
+Redirected to http://test.host/characters/1058
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters?character%5Bthese%5D=params]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 13:42:18) [POST]
+  Parameters: {"character"=>{}}
+Redirected to http://test.host/characters/1059
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters?]
+
+
+Processing CharactersController#edit (for 0.0.0.0 at 2009-10-22 13:42:18) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37/edit]
+
+
+Processing CharactersController#new (for 0.0.0.0 at 2009-10-22 13:42:18) [GET]
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/new]
+
+
+Processing CharactersController#show (for 0.0.0.0 at 2009-10-22 13:42:18) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37]
+
+
+Processing CharactersController#index (for 0.0.0.0 at 2009-10-22 13:42:18) [GET]
+Rendering template within layouts/characters
+Rendering characters/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters]
+Rendering raids/show.html.erb
+Rendering raids/new.html.erb
+Rendering raids/index.html.erb
+Rendering raids/edit.html.erb
+
+
+Processing FactionsController#destroy (for 0.0.0.0 at 2009-10-22 14:51:19) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/factions
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/factions/37]
+
+
+Processing FactionsController#destroy (for 0.0.0.0 at 2009-10-22 14:51:19) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 14:51:19) [PUT]
+  Parameters: {"id"=>"37", "faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 14:51:19) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 14:51:19) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 14:51:19) [PUT]
+  Parameters: {"id"=>"37", "faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 14:51:19) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions/1012
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 14:51:19) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions/1013
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 14:51:19) [POST]
+  Parameters: {"faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 14:51:19) [POST]
+  Parameters: {"faction"=>{}}
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions?]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 14:51:19) [POST]
+  Parameters: {"faction"=>{"these"=>"params"}}
+Redirected to http://test.host/factions/1016
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 14:51:19) [POST]
+  Parameters: {"faction"=>{}}
+Redirected to http://test.host/factions/1017
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions?]
+
+
+Processing FactionsController#edit (for 0.0.0.0 at 2009-10-22 14:51:19) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37/edit]
+
+
+Processing FactionsController#new (for 0.0.0.0 at 2009-10-22 14:51:19) [GET]
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/new]
+
+
+Processing FactionsController#show (for 0.0.0.0 at 2009-10-22 14:51:19) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/factions
+Rendering factions/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37]
+
+
+Processing FactionsController#index (for 0.0.0.0 at 2009-10-22 14:51:19) [GET]
+Rendering template within layouts/factions
+Rendering factions/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions]
+
+
+Processing CharactersController#destroy (for 0.0.0.0 at 2009-10-22 14:51:19) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/characters
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/characters/37]
+
+
+Processing CharactersController#destroy (for 0.0.0.0 at 2009-10-22 14:51:19) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/characters
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 14:51:19) [PUT]
+  Parameters: {"character"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37?character%5Bthese%5D=params]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 14:51:19) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 14:51:19) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 14:51:19) [PUT]
+  Parameters: {"character"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37?character%5Bthese%5D=params]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 14:51:19) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/characters/1028
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 14:51:19) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/characters/1029
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters/1]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 14:51:19) [POST]
+  Parameters: {"character"=>{"these"=>"params"}}
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters?character%5Bthese%5D=params]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 14:51:19) [POST]
+  Parameters: {"character"=>{}}
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters?]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 14:51:19) [POST]
+  Parameters: {"character"=>{"these"=>"params"}}
+Redirected to http://test.host/characters/1032
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters?character%5Bthese%5D=params]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 14:51:19) [POST]
+  Parameters: {"character"=>{}}
+Redirected to http://test.host/characters/1033
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters?]
+
+
+Processing CharactersController#edit (for 0.0.0.0 at 2009-10-22 14:51:19) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37/edit]
+
+
+Processing CharactersController#new (for 0.0.0.0 at 2009-10-22 14:51:19) [GET]
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/new]
+
+
+Processing CharactersController#show (for 0.0.0.0 at 2009-10-22 14:51:19) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37]
+
+
+Processing CharactersController#index (for 0.0.0.0 at 2009-10-22 14:51:19) [GET]
+Rendering template within layouts/characters
+Rendering characters/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters]
+
+
+Processing RaidsController#destroy (for 0.0.0.0 at 2009-10-22 14:51:19) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/raids
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/raids/37]
+
+
+Processing RaidsController#destroy (for 0.0.0.0 at 2009-10-22 14:51:19) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 14:51:19) [PUT]
+  Parameters: {"raid"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 14:51:19) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 14:51:19) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 14:51:19) [PUT]
+  Parameters: {"raid"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 14:51:19) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids/1044
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 14:51:19) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids/1045
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 14:51:19) [POST]
+  Parameters: {"raid"=>{"these"=>"params"}}
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 14:51:19) [POST]
+  Parameters: {"raid"=>{}}
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids?]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 14:51:19) [POST]
+  Parameters: {"raid"=>{"these"=>"params"}}
+Redirected to http://test.host/raids/1048
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 14:51:19) [POST]
+  Parameters: {"raid"=>{}}
+Redirected to http://test.host/raids/1049
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids?]
+
+
+Processing RaidsController#edit (for 0.0.0.0 at 2009-10-22 14:51:19) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37/edit]
+
+
+Processing RaidsController#new (for 0.0.0.0 at 2009-10-22 14:51:19) [GET]
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/new]
+
+
+Processing RaidsController#show (for 0.0.0.0 at 2009-10-22 14:51:19) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37]
+
+
+Processing RaidsController#index (for 0.0.0.0 at 2009-10-22 14:51:19) [GET]
+Rendering template within layouts/raids
+Rendering raids/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids]
+Rendering factions/show.html.erb
+Rendering factions/new.html.erb
+Rendering factions/index.html.erb
+Rendering factions/edit.html.erb
+Rendering characters/show.html.erb
+Rendering characters/new.html.erb
+Rendering characters/index.html.erb
+Rendering characters/edit.html.erb
+  [4;36;1mFaction Create (58.7ms)[0m   [0;1mINSERT INTO "factions" ("name", "created_at", "updated_at") VALUES('value for name', '2009-10-22 18:51:19', '2009-10-22 18:51:19')[0m
+  [4;35;1mRaid Create (0.4ms)[0m   [0mINSERT INTO "raids" ("tanks", "heals", "realm_id", "created_at", "code", "searchable", "instance_id", "min_gear_level", "updated_at", "creator_id", "raid_time", "protected", "dps", "raid_end_time", "password") VALUES(2, 3, NULL, '2009-10-22 18:51:19', '1234abcd', 't', 1, 2000, '2009-10-22 18:51:19', 1, '2009-10-27 18:51:19', 'f', 5, '2009-10-27 21:51:19', 'mynewraid')[0m
+  [4;36;1mRace Create (0.3ms)[0m   [0;1mINSERT INTO "races" ("name", "ability", "created_at", "updated_at", "faction_id") VALUES('value for name', 'value for ability', '2009-10-22 18:51:19', '2009-10-22 18:51:19', 1)[0m
+
+
+Processing RacesController#destroy (for 0.0.0.0 at 2009-10-22 14:51:19) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/races
+Completed in 2ms (DB: 59) | 302 Found [http://test.host/races/37]
+
+
+Processing RacesController#destroy (for 0.0.0.0 at 2009-10-22 14:51:19) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/races
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 14:51:19) [PUT]
+  Parameters: {"id"=>"37", "race"=>{"these"=>"params"}}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37?race%5Bthese%5D=params]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 14:51:19) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 14:51:19) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 14:51:19) [PUT]
+  Parameters: {"id"=>"37", "race"=>{"these"=>"params"}}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37?race%5Bthese%5D=params]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 14:51:19) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/races/1070
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 14:51:19) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/races/1071
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races/1]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 14:51:19) [POST]
+  Parameters: {"race"=>{"these"=>"params"}}
+Rendering template within layouts/races
+Rendering races/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races?race%5Bthese%5D=params]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 14:51:19) [POST]
+  Parameters: {"race"=>{}}
+Rendering template within layouts/races
+Rendering races/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races?]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 14:51:19) [POST]
+  Parameters: {"race"=>{"these"=>"params"}}
+Redirected to http://test.host/races/1074
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races?race%5Bthese%5D=params]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 14:51:19) [POST]
+  Parameters: {"race"=>{}}
+Redirected to http://test.host/races/1075
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races?]
+
+
+Processing RacesController#edit (for 0.0.0.0 at 2009-10-22 14:51:19) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37/edit]
+
+
+Processing RacesController#new (for 0.0.0.0 at 2009-10-22 14:51:19) [GET]
+Rendering template within layouts/races
+Rendering races/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/new]
+
+
+Processing RacesController#show (for 0.0.0.0 at 2009-10-22 14:51:19) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/races
+Rendering races/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37]
+
+
+Processing RacesController#index (for 0.0.0.0 at 2009-10-22 14:51:19) [GET]
+Rendering template within layouts/races
+Rendering races/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races]
+Rendering races/show.html.erb
+Rendering races/edit.html.erb
+Rendering races/index.html.erb
+Rendering races/new.html.erb
+  [4;35;1mCharacter Create (0.3ms)[0m   [0mINSERT INTO "characters" ("name", "race_id", "realm_id", "created_at", "updated_at", "class_id", "level", "gear_score", "faction_id") VALUES(NULL, NULL, NULL, '2009-10-22 18:51:19', '2009-10-22 18:51:19', NULL, NULL, NULL, NULL)[0m
+Rendering raids/show.html.erb
+Rendering raids/new.html.erb
+Rendering raids/index.html.erb
+Rendering raids/edit.html.erb
+
+
+Processing FactionsController#destroy (for 0.0.0.0 at 2009-10-22 14:52:18) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/factions
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/factions/37]
+
+
+Processing FactionsController#destroy (for 0.0.0.0 at 2009-10-22 14:52:18) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 14:52:18) [PUT]
+  Parameters: {"id"=>"37", "faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 14:52:18) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 14:52:18) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 14:52:18) [PUT]
+  Parameters: {"id"=>"37", "faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 14:52:18) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions/1012
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 14:52:18) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions/1013
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 14:52:18) [POST]
+  Parameters: {"faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 14:52:18) [POST]
+  Parameters: {"faction"=>{}}
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions?]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 14:52:18) [POST]
+  Parameters: {"faction"=>{"these"=>"params"}}
+Redirected to http://test.host/factions/1016
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 14:52:18) [POST]
+  Parameters: {"faction"=>{}}
+Redirected to http://test.host/factions/1017
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions?]
+
+
+Processing FactionsController#edit (for 0.0.0.0 at 2009-10-22 14:52:18) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37/edit]
+
+
+Processing FactionsController#new (for 0.0.0.0 at 2009-10-22 14:52:18) [GET]
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/new]
+
+
+Processing FactionsController#show (for 0.0.0.0 at 2009-10-22 14:52:18) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/factions
+Rendering factions/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37]
+
+
+Processing FactionsController#index (for 0.0.0.0 at 2009-10-22 14:52:18) [GET]
+Rendering template within layouts/factions
+Rendering factions/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions]
+
+
+Processing CharactersController#destroy (for 0.0.0.0 at 2009-10-22 14:52:18) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/characters
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/characters/37]
+
+
+Processing CharactersController#destroy (for 0.0.0.0 at 2009-10-22 14:52:18) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/characters
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 14:52:18) [PUT]
+  Parameters: {"character"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37?character%5Bthese%5D=params]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 14:52:18) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 14:52:18) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 14:52:18) [PUT]
+  Parameters: {"character"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37?character%5Bthese%5D=params]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 14:52:18) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/characters/1028
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 14:52:18) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/characters/1029
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters/1]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 14:52:18) [POST]
+  Parameters: {"character"=>{"these"=>"params"}}
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters?character%5Bthese%5D=params]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 14:52:18) [POST]
+  Parameters: {"character"=>{}}
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters?]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 14:52:18) [POST]
+  Parameters: {"character"=>{"these"=>"params"}}
+Redirected to http://test.host/characters/1032
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters?character%5Bthese%5D=params]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 14:52:18) [POST]
+  Parameters: {"character"=>{}}
+Redirected to http://test.host/characters/1033
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters?]
+
+
+Processing CharactersController#edit (for 0.0.0.0 at 2009-10-22 14:52:18) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37/edit]
+
+
+Processing CharactersController#new (for 0.0.0.0 at 2009-10-22 14:52:18) [GET]
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/new]
+
+
+Processing CharactersController#show (for 0.0.0.0 at 2009-10-22 14:52:18) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37]
+
+
+Processing CharactersController#index (for 0.0.0.0 at 2009-10-22 14:52:18) [GET]
+Rendering template within layouts/characters
+Rendering characters/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters]
+
+
+Processing RaidsController#destroy (for 0.0.0.0 at 2009-10-22 14:52:18) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/raids
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/raids/37]
+
+
+Processing RaidsController#destroy (for 0.0.0.0 at 2009-10-22 14:52:18) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 14:52:18) [PUT]
+  Parameters: {"raid"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 14:52:18) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 14:52:18) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 14:52:18) [PUT]
+  Parameters: {"raid"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 14:52:18) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids/1044
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 14:52:18) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids/1045
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 14:52:18) [POST]
+  Parameters: {"raid"=>{"these"=>"params"}}
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 14:52:18) [POST]
+  Parameters: {"raid"=>{}}
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids?]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 14:52:18) [POST]
+  Parameters: {"raid"=>{"these"=>"params"}}
+Redirected to http://test.host/raids/1048
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 14:52:18) [POST]
+  Parameters: {"raid"=>{}}
+Redirected to http://test.host/raids/1049
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids?]
+
+
+Processing RaidsController#edit (for 0.0.0.0 at 2009-10-22 14:52:18) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37/edit]
+
+
+Processing RaidsController#new (for 0.0.0.0 at 2009-10-22 14:52:18) [GET]
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/new]
+
+
+Processing RaidsController#show (for 0.0.0.0 at 2009-10-22 14:52:18) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37]
+
+
+Processing RaidsController#index (for 0.0.0.0 at 2009-10-22 14:52:18) [GET]
+Rendering template within layouts/raids
+Rendering raids/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids]
+Rendering factions/show.html.erb
+Rendering factions/new.html.erb
+Rendering factions/index.html.erb
+Rendering factions/edit.html.erb
+Rendering characters/show.html.erb
+Rendering characters/new.html.erb
+Rendering characters/index.html.erb
+Rendering characters/edit.html.erb
+  [4;36;1mFaction Create (0.5ms)[0m   [0;1mINSERT INTO "factions" ("name", "created_at", "updated_at") VALUES('value for name', '2009-10-22 18:52:18', '2009-10-22 18:52:18')[0m
+  [4;35;1mRaid Create (0.4ms)[0m   [0mINSERT INTO "raids" ("tanks", "heals", "realm_id", "created_at", "code", "searchable", "instance_id", "min_gear_level", "updated_at", "creator_id", "raid_time", "protected", "dps", "raid_end_time", "password") VALUES(2, 3, NULL, '2009-10-22 18:52:18', '1234abcd', 't', 1, 2000, '2009-10-22 18:52:18', 1, '2009-10-27 18:52:18', 'f', 5, '2009-10-27 21:52:18', 'mynewraid')[0m
+  [4;36;1mRace Create (0.4ms)[0m   [0;1mINSERT INTO "races" ("name", "ability", "created_at", "updated_at", "faction_id") VALUES('value for name', 'value for ability', '2009-10-22 18:52:18', '2009-10-22 18:52:18', 1)[0m
+
+
+Processing RacesController#destroy (for 0.0.0.0 at 2009-10-22 14:52:18) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/races
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/races/37]
+
+
+Processing RacesController#destroy (for 0.0.0.0 at 2009-10-22 14:52:18) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/races
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 14:52:18) [PUT]
+  Parameters: {"id"=>"37", "race"=>{"these"=>"params"}}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37?race%5Bthese%5D=params]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 14:52:18) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 14:52:18) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 14:52:18) [PUT]
+  Parameters: {"id"=>"37", "race"=>{"these"=>"params"}}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37?race%5Bthese%5D=params]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 14:52:18) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/races/1070
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 14:52:18) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/races/1071
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races/1]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 14:52:18) [POST]
+  Parameters: {"race"=>{"these"=>"params"}}
+Rendering template within layouts/races
+Rendering races/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races?race%5Bthese%5D=params]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 14:52:18) [POST]
+  Parameters: {"race"=>{}}
+Rendering template within layouts/races
+Rendering races/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races?]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 14:52:18) [POST]
+  Parameters: {"race"=>{"these"=>"params"}}
+Redirected to http://test.host/races/1074
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races?race%5Bthese%5D=params]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 14:52:18) [POST]
+  Parameters: {"race"=>{}}
+Redirected to http://test.host/races/1075
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races?]
+
+
+Processing RacesController#edit (for 0.0.0.0 at 2009-10-22 14:52:18) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37/edit]
+
+
+Processing RacesController#new (for 0.0.0.0 at 2009-10-22 14:52:18) [GET]
+Rendering template within layouts/races
+Rendering races/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/new]
+
+
+Processing RacesController#show (for 0.0.0.0 at 2009-10-22 14:52:19) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/races
+Rendering races/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37]
+
+
+Processing RacesController#index (for 0.0.0.0 at 2009-10-22 14:52:19) [GET]
+Rendering template within layouts/races
+Rendering races/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races]
+Rendering races/show.html.erb
+Rendering races/edit.html.erb
+Rendering races/index.html.erb
+Rendering races/new.html.erb
+  [4;35;1mCharacter Create (0.3ms)[0m   [0mINSERT INTO "characters" ("name", "race_id", "realm_id", "created_at", "updated_at", "class_id", "level", "gear_score", "faction_id") VALUES(NULL, NULL, NULL, '2009-10-22 18:52:19', '2009-10-22 18:52:19', NULL, NULL, NULL, NULL)[0m
+Rendering raids/show.html.erb
+Rendering raids/new.html.erb
+Rendering raids/index.html.erb
+Rendering raids/edit.html.erb
+
+
+Processing FactionsController#destroy (for 0.0.0.0 at 2009-10-22 15:04:14) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/factions
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/factions/37]
+
+
+Processing FactionsController#destroy (for 0.0.0.0 at 2009-10-22 15:04:14) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:04:14) [PUT]
+  Parameters: {"id"=>"37", "faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:04:14) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:04:14) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:04:14) [PUT]
+  Parameters: {"id"=>"37", "faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:04:14) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions/1012
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:04:14) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions/1013
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 15:04:14) [POST]
+  Parameters: {"faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 15:04:14) [POST]
+  Parameters: {"faction"=>{}}
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions?]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 15:04:14) [POST]
+  Parameters: {"faction"=>{"these"=>"params"}}
+Redirected to http://test.host/factions/1016
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 15:04:14) [POST]
+  Parameters: {"faction"=>{}}
+Redirected to http://test.host/factions/1017
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions?]
+
+
+Processing FactionsController#edit (for 0.0.0.0 at 2009-10-22 15:04:14) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37/edit]
+
+
+Processing FactionsController#new (for 0.0.0.0 at 2009-10-22 15:04:14) [GET]
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/new]
+
+
+Processing FactionsController#show (for 0.0.0.0 at 2009-10-22 15:04:14) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/factions
+Rendering factions/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37]
+
+
+Processing FactionsController#index (for 0.0.0.0 at 2009-10-22 15:04:14) [GET]
+Rendering template within layouts/factions
+Rendering factions/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions]
+
+
+Processing CharactersController#destroy (for 0.0.0.0 at 2009-10-22 15:04:14) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/characters
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/characters/37]
+
+
+Processing CharactersController#destroy (for 0.0.0.0 at 2009-10-22 15:04:14) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/characters
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:04:14) [PUT]
+  Parameters: {"character"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37?character%5Bthese%5D=params]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:04:14) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:04:14) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:04:14) [PUT]
+  Parameters: {"character"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37?character%5Bthese%5D=params]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:04:14) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/characters/1028
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:04:14) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/characters/1029
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters/1]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 15:04:14) [POST]
+  Parameters: {"character"=>{"these"=>"params"}}
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters?character%5Bthese%5D=params]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 15:04:14) [POST]
+  Parameters: {"character"=>{}}
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters?]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 15:04:15) [POST]
+  Parameters: {"character"=>{"these"=>"params"}}
+Redirected to http://test.host/characters/1032
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters?character%5Bthese%5D=params]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 15:04:15) [POST]
+  Parameters: {"character"=>{}}
+Redirected to http://test.host/characters/1033
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters?]
+
+
+Processing CharactersController#edit (for 0.0.0.0 at 2009-10-22 15:04:15) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37/edit]
+
+
+Processing CharactersController#new (for 0.0.0.0 at 2009-10-22 15:04:15) [GET]
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/new]
+
+
+Processing CharactersController#show (for 0.0.0.0 at 2009-10-22 15:04:15) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37]
+
+
+Processing CharactersController#index (for 0.0.0.0 at 2009-10-22 15:04:15) [GET]
+Rendering template within layouts/characters
+Rendering characters/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters]
+
+
+Processing RaidsController#destroy (for 0.0.0.0 at 2009-10-22 15:04:15) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/raids
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/raids/37]
+
+
+Processing RaidsController#destroy (for 0.0.0.0 at 2009-10-22 15:04:15) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:04:15) [PUT]
+  Parameters: {"raid"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:04:15) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:04:15) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:04:15) [PUT]
+  Parameters: {"raid"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:04:15) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids/1044
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:04:15) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids/1045
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 15:04:15) [POST]
+  Parameters: {"raid"=>{"these"=>"params"}}
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 15:04:15) [POST]
+  Parameters: {"raid"=>{}}
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids?]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 15:04:15) [POST]
+  Parameters: {"raid"=>{"these"=>"params"}}
+Redirected to http://test.host/raids/1048
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 15:04:15) [POST]
+  Parameters: {"raid"=>{}}
+Redirected to http://test.host/raids/1049
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids?]
+
+
+Processing RaidsController#edit (for 0.0.0.0 at 2009-10-22 15:04:15) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37/edit]
+
+
+Processing RaidsController#new (for 0.0.0.0 at 2009-10-22 15:04:15) [GET]
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/new]
+
+
+Processing RaidsController#show (for 0.0.0.0 at 2009-10-22 15:04:15) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37]
+
+
+Processing RaidsController#index (for 0.0.0.0 at 2009-10-22 15:04:15) [GET]
+Rendering template within layouts/raids
+Rendering raids/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids]
+Rendering factions/show.html.erb
+Rendering factions/new.html.erb
+Rendering factions/index.html.erb
+Rendering factions/edit.html.erb
+Rendering characters/show.html.erb
+Rendering characters/new.html.erb
+Rendering characters/index.html.erb
+Rendering characters/edit.html.erb
+  [4;36;1mFaction Create (0.5ms)[0m   [0;1mINSERT INTO "factions" ("name", "created_at", "updated_at") VALUES('value for name', '2009-10-22 19:04:15', '2009-10-22 19:04:15')[0m
+  [4;35;1mRaid Create (0.4ms)[0m   [0mINSERT INTO "raids" ("tanks", "heals", "realm_id", "created_at", "code", "searchable", "instance_id", "min_gear_level", "updated_at", "creator_id", "raid_time", "protected", "dps", "raid_end_time", "password") VALUES(2, 3, NULL, '2009-10-22 19:04:15', '1234abcd', 't', 1, 2000, '2009-10-22 19:04:15', 1, '2009-10-27 19:04:15', 'f', 5, '2009-10-27 22:04:15', 'mynewraid')[0m
+  [4;36;1mRace Create (0.3ms)[0m   [0;1mINSERT INTO "races" ("name", "ability", "created_at", "updated_at", "faction_id") VALUES('value for name', 'value for ability', '2009-10-22 19:04:15', '2009-10-22 19:04:15', 1)[0m
+
+
+Processing RacesController#destroy (for 0.0.0.0 at 2009-10-22 15:04:15) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/races
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/races/37]
+
+
+Processing RacesController#destroy (for 0.0.0.0 at 2009-10-22 15:04:15) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/races
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:04:15) [PUT]
+  Parameters: {"id"=>"37", "race"=>{"these"=>"params"}}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37?race%5Bthese%5D=params]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:04:15) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:04:15) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:04:15) [PUT]
+  Parameters: {"id"=>"37", "race"=>{"these"=>"params"}}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37?race%5Bthese%5D=params]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:04:15) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/races/1070
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:04:15) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/races/1071
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races/1]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 15:04:15) [POST]
+  Parameters: {"race"=>{"these"=>"params"}}
+Rendering template within layouts/races
+Rendering races/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races?race%5Bthese%5D=params]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 15:04:15) [POST]
+  Parameters: {"race"=>{}}
+Rendering template within layouts/races
+Rendering races/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races?]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 15:04:15) [POST]
+  Parameters: {"race"=>{"these"=>"params"}}
+Redirected to http://test.host/races/1074
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races?race%5Bthese%5D=params]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 15:04:15) [POST]
+  Parameters: {"race"=>{}}
+Redirected to http://test.host/races/1075
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races?]
+
+
+Processing RacesController#edit (for 0.0.0.0 at 2009-10-22 15:04:15) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37/edit]
+
+
+Processing RacesController#new (for 0.0.0.0 at 2009-10-22 15:04:15) [GET]
+Rendering template within layouts/races
+Rendering races/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/new]
+
+
+Processing RacesController#show (for 0.0.0.0 at 2009-10-22 15:04:15) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/races
+Rendering races/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37]
+
+
+Processing RacesController#index (for 0.0.0.0 at 2009-10-22 15:04:15) [GET]
+Rendering template within layouts/races
+Rendering races/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races]
+Rendering races/show.html.erb
+Rendering races/edit.html.erb
+Rendering races/index.html.erb
+Rendering races/new.html.erb
+  [4;35;1mCharacter Create (0.3ms)[0m   [0mINSERT INTO "characters" ("name", "race_id", "realm_id", "created_at", "updated_at", "class_id", "level", "gear_score", "faction_id") VALUES(NULL, NULL, NULL, '2009-10-22 19:04:15', '2009-10-22 19:04:15', NULL, NULL, NULL, NULL)[0m
+  [4;36;1mRace Load (0.2ms)[0m   [0;1mSELECT * FROM "races" WHERE ("races"."name" = 'Tauren') LIMIT 1[0m
+Rendering raids/show.html.erb
+Rendering raids/new.html.erb
+Rendering raids/index.html.erb
+Rendering raids/edit.html.erb
+
+
+Processing FactionsController#destroy (for 0.0.0.0 at 2009-10-22 15:08:42) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/factions
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/factions/37]
+
+
+Processing FactionsController#destroy (for 0.0.0.0 at 2009-10-22 15:08:42) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:08:42) [PUT]
+  Parameters: {"id"=>"37", "faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:08:42) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:08:42) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:08:42) [PUT]
+  Parameters: {"id"=>"37", "faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:08:42) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions/1012
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:08:42) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions/1013
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 15:08:42) [POST]
+  Parameters: {"faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 15:08:42) [POST]
+  Parameters: {"faction"=>{}}
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions?]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 15:08:42) [POST]
+  Parameters: {"faction"=>{"these"=>"params"}}
+Redirected to http://test.host/factions/1016
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 15:08:42) [POST]
+  Parameters: {"faction"=>{}}
+Redirected to http://test.host/factions/1017
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions?]
+
+
+Processing FactionsController#edit (for 0.0.0.0 at 2009-10-22 15:08:42) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37/edit]
+
+
+Processing FactionsController#new (for 0.0.0.0 at 2009-10-22 15:08:42) [GET]
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/new]
+
+
+Processing FactionsController#show (for 0.0.0.0 at 2009-10-22 15:08:42) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/factions
+Rendering factions/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37]
+
+
+Processing FactionsController#index (for 0.0.0.0 at 2009-10-22 15:08:42) [GET]
+Rendering template within layouts/factions
+Rendering factions/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions]
+
+
+Processing CharactersController#destroy (for 0.0.0.0 at 2009-10-22 15:08:42) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/characters
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/characters/37]
+
+
+Processing CharactersController#destroy (for 0.0.0.0 at 2009-10-22 15:08:42) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/characters
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:08:42) [PUT]
+  Parameters: {"character"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37?character%5Bthese%5D=params]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:08:42) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:08:42) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:08:42) [PUT]
+  Parameters: {"character"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37?character%5Bthese%5D=params]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:08:42) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/characters/1028
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:08:42) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/characters/1029
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters/1]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 15:08:42) [POST]
+  Parameters: {"character"=>{"these"=>"params"}}
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters?character%5Bthese%5D=params]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 15:08:42) [POST]
+  Parameters: {"character"=>{}}
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters?]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 15:08:42) [POST]
+  Parameters: {"character"=>{"these"=>"params"}}
+Redirected to http://test.host/characters/1032
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters?character%5Bthese%5D=params]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 15:08:42) [POST]
+  Parameters: {"character"=>{}}
+Redirected to http://test.host/characters/1033
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters?]
+
+
+Processing CharactersController#edit (for 0.0.0.0 at 2009-10-22 15:08:42) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37/edit]
+
+
+Processing CharactersController#new (for 0.0.0.0 at 2009-10-22 15:08:42) [GET]
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/new]
+
+
+Processing CharactersController#show (for 0.0.0.0 at 2009-10-22 15:08:42) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37]
+
+
+Processing CharactersController#index (for 0.0.0.0 at 2009-10-22 15:08:42) [GET]
+Rendering template within layouts/characters
+Rendering characters/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters]
+
+
+Processing RaidsController#destroy (for 0.0.0.0 at 2009-10-22 15:08:42) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/raids
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/raids/37]
+
+
+Processing RaidsController#destroy (for 0.0.0.0 at 2009-10-22 15:08:42) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:08:42) [PUT]
+  Parameters: {"raid"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:08:42) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:08:42) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:08:42) [PUT]
+  Parameters: {"raid"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:08:42) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids/1044
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:08:42) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids/1045
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 15:08:42) [POST]
+  Parameters: {"raid"=>{"these"=>"params"}}
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 15:08:42) [POST]
+  Parameters: {"raid"=>{}}
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids?]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 15:08:42) [POST]
+  Parameters: {"raid"=>{"these"=>"params"}}
+Redirected to http://test.host/raids/1048
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 15:08:42) [POST]
+  Parameters: {"raid"=>{}}
+Redirected to http://test.host/raids/1049
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids?]
+
+
+Processing RaidsController#edit (for 0.0.0.0 at 2009-10-22 15:08:42) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37/edit]
+
+
+Processing RaidsController#new (for 0.0.0.0 at 2009-10-22 15:08:42) [GET]
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/new]
+
+
+Processing RaidsController#show (for 0.0.0.0 at 2009-10-22 15:08:42) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37]
+
+
+Processing RaidsController#index (for 0.0.0.0 at 2009-10-22 15:08:42) [GET]
+Rendering template within layouts/raids
+Rendering raids/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids]
+Rendering factions/show.html.erb
+Rendering factions/new.html.erb
+Rendering factions/index.html.erb
+Rendering factions/edit.html.erb
+Rendering characters/show.html.erb
+Rendering characters/new.html.erb
+Rendering characters/index.html.erb
+Rendering characters/edit.html.erb
+  [4;36;1mFaction Create (0.5ms)[0m   [0;1mINSERT INTO "factions" ("name", "created_at", "updated_at") VALUES('value for name', '2009-10-22 19:08:42', '2009-10-22 19:08:42')[0m
+  [4;35;1mRaid Create (0.4ms)[0m   [0mINSERT INTO "raids" ("tanks", "heals", "realm_id", "created_at", "code", "searchable", "instance_id", "min_gear_level", "updated_at", "creator_id", "raid_time", "protected", "dps", "raid_end_time", "password") VALUES(2, 3, NULL, '2009-10-22 19:08:42', '1234abcd', 't', 1, 2000, '2009-10-22 19:08:42', 1, '2009-10-27 19:08:42', 'f', 5, '2009-10-27 22:08:42', 'mynewraid')[0m
+  [4;36;1mRace Create (0.4ms)[0m   [0;1mINSERT INTO "races" ("name", "ability", "created_at", "updated_at", "faction_id") VALUES('value for name', 'value for ability', '2009-10-22 19:08:42', '2009-10-22 19:08:42', 1)[0m
+
+
+Processing RacesController#destroy (for 0.0.0.0 at 2009-10-22 15:08:42) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/races
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/races/37]
+
+
+Processing RacesController#destroy (for 0.0.0.0 at 2009-10-22 15:08:42) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/races
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:08:42) [PUT]
+  Parameters: {"id"=>"37", "race"=>{"these"=>"params"}}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37?race%5Bthese%5D=params]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:08:42) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:08:42) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:08:42) [PUT]
+  Parameters: {"id"=>"37", "race"=>{"these"=>"params"}}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37?race%5Bthese%5D=params]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:08:42) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/races/1070
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:08:42) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/races/1071
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races/1]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 15:08:42) [POST]
+  Parameters: {"race"=>{"these"=>"params"}}
+Rendering template within layouts/races
+Rendering races/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races?race%5Bthese%5D=params]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 15:08:42) [POST]
+  Parameters: {"race"=>{}}
+Rendering template within layouts/races
+Rendering races/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races?]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 15:08:42) [POST]
+  Parameters: {"race"=>{"these"=>"params"}}
+Redirected to http://test.host/races/1074
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races?race%5Bthese%5D=params]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 15:08:42) [POST]
+  Parameters: {"race"=>{}}
+Redirected to http://test.host/races/1075
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races?]
+
+
+Processing RacesController#edit (for 0.0.0.0 at 2009-10-22 15:08:42) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37/edit]
+
+
+Processing RacesController#new (for 0.0.0.0 at 2009-10-22 15:08:42) [GET]
+Rendering template within layouts/races
+Rendering races/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/new]
+
+
+Processing RacesController#show (for 0.0.0.0 at 2009-10-22 15:08:42) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/races
+Rendering races/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37]
+
+
+Processing RacesController#index (for 0.0.0.0 at 2009-10-22 15:08:42) [GET]
+Rendering template within layouts/races
+Rendering races/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races]
+Rendering races/show.html.erb
+Rendering races/edit.html.erb
+Rendering races/index.html.erb
+Rendering races/new.html.erb
+  [4;35;1mCharacter Create (0.3ms)[0m   [0mINSERT INTO "characters" ("name", "race_id", "realm_id", "created_at", "updated_at", "class_id", "level", "gear_score", "faction_id") VALUES(NULL, NULL, NULL, '2009-10-22 19:08:42', '2009-10-22 19:08:42', NULL, NULL, NULL, NULL)[0m
+  [4;36;1mRace Load (0.2ms)[0m   [0;1mSELECT * FROM "races" WHERE ("races"."name" = 'Tauren') LIMIT 1[0m
+Rendering raids/show.html.erb
+Rendering raids/new.html.erb
+Rendering raids/index.html.erb
+Rendering raids/edit.html.erb
+
+
+Processing FactionsController#destroy (for 0.0.0.0 at 2009-10-22 15:08:59) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/factions
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/factions/37]
+
+
+Processing FactionsController#destroy (for 0.0.0.0 at 2009-10-22 15:08:59) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:08:59) [PUT]
+  Parameters: {"id"=>"37", "faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:08:59) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:08:59) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:08:59) [PUT]
+  Parameters: {"id"=>"37", "faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:08:59) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions/1012
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:08:59) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions/1013
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 15:08:59) [POST]
+  Parameters: {"faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 15:08:59) [POST]
+  Parameters: {"faction"=>{}}
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions?]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 15:08:59) [POST]
+  Parameters: {"faction"=>{"these"=>"params"}}
+Redirected to http://test.host/factions/1016
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 15:08:59) [POST]
+  Parameters: {"faction"=>{}}
+Redirected to http://test.host/factions/1017
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions?]
+
+
+Processing FactionsController#edit (for 0.0.0.0 at 2009-10-22 15:08:59) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37/edit]
+
+
+Processing FactionsController#new (for 0.0.0.0 at 2009-10-22 15:08:59) [GET]
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/new]
+
+
+Processing FactionsController#show (for 0.0.0.0 at 2009-10-22 15:08:59) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/factions
+Rendering factions/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37]
+
+
+Processing FactionsController#index (for 0.0.0.0 at 2009-10-22 15:08:59) [GET]
+Rendering template within layouts/factions
+Rendering factions/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions]
+
+
+Processing CharactersController#destroy (for 0.0.0.0 at 2009-10-22 15:08:59) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/characters
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/characters/37]
+
+
+Processing CharactersController#destroy (for 0.0.0.0 at 2009-10-22 15:08:59) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/characters
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:08:59) [PUT]
+  Parameters: {"character"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37?character%5Bthese%5D=params]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:08:59) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:08:59) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:08:59) [PUT]
+  Parameters: {"character"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37?character%5Bthese%5D=params]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:08:59) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/characters/1028
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:08:59) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/characters/1029
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters/1]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 15:08:59) [POST]
+  Parameters: {"character"=>{"these"=>"params"}}
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters?character%5Bthese%5D=params]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 15:08:59) [POST]
+  Parameters: {"character"=>{}}
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters?]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 15:08:59) [POST]
+  Parameters: {"character"=>{"these"=>"params"}}
+Redirected to http://test.host/characters/1032
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters?character%5Bthese%5D=params]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 15:08:59) [POST]
+  Parameters: {"character"=>{}}
+Redirected to http://test.host/characters/1033
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters?]
+
+
+Processing CharactersController#edit (for 0.0.0.0 at 2009-10-22 15:08:59) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37/edit]
+
+
+Processing CharactersController#new (for 0.0.0.0 at 2009-10-22 15:08:59) [GET]
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/new]
+
+
+Processing CharactersController#show (for 0.0.0.0 at 2009-10-22 15:08:59) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37]
+
+
+Processing CharactersController#index (for 0.0.0.0 at 2009-10-22 15:08:59) [GET]
+Rendering template within layouts/characters
+Rendering characters/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters]
+
+
+Processing RaidsController#destroy (for 0.0.0.0 at 2009-10-22 15:08:59) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/raids
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/raids/37]
+
+
+Processing RaidsController#destroy (for 0.0.0.0 at 2009-10-22 15:08:59) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:08:59) [PUT]
+  Parameters: {"raid"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:08:59) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:08:59) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:08:59) [PUT]
+  Parameters: {"raid"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:08:59) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids/1044
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:09:00) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids/1045
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 15:09:00) [POST]
+  Parameters: {"raid"=>{"these"=>"params"}}
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 15:09:00) [POST]
+  Parameters: {"raid"=>{}}
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids?]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 15:09:00) [POST]
+  Parameters: {"raid"=>{"these"=>"params"}}
+Redirected to http://test.host/raids/1048
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 15:09:00) [POST]
+  Parameters: {"raid"=>{}}
+Redirected to http://test.host/raids/1049
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids?]
+
+
+Processing RaidsController#edit (for 0.0.0.0 at 2009-10-22 15:09:00) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37/edit]
+
+
+Processing RaidsController#new (for 0.0.0.0 at 2009-10-22 15:09:00) [GET]
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/new]
+
+
+Processing RaidsController#show (for 0.0.0.0 at 2009-10-22 15:09:00) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37]
+
+
+Processing RaidsController#index (for 0.0.0.0 at 2009-10-22 15:09:00) [GET]
+Rendering template within layouts/raids
+Rendering raids/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids]
+Rendering factions/show.html.erb
+Rendering factions/new.html.erb
+Rendering factions/index.html.erb
+Rendering factions/edit.html.erb
+Rendering characters/show.html.erb
+Rendering characters/new.html.erb
+Rendering characters/index.html.erb
+Rendering characters/edit.html.erb
+  [4;36;1mFaction Create (0.5ms)[0m   [0;1mINSERT INTO "factions" ("name", "created_at", "updated_at") VALUES('value for name', '2009-10-22 19:09:00', '2009-10-22 19:09:00')[0m
+  [4;35;1mRaid Create (0.4ms)[0m   [0mINSERT INTO "raids" ("tanks", "heals", "realm_id", "created_at", "code", "searchable", "instance_id", "min_gear_level", "updated_at", "creator_id", "raid_time", "protected", "dps", "raid_end_time", "password") VALUES(2, 3, NULL, '2009-10-22 19:09:00', '1234abcd', 't', 1, 2000, '2009-10-22 19:09:00', 1, '2009-10-27 19:09:00', 'f', 5, '2009-10-27 22:09:00', 'mynewraid')[0m
+  [4;36;1mRace Create (0.4ms)[0m   [0;1mINSERT INTO "races" ("name", "ability", "created_at", "updated_at", "faction_id") VALUES('value for name', 'value for ability', '2009-10-22 19:09:00', '2009-10-22 19:09:00', 1)[0m
+
+
+Processing RacesController#destroy (for 0.0.0.0 at 2009-10-22 15:09:00) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/races
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/races/37]
+
+
+Processing RacesController#destroy (for 0.0.0.0 at 2009-10-22 15:09:00) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/races
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:09:00) [PUT]
+  Parameters: {"id"=>"37", "race"=>{"these"=>"params"}}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37?race%5Bthese%5D=params]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:09:00) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:09:00) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:09:00) [PUT]
+  Parameters: {"id"=>"37", "race"=>{"these"=>"params"}}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37?race%5Bthese%5D=params]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:09:00) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/races/1070
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:09:00) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/races/1071
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races/1]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 15:09:00) [POST]
+  Parameters: {"race"=>{"these"=>"params"}}
+Rendering template within layouts/races
+Rendering races/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races?race%5Bthese%5D=params]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 15:09:00) [POST]
+  Parameters: {"race"=>{}}
+Rendering template within layouts/races
+Rendering races/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races?]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 15:09:00) [POST]
+  Parameters: {"race"=>{"these"=>"params"}}
+Redirected to http://test.host/races/1074
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races?race%5Bthese%5D=params]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 15:09:00) [POST]
+  Parameters: {"race"=>{}}
+Redirected to http://test.host/races/1075
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races?]
+
+
+Processing RacesController#edit (for 0.0.0.0 at 2009-10-22 15:09:00) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37/edit]
+
+
+Processing RacesController#new (for 0.0.0.0 at 2009-10-22 15:09:00) [GET]
+Rendering template within layouts/races
+Rendering races/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/new]
+
+
+Processing RacesController#show (for 0.0.0.0 at 2009-10-22 15:09:00) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/races
+Rendering races/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37]
+
+
+Processing RacesController#index (for 0.0.0.0 at 2009-10-22 15:09:00) [GET]
+Rendering template within layouts/races
+Rendering races/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races]
+Rendering races/show.html.erb
+Rendering races/edit.html.erb
+Rendering races/index.html.erb
+Rendering races/new.html.erb
+  [4;35;1mCharacter Create (0.4ms)[0m   [0mINSERT INTO "characters" ("name", "race_id", "realm_id", "created_at", "updated_at", "class_id", "level", "gear_score", "faction_id") VALUES(NULL, NULL, NULL, '2009-10-22 19:09:00', '2009-10-22 19:09:00', NULL, NULL, NULL, NULL)[0m
+  [4;36;1mRace Load (0.2ms)[0m   [0;1mSELECT * FROM "races" WHERE ("races"."name" = 'Tauren') LIMIT 1[0m
+  [4;35;1mRealm Create (0.3ms)[0m   [0mINSERT INTO "realms" ("name", "created_at", "updated_at", "region_id") VALUES('Gorefiend', '2009-10-22 19:09:01', '2009-10-22 19:09:01', NULL)[0m
+  [4;36;1mCharacter Create (0.2ms)[0m   [0;1mINSERT INTO "characters" ("name", "race_id", "realm_id", "created_at", "updated_at", "class_id", "level", "gear_score", "faction_id") VALUES('Rexerengeti', NULL, 1, '2009-10-22 19:09:01', '2009-10-22 19:09:01', NULL, NULL, NULL, NULL)[0m
+Rendering raids/show.html.erb
+Rendering raids/new.html.erb
+Rendering raids/index.html.erb
+Rendering raids/edit.html.erb
+
+
+Processing FactionsController#destroy (for 0.0.0.0 at 2009-10-22 15:14:17) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/factions
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/factions/37]
+
+
+Processing FactionsController#destroy (for 0.0.0.0 at 2009-10-22 15:14:17) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:14:17) [PUT]
+  Parameters: {"id"=>"37", "faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:14:17) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:14:17) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:14:17) [PUT]
+  Parameters: {"id"=>"37", "faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:14:17) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions/1012
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:14:17) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions/1013
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 15:14:17) [POST]
+  Parameters: {"faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 15:14:17) [POST]
+  Parameters: {"faction"=>{}}
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions?]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 15:14:17) [POST]
+  Parameters: {"faction"=>{"these"=>"params"}}
+Redirected to http://test.host/factions/1016
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 15:14:17) [POST]
+  Parameters: {"faction"=>{}}
+Redirected to http://test.host/factions/1017
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions?]
+
+
+Processing FactionsController#edit (for 0.0.0.0 at 2009-10-22 15:14:17) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37/edit]
+
+
+Processing FactionsController#new (for 0.0.0.0 at 2009-10-22 15:14:17) [GET]
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/new]
+
+
+Processing FactionsController#show (for 0.0.0.0 at 2009-10-22 15:14:17) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/factions
+Rendering factions/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37]
+
+
+Processing FactionsController#index (for 0.0.0.0 at 2009-10-22 15:14:17) [GET]
+Rendering template within layouts/factions
+Rendering factions/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions]
+
+
+Processing CharactersController#destroy (for 0.0.0.0 at 2009-10-22 15:14:17) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/characters
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/characters/37]
+
+
+Processing CharactersController#destroy (for 0.0.0.0 at 2009-10-22 15:14:17) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/characters
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:14:17) [PUT]
+  Parameters: {"character"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37?character%5Bthese%5D=params]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:14:17) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:14:17) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:14:17) [PUT]
+  Parameters: {"character"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37?character%5Bthese%5D=params]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:14:17) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/characters/1028
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:14:17) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/characters/1029
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters/1]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 15:14:17) [POST]
+  Parameters: {"character"=>{"these"=>"params"}}
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters?character%5Bthese%5D=params]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 15:14:17) [POST]
+  Parameters: {"character"=>{}}
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters?]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 15:14:17) [POST]
+  Parameters: {"character"=>{"these"=>"params"}}
+Redirected to http://test.host/characters/1032
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters?character%5Bthese%5D=params]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 15:14:17) [POST]
+  Parameters: {"character"=>{}}
+Redirected to http://test.host/characters/1033
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters?]
+
+
+Processing CharactersController#edit (for 0.0.0.0 at 2009-10-22 15:14:17) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37/edit]
+
+
+Processing CharactersController#new (for 0.0.0.0 at 2009-10-22 15:14:17) [GET]
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/new]
+
+
+Processing CharactersController#show (for 0.0.0.0 at 2009-10-22 15:14:17) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37]
+
+
+Processing CharactersController#index (for 0.0.0.0 at 2009-10-22 15:14:17) [GET]
+Rendering template within layouts/characters
+Rendering characters/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters]
+
+
+Processing RaidsController#destroy (for 0.0.0.0 at 2009-10-22 15:14:17) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/raids
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/raids/37]
+
+
+Processing RaidsController#destroy (for 0.0.0.0 at 2009-10-22 15:14:17) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:14:17) [PUT]
+  Parameters: {"raid"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:14:17) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:14:17) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:14:17) [PUT]
+  Parameters: {"raid"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:14:17) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids/1044
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:14:17) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids/1045
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 15:14:17) [POST]
+  Parameters: {"raid"=>{"these"=>"params"}}
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 15:14:17) [POST]
+  Parameters: {"raid"=>{}}
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids?]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 15:14:17) [POST]
+  Parameters: {"raid"=>{"these"=>"params"}}
+Redirected to http://test.host/raids/1048
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 15:14:17) [POST]
+  Parameters: {"raid"=>{}}
+Redirected to http://test.host/raids/1049
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids?]
+
+
+Processing RaidsController#edit (for 0.0.0.0 at 2009-10-22 15:14:17) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37/edit]
+
+
+Processing RaidsController#new (for 0.0.0.0 at 2009-10-22 15:14:17) [GET]
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/new]
+
+
+Processing RaidsController#show (for 0.0.0.0 at 2009-10-22 15:14:17) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37]
+
+
+Processing RaidsController#index (for 0.0.0.0 at 2009-10-22 15:14:17) [GET]
+Rendering template within layouts/raids
+Rendering raids/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids]
+Rendering factions/show.html.erb
+Rendering factions/new.html.erb
+Rendering factions/index.html.erb
+Rendering factions/edit.html.erb
+Rendering characters/show.html.erb
+Rendering characters/new.html.erb
+Rendering characters/index.html.erb
+Rendering characters/edit.html.erb
+  [4;36;1mFaction Create (0.5ms)[0m   [0;1mINSERT INTO "factions" ("name", "created_at", "updated_at") VALUES('value for name', '2009-10-22 19:14:17', '2009-10-22 19:14:17')[0m
+  [4;35;1mRaid Create (0.4ms)[0m   [0mINSERT INTO "raids" ("tanks", "heals", "realm_id", "created_at", "code", "searchable", "instance_id", "min_gear_level", "updated_at", "creator_id", "raid_time", "protected", "dps", "raid_end_time", "password") VALUES(2, 3, NULL, '2009-10-22 19:14:17', '1234abcd', 't', 1, 2000, '2009-10-22 19:14:17', 1, '2009-10-27 19:14:17', 'f', 5, '2009-10-27 22:14:17', 'mynewraid')[0m
+  [4;36;1mRace Create (0.3ms)[0m   [0;1mINSERT INTO "races" ("name", "ability", "created_at", "updated_at", "faction_id") VALUES('value for name', 'value for ability', '2009-10-22 19:14:17', '2009-10-22 19:14:17', 1)[0m
+
+
+Processing RacesController#destroy (for 0.0.0.0 at 2009-10-22 15:14:17) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/races
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/races/37]
+
+
+Processing RacesController#destroy (for 0.0.0.0 at 2009-10-22 15:14:17) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/races
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:14:17) [PUT]
+  Parameters: {"id"=>"37", "race"=>{"these"=>"params"}}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37?race%5Bthese%5D=params]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:14:17) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:14:17) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:14:17) [PUT]
+  Parameters: {"id"=>"37", "race"=>{"these"=>"params"}}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37?race%5Bthese%5D=params]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:14:17) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/races/1070
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:14:17) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/races/1071
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races/1]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 15:14:17) [POST]
+  Parameters: {"race"=>{"these"=>"params"}}
+Rendering template within layouts/races
+Rendering races/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races?race%5Bthese%5D=params]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 15:14:17) [POST]
+  Parameters: {"race"=>{}}
+Rendering template within layouts/races
+Rendering races/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races?]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 15:14:17) [POST]
+  Parameters: {"race"=>{"these"=>"params"}}
+Redirected to http://test.host/races/1074
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races?race%5Bthese%5D=params]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 15:14:17) [POST]
+  Parameters: {"race"=>{}}
+Redirected to http://test.host/races/1075
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races?]
+
+
+Processing RacesController#edit (for 0.0.0.0 at 2009-10-22 15:14:17) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37/edit]
+
+
+Processing RacesController#new (for 0.0.0.0 at 2009-10-22 15:14:17) [GET]
+Rendering template within layouts/races
+Rendering races/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/new]
+
+
+Processing RacesController#show (for 0.0.0.0 at 2009-10-22 15:14:17) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/races
+Rendering races/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37]
+
+
+Processing RacesController#index (for 0.0.0.0 at 2009-10-22 15:14:17) [GET]
+Rendering template within layouts/races
+Rendering races/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races]
+Rendering races/show.html.erb
+Rendering races/edit.html.erb
+Rendering races/index.html.erb
+Rendering races/new.html.erb
+  [4;35;1mCharacter Create (0.3ms)[0m   [0mINSERT INTO "characters" ("name", "race_id", "realm_id", "created_at", "updated_at", "class_id", "level", "gear_score", "faction_id") VALUES(NULL, NULL, NULL, '2009-10-22 19:14:17', '2009-10-22 19:14:17', NULL, NULL, NULL, NULL)[0m
+  [4;36;1mRace Load (0.2ms)[0m   [0;1mSELECT * FROM "races" WHERE ("races"."name" = 'Tauren') LIMIT 1[0m
+Rendering raids/show.html.erb
+Rendering raids/new.html.erb
+Rendering raids/index.html.erb
+Rendering raids/edit.html.erb
+
+
+Processing FactionsController#destroy (for 0.0.0.0 at 2009-10-22 15:17:12) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/factions
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/factions/37]
+
+
+Processing FactionsController#destroy (for 0.0.0.0 at 2009-10-22 15:17:12) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:17:12) [PUT]
+  Parameters: {"id"=>"37", "faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:17:12) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:17:12) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:17:13) [PUT]
+  Parameters: {"id"=>"37", "faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:17:13) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions/1012
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:17:13) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions/1013
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 15:17:13) [POST]
+  Parameters: {"faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 15:17:13) [POST]
+  Parameters: {"faction"=>{}}
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions?]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 15:17:13) [POST]
+  Parameters: {"faction"=>{"these"=>"params"}}
+Redirected to http://test.host/factions/1016
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 15:17:13) [POST]
+  Parameters: {"faction"=>{}}
+Redirected to http://test.host/factions/1017
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions?]
+
+
+Processing FactionsController#edit (for 0.0.0.0 at 2009-10-22 15:17:13) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37/edit]
+
+
+Processing FactionsController#new (for 0.0.0.0 at 2009-10-22 15:17:13) [GET]
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/new]
+
+
+Processing FactionsController#show (for 0.0.0.0 at 2009-10-22 15:17:13) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/factions
+Rendering factions/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37]
+
+
+Processing FactionsController#index (for 0.0.0.0 at 2009-10-22 15:17:13) [GET]
+Rendering template within layouts/factions
+Rendering factions/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions]
+
+
+Processing CharactersController#destroy (for 0.0.0.0 at 2009-10-22 15:17:13) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/characters
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/characters/37]
+
+
+Processing CharactersController#destroy (for 0.0.0.0 at 2009-10-22 15:17:13) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/characters
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:17:13) [PUT]
+  Parameters: {"character"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37?character%5Bthese%5D=params]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:17:13) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:17:13) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:17:13) [PUT]
+  Parameters: {"character"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37?character%5Bthese%5D=params]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:17:13) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/characters/1028
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:17:13) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/characters/1029
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters/1]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 15:17:13) [POST]
+  Parameters: {"character"=>{"these"=>"params"}}
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters?character%5Bthese%5D=params]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 15:17:13) [POST]
+  Parameters: {"character"=>{}}
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters?]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 15:17:13) [POST]
+  Parameters: {"character"=>{"these"=>"params"}}
+Redirected to http://test.host/characters/1032
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters?character%5Bthese%5D=params]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 15:17:13) [POST]
+  Parameters: {"character"=>{}}
+Redirected to http://test.host/characters/1033
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters?]
+
+
+Processing CharactersController#edit (for 0.0.0.0 at 2009-10-22 15:17:13) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37/edit]
+
+
+Processing CharactersController#new (for 0.0.0.0 at 2009-10-22 15:17:13) [GET]
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/new]
+
+
+Processing CharactersController#show (for 0.0.0.0 at 2009-10-22 15:17:13) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37]
+
+
+Processing CharactersController#index (for 0.0.0.0 at 2009-10-22 15:17:13) [GET]
+Rendering template within layouts/characters
+Rendering characters/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters]
+
+
+Processing RaidsController#destroy (for 0.0.0.0 at 2009-10-22 15:17:13) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/raids
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/raids/37]
+
+
+Processing RaidsController#destroy (for 0.0.0.0 at 2009-10-22 15:17:13) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:17:13) [PUT]
+  Parameters: {"raid"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:17:13) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:17:13) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:17:13) [PUT]
+  Parameters: {"raid"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:17:13) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids/1044
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:17:13) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids/1045
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 15:17:13) [POST]
+  Parameters: {"raid"=>{"these"=>"params"}}
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 15:17:13) [POST]
+  Parameters: {"raid"=>{}}
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids?]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 15:17:13) [POST]
+  Parameters: {"raid"=>{"these"=>"params"}}
+Redirected to http://test.host/raids/1048
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 15:17:13) [POST]
+  Parameters: {"raid"=>{}}
+Redirected to http://test.host/raids/1049
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids?]
+
+
+Processing RaidsController#edit (for 0.0.0.0 at 2009-10-22 15:17:13) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37/edit]
+
+
+Processing RaidsController#new (for 0.0.0.0 at 2009-10-22 15:17:13) [GET]
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/new]
+
+
+Processing RaidsController#show (for 0.0.0.0 at 2009-10-22 15:17:13) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37]
+
+
+Processing RaidsController#index (for 0.0.0.0 at 2009-10-22 15:17:13) [GET]
+Rendering template within layouts/raids
+Rendering raids/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids]
+Rendering factions/show.html.erb
+Rendering factions/new.html.erb
+Rendering factions/index.html.erb
+Rendering factions/edit.html.erb
+Rendering characters/show.html.erb
+Rendering characters/new.html.erb
+Rendering characters/index.html.erb
+Rendering characters/edit.html.erb
+  [4;36;1mFaction Create (0.5ms)[0m   [0;1mINSERT INTO "factions" ("name", "created_at", "updated_at") VALUES('value for name', '2009-10-22 19:17:13', '2009-10-22 19:17:13')[0m
+  [4;35;1mRaid Create (0.4ms)[0m   [0mINSERT INTO "raids" ("tanks", "heals", "realm_id", "created_at", "code", "searchable", "instance_id", "min_gear_level", "updated_at", "creator_id", "raid_time", "protected", "dps", "raid_end_time", "password") VALUES(2, 3, NULL, '2009-10-22 19:17:13', '1234abcd', 't', 1, 2000, '2009-10-22 19:17:13', 1, '2009-10-27 19:17:13', 'f', 5, '2009-10-27 22:17:13', 'mynewraid')[0m
+  [4;36;1mRace Create (0.3ms)[0m   [0;1mINSERT INTO "races" ("name", "ability", "created_at", "updated_at", "faction_id") VALUES('value for name', 'value for ability', '2009-10-22 19:17:13', '2009-10-22 19:17:13', 1)[0m
+
+
+Processing RacesController#destroy (for 0.0.0.0 at 2009-10-22 15:17:13) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/races
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/races/37]
+
+
+Processing RacesController#destroy (for 0.0.0.0 at 2009-10-22 15:17:13) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/races
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:17:13) [PUT]
+  Parameters: {"id"=>"37", "race"=>{"these"=>"params"}}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37?race%5Bthese%5D=params]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:17:13) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:17:13) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:17:13) [PUT]
+  Parameters: {"id"=>"37", "race"=>{"these"=>"params"}}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37?race%5Bthese%5D=params]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:17:13) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/races/1070
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:17:13) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/races/1071
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races/1]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 15:17:13) [POST]
+  Parameters: {"race"=>{"these"=>"params"}}
+Rendering template within layouts/races
+Rendering races/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races?race%5Bthese%5D=params]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 15:17:13) [POST]
+  Parameters: {"race"=>{}}
+Rendering template within layouts/races
+Rendering races/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races?]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 15:17:13) [POST]
+  Parameters: {"race"=>{"these"=>"params"}}
+Redirected to http://test.host/races/1074
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races?race%5Bthese%5D=params]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 15:17:13) [POST]
+  Parameters: {"race"=>{}}
+Redirected to http://test.host/races/1075
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races?]
+
+
+Processing RacesController#edit (for 0.0.0.0 at 2009-10-22 15:17:13) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37/edit]
+
+
+Processing RacesController#new (for 0.0.0.0 at 2009-10-22 15:17:13) [GET]
+Rendering template within layouts/races
+Rendering races/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/new]
+
+
+Processing RacesController#show (for 0.0.0.0 at 2009-10-22 15:17:13) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/races
+Rendering races/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37]
+
+
+Processing RacesController#index (for 0.0.0.0 at 2009-10-22 15:17:13) [GET]
+Rendering template within layouts/races
+Rendering races/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races]
+Rendering races/show.html.erb
+Rendering races/edit.html.erb
+Rendering races/index.html.erb
+Rendering races/new.html.erb
+  [4;35;1mCharacter Create (0.4ms)[0m   [0mINSERT INTO "characters" ("name", "race_id", "realm_id", "created_at", "updated_at", "class_id", "level", "gear_score", "faction_id") VALUES(NULL, NULL, NULL, '2009-10-22 19:17:13', '2009-10-22 19:17:13', NULL, NULL, NULL, NULL)[0m
+  [4;36;1mRace Load (0.2ms)[0m   [0;1mSELECT * FROM "races" WHERE ("races"."name" = 'Tauren') LIMIT 1[0m
+  [4;35;1mRealm Create (0.3ms)[0m   [0mINSERT INTO "realms" ("name", "created_at", "updated_at", "region_id") VALUES('Gorefiend', '2009-10-22 19:17:13', '2009-10-22 19:17:13', NULL)[0m
+  [4;36;1mCharacter Create (0.1ms)[0m   [0;1mINSERT INTO "characters" ("name", "race_id", "realm_id", "created_at", "updated_at", "class_id", "level", "gear_score", "faction_id") VALUES('Rexerengeti', NULL, 1, '2009-10-22 19:17:13', '2009-10-22 19:17:13', NULL, NULL, NULL, NULL)[0m
+Rendering raids/show.html.erb
+Rendering raids/new.html.erb
+Rendering raids/index.html.erb
+Rendering raids/edit.html.erb
+
+
+Processing FactionsController#destroy (for 0.0.0.0 at 2009-10-22 15:19:46) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/factions
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/factions/37]
+
+
+Processing FactionsController#destroy (for 0.0.0.0 at 2009-10-22 15:19:46) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:19:46) [PUT]
+  Parameters: {"id"=>"37", "faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:19:46) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:19:46) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:19:46) [PUT]
+  Parameters: {"id"=>"37", "faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:19:46) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions/1012
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:19:46) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions/1013
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 15:19:46) [POST]
+  Parameters: {"faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 15:19:46) [POST]
+  Parameters: {"faction"=>{}}
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions?]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 15:19:46) [POST]
+  Parameters: {"faction"=>{"these"=>"params"}}
+Redirected to http://test.host/factions/1016
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 15:19:46) [POST]
+  Parameters: {"faction"=>{}}
+Redirected to http://test.host/factions/1017
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions?]
+
+
+Processing FactionsController#edit (for 0.0.0.0 at 2009-10-22 15:19:46) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37/edit]
+
+
+Processing FactionsController#new (for 0.0.0.0 at 2009-10-22 15:19:46) [GET]
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/new]
+
+
+Processing FactionsController#show (for 0.0.0.0 at 2009-10-22 15:19:46) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/factions
+Rendering factions/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37]
+
+
+Processing FactionsController#index (for 0.0.0.0 at 2009-10-22 15:19:46) [GET]
+Rendering template within layouts/factions
+Rendering factions/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions]
+
+
+Processing CharactersController#destroy (for 0.0.0.0 at 2009-10-22 15:19:46) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/characters
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/characters/37]
+
+
+Processing CharactersController#destroy (for 0.0.0.0 at 2009-10-22 15:19:46) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/characters
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:19:46) [PUT]
+  Parameters: {"character"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37?character%5Bthese%5D=params]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:19:46) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:19:46) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:19:46) [PUT]
+  Parameters: {"character"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37?character%5Bthese%5D=params]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:19:46) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/characters/1028
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:19:46) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/characters/1029
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters/1]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 15:19:46) [POST]
+  Parameters: {"character"=>{"these"=>"params"}}
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters?character%5Bthese%5D=params]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 15:19:46) [POST]
+  Parameters: {"character"=>{}}
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters?]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 15:19:46) [POST]
+  Parameters: {"character"=>{"these"=>"params"}}
+Redirected to http://test.host/characters/1032
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters?character%5Bthese%5D=params]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 15:19:46) [POST]
+  Parameters: {"character"=>{}}
+Redirected to http://test.host/characters/1033
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters?]
+
+
+Processing CharactersController#edit (for 0.0.0.0 at 2009-10-22 15:19:46) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37/edit]
+
+
+Processing CharactersController#new (for 0.0.0.0 at 2009-10-22 15:19:46) [GET]
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/new]
+
+
+Processing CharactersController#show (for 0.0.0.0 at 2009-10-22 15:19:46) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37]
+
+
+Processing CharactersController#index (for 0.0.0.0 at 2009-10-22 15:19:46) [GET]
+Rendering template within layouts/characters
+Rendering characters/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters]
+
+
+Processing RaidsController#destroy (for 0.0.0.0 at 2009-10-22 15:19:46) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/raids
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/raids/37]
+
+
+Processing RaidsController#destroy (for 0.0.0.0 at 2009-10-22 15:19:46) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:19:46) [PUT]
+  Parameters: {"raid"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:19:46) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:19:46) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:19:46) [PUT]
+  Parameters: {"raid"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:19:46) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids/1044
+Completed in 67ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:19:46) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids/1045
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 15:19:46) [POST]
+  Parameters: {"raid"=>{"these"=>"params"}}
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 15:19:46) [POST]
+  Parameters: {"raid"=>{}}
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids?]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 15:19:46) [POST]
+  Parameters: {"raid"=>{"these"=>"params"}}
+Redirected to http://test.host/raids/1048
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 15:19:46) [POST]
+  Parameters: {"raid"=>{}}
+Redirected to http://test.host/raids/1049
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids?]
+
+
+Processing RaidsController#edit (for 0.0.0.0 at 2009-10-22 15:19:46) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37/edit]
+
+
+Processing RaidsController#new (for 0.0.0.0 at 2009-10-22 15:19:46) [GET]
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/new]
+
+
+Processing RaidsController#show (for 0.0.0.0 at 2009-10-22 15:19:46) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37]
+
+
+Processing RaidsController#index (for 0.0.0.0 at 2009-10-22 15:19:46) [GET]
+Rendering template within layouts/raids
+Rendering raids/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids]
+Rendering factions/show.html.erb
+Rendering factions/new.html.erb
+Rendering factions/index.html.erb
+Rendering factions/edit.html.erb
+Rendering characters/show.html.erb
+Rendering characters/new.html.erb
+Rendering characters/index.html.erb
+Rendering characters/edit.html.erb
+  [4;36;1mFaction Create (0.5ms)[0m   [0;1mINSERT INTO "factions" ("name", "created_at", "updated_at") VALUES('value for name', '2009-10-22 19:19:46', '2009-10-22 19:19:46')[0m
+  [4;35;1mRaid Create (0.4ms)[0m   [0mINSERT INTO "raids" ("tanks", "heals", "realm_id", "created_at", "code", "searchable", "instance_id", "min_gear_level", "updated_at", "creator_id", "raid_time", "protected", "dps", "raid_end_time", "password") VALUES(2, 3, NULL, '2009-10-22 19:19:46', '1234abcd', 't', 1, 2000, '2009-10-22 19:19:46', 1, '2009-10-27 19:19:46', 'f', 5, '2009-10-27 22:19:46', 'mynewraid')[0m
+  [4;36;1mRace Create (0.3ms)[0m   [0;1mINSERT INTO "races" ("name", "ability", "created_at", "updated_at", "faction_id") VALUES('value for name', 'value for ability', '2009-10-22 19:19:46', '2009-10-22 19:19:46', 1)[0m
+
+
+Processing RacesController#destroy (for 0.0.0.0 at 2009-10-22 15:19:46) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/races
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/races/37]
+
+
+Processing RacesController#destroy (for 0.0.0.0 at 2009-10-22 15:19:46) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/races
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:19:46) [PUT]
+  Parameters: {"id"=>"37", "race"=>{"these"=>"params"}}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37?race%5Bthese%5D=params]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:19:46) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:19:46) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:19:46) [PUT]
+  Parameters: {"id"=>"37", "race"=>{"these"=>"params"}}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37?race%5Bthese%5D=params]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:19:46) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/races/1070
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:19:46) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/races/1071
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races/1]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 15:19:46) [POST]
+  Parameters: {"race"=>{"these"=>"params"}}
+Rendering template within layouts/races
+Rendering races/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races?race%5Bthese%5D=params]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 15:19:46) [POST]
+  Parameters: {"race"=>{}}
+Rendering template within layouts/races
+Rendering races/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races?]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 15:19:46) [POST]
+  Parameters: {"race"=>{"these"=>"params"}}
+Redirected to http://test.host/races/1074
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races?race%5Bthese%5D=params]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 15:19:46) [POST]
+  Parameters: {"race"=>{}}
+Redirected to http://test.host/races/1075
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races?]
+
+
+Processing RacesController#edit (for 0.0.0.0 at 2009-10-22 15:19:46) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37/edit]
+
+
+Processing RacesController#new (for 0.0.0.0 at 2009-10-22 15:19:46) [GET]
+Rendering template within layouts/races
+Rendering races/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/new]
+
+
+Processing RacesController#show (for 0.0.0.0 at 2009-10-22 15:19:46) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/races
+Rendering races/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37]
+
+
+Processing RacesController#index (for 0.0.0.0 at 2009-10-22 15:19:46) [GET]
+Rendering template within layouts/races
+Rendering races/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races]
+Rendering races/show.html.erb
+Rendering races/edit.html.erb
+Rendering races/index.html.erb
+Rendering races/new.html.erb
+  [4;35;1mCharacter Create (0.4ms)[0m   [0mINSERT INTO "characters" ("name", "race_id", "realm_id", "created_at", "updated_at", "class_id", "level", "gear_score", "faction_id") VALUES(NULL, NULL, NULL, '2009-10-22 19:19:46', '2009-10-22 19:19:46', NULL, NULL, NULL, NULL)[0m
+  [4;36;1mRace Load (0.2ms)[0m   [0;1mSELECT * FROM "races" WHERE ("races"."name" = 'Tauren') LIMIT 1[0m
+  [4;35;1mRealm Create (0.3ms)[0m   [0mINSERT INTO "realms" ("name", "created_at", "updated_at", "region_id") VALUES('Gorefiend', '2009-10-22 19:19:47', '2009-10-22 19:19:47', NULL)[0m
+  [4;36;1mCharacter Create (0.2ms)[0m   [0;1mINSERT INTO "characters" ("name", "race_id", "realm_id", "created_at", "updated_at", "class_id", "level", "gear_score", "faction_id") VALUES('Rexerengeti', NULL, 1, '2009-10-22 19:19:47', '2009-10-22 19:19:47', NULL, NULL, NULL, NULL)[0m
+Rendering raids/show.html.erb
+Rendering raids/new.html.erb
+Rendering raids/index.html.erb
+Rendering raids/edit.html.erb
+
+
+Processing FactionsController#destroy (for 0.0.0.0 at 2009-10-22 15:24:37) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/factions
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/factions/37]
+
+
+Processing FactionsController#destroy (for 0.0.0.0 at 2009-10-22 15:24:37) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:24:37) [PUT]
+  Parameters: {"id"=>"37", "faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:24:37) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:24:37) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:24:37) [PUT]
+  Parameters: {"id"=>"37", "faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:24:37) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions/1012
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#update (for 0.0.0.0 at 2009-10-22 15:24:37) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/factions/1013
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions/1]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 15:24:37) [POST]
+  Parameters: {"faction"=>{"these"=>"params"}}
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 15:24:37) [POST]
+  Parameters: {"faction"=>{}}
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions?]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 15:24:37) [POST]
+  Parameters: {"faction"=>{"these"=>"params"}}
+Redirected to http://test.host/factions/1016
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions?faction%5Bthese%5D=params]
+
+
+Processing FactionsController#create (for 0.0.0.0 at 2009-10-22 15:24:37) [POST]
+  Parameters: {"faction"=>{}}
+Redirected to http://test.host/factions/1017
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/factions?]
+
+
+Processing FactionsController#edit (for 0.0.0.0 at 2009-10-22 15:24:37) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/factions
+Rendering factions/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37/edit]
+
+
+Processing FactionsController#new (for 0.0.0.0 at 2009-10-22 15:24:37) [GET]
+Rendering template within layouts/factions
+Rendering factions/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/new]
+
+
+Processing FactionsController#show (for 0.0.0.0 at 2009-10-22 15:24:37) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/factions
+Rendering factions/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions/37]
+
+
+Processing FactionsController#index (for 0.0.0.0 at 2009-10-22 15:24:37) [GET]
+Rendering template within layouts/factions
+Rendering factions/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/factions]
+
+
+Processing CharactersController#destroy (for 0.0.0.0 at 2009-10-22 15:24:37) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/characters
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/characters/37]
+
+
+Processing CharactersController#destroy (for 0.0.0.0 at 2009-10-22 15:24:37) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/characters
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:24:37) [PUT]
+  Parameters: {"character"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37?character%5Bthese%5D=params]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:24:37) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:24:37) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:24:37) [PUT]
+  Parameters: {"character"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37?character%5Bthese%5D=params]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:24:37) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/characters/1028
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters/1]
+
+
+Processing CharactersController#update (for 0.0.0.0 at 2009-10-22 15:24:37) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/characters/1029
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters/1]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 15:24:37) [POST]
+  Parameters: {"character"=>{"these"=>"params"}}
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters?character%5Bthese%5D=params]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 15:24:37) [POST]
+  Parameters: {"character"=>{}}
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters?]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 15:24:37) [POST]
+  Parameters: {"character"=>{"these"=>"params"}}
+Redirected to http://test.host/characters/1032
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters?character%5Bthese%5D=params]
+
+
+Processing CharactersController#create (for 0.0.0.0 at 2009-10-22 15:24:37) [POST]
+  Parameters: {"character"=>{}}
+Redirected to http://test.host/characters/1033
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/characters?]
+
+
+Processing CharactersController#edit (for 0.0.0.0 at 2009-10-22 15:24:37) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37/edit]
+
+
+Processing CharactersController#new (for 0.0.0.0 at 2009-10-22 15:24:37) [GET]
+Rendering template within layouts/characters
+Rendering characters/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/new]
+
+
+Processing CharactersController#show (for 0.0.0.0 at 2009-10-22 15:24:37) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/characters
+Rendering characters/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters/37]
+
+
+Processing CharactersController#index (for 0.0.0.0 at 2009-10-22 15:24:37) [GET]
+Rendering template within layouts/characters
+Rendering characters/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/characters]
+
+
+Processing RaidsController#destroy (for 0.0.0.0 at 2009-10-22 15:24:37) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/raids
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/raids/37]
+
+
+Processing RaidsController#destroy (for 0.0.0.0 at 2009-10-22 15:24:37) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:24:37) [PUT]
+  Parameters: {"raid"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:24:37) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:24:37) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:24:37) [PUT]
+  Parameters: {"raid"=>{"these"=>"params"}, "id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:24:37) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids/1044
+Completed in 67ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#update (for 0.0.0.0 at 2009-10-22 15:24:37) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/raids/1045
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids/1]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 15:24:37) [POST]
+  Parameters: {"raid"=>{"these"=>"params"}}
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 15:24:37) [POST]
+  Parameters: {"raid"=>{}}
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids?]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 15:24:37) [POST]
+  Parameters: {"raid"=>{"these"=>"params"}}
+Redirected to http://test.host/raids/1048
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids?raid%5Bthese%5D=params]
+
+
+Processing RaidsController#create (for 0.0.0.0 at 2009-10-22 15:24:37) [POST]
+  Parameters: {"raid"=>{}}
+Redirected to http://test.host/raids/1049
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/raids?]
+
+
+Processing RaidsController#edit (for 0.0.0.0 at 2009-10-22 15:24:37) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37/edit]
+
+
+Processing RaidsController#new (for 0.0.0.0 at 2009-10-22 15:24:37) [GET]
+Rendering template within layouts/raids
+Rendering raids/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/new]
+
+
+Processing RaidsController#show (for 0.0.0.0 at 2009-10-22 15:24:37) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/raids
+Rendering raids/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids/37]
+
+
+Processing RaidsController#index (for 0.0.0.0 at 2009-10-22 15:24:37) [GET]
+Rendering template within layouts/raids
+Rendering raids/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/raids]
+Rendering factions/show.html.erb
+Rendering factions/new.html.erb
+Rendering factions/index.html.erb
+Rendering factions/edit.html.erb
+Rendering characters/show.html.erb
+Rendering characters/new.html.erb
+Rendering characters/index.html.erb
+Rendering characters/edit.html.erb
+  [4;36;1mFaction Create (0.5ms)[0m   [0;1mINSERT INTO "factions" ("name", "created_at", "updated_at") VALUES('value for name', '2009-10-22 19:24:37', '2009-10-22 19:24:37')[0m
+  [4;35;1mRaid Create (0.4ms)[0m   [0mINSERT INTO "raids" ("tanks", "heals", "realm_id", "created_at", "code", "searchable", "instance_id", "min_gear_level", "updated_at", "creator_id", "raid_time", "protected", "dps", "raid_end_time", "password") VALUES(2, 3, NULL, '2009-10-22 19:24:37', '1234abcd', 't', 1, 2000, '2009-10-22 19:24:37', 1, '2009-10-27 19:24:37', 'f', 5, '2009-10-27 22:24:37', 'mynewraid')[0m
+  [4;36;1mRace Create (0.3ms)[0m   [0;1mINSERT INTO "races" ("name", "ability", "created_at", "updated_at", "faction_id") VALUES('value for name', 'value for ability', '2009-10-22 19:24:37', '2009-10-22 19:24:37', 1)[0m
+
+
+Processing RacesController#destroy (for 0.0.0.0 at 2009-10-22 15:24:37) [DELETE]
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/races
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/races/37]
+
+
+Processing RacesController#destroy (for 0.0.0.0 at 2009-10-22 15:24:37) [DELETE]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/races
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:24:37) [PUT]
+  Parameters: {"id"=>"37", "race"=>{"these"=>"params"}}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37?race%5Bthese%5D=params]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:24:37) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:24:37) [PUT]
+  Parameters: {"id"=>"1"}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:24:37) [PUT]
+  Parameters: {"id"=>"37", "race"=>{"these"=>"params"}}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37?race%5Bthese%5D=params]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:24:37) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/races/1070
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races/1]
+
+
+Processing RacesController#update (for 0.0.0.0 at 2009-10-22 15:24:37) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/races/1071
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races/1]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 15:24:37) [POST]
+  Parameters: {"race"=>{"these"=>"params"}}
+Rendering template within layouts/races
+Rendering races/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races?race%5Bthese%5D=params]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 15:24:37) [POST]
+  Parameters: {"race"=>{}}
+Rendering template within layouts/races
+Rendering races/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races?]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 15:24:37) [POST]
+  Parameters: {"race"=>{"these"=>"params"}}
+Redirected to http://test.host/races/1074
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races?race%5Bthese%5D=params]
+
+
+Processing RacesController#create (for 0.0.0.0 at 2009-10-22 15:24:37) [POST]
+  Parameters: {"race"=>{}}
+Redirected to http://test.host/races/1075
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/races?]
+
+
+Processing RacesController#edit (for 0.0.0.0 at 2009-10-22 15:24:37) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/races
+Rendering races/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37/edit]
+
+
+Processing RacesController#new (for 0.0.0.0 at 2009-10-22 15:24:37) [GET]
+Rendering template within layouts/races
+Rendering races/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/new]
+
+
+Processing RacesController#show (for 0.0.0.0 at 2009-10-22 15:24:37) [GET]
+  Parameters: {"id"=>"37"}
+Rendering template within layouts/races
+Rendering races/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races/37]
+
+
+Processing RacesController#index (for 0.0.0.0 at 2009-10-22 15:24:37) [GET]
+Rendering template within layouts/races
+Rendering races/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/races]
+Rendering races/show.html.erb
+Rendering races/edit.html.erb
+Rendering races/index.html.erb
+Rendering races/new.html.erb
+  [4;35;1mRace Create (0.3ms)[0m   [0mINSERT INTO "races" ("name", "ability", "created_at", "updated_at", "faction_id") VALUES('Tauren', NULL, '2009-10-22 19:24:37', '2009-10-22 19:24:37', NULL)[0m
+  [4;36;1mCharacter Create (0.4ms)[0m   [0;1mINSERT INTO "characters" ("name", "race_id", "realm_id", "created_at", "updated_at", "class_id", "level", "gear_score", "faction_id") VALUES(NULL, NULL, NULL, '2009-10-22 19:24:37', '2009-10-22 19:24:37', NULL, NULL, NULL, NULL)[0m
+  [4;35;1mRace Load (0.4ms)[0m   [0mSELECT * FROM "races" WHERE ("races"."name" = 'Tauren') LIMIT 1[0m
+  [4;36;1mRealm Create (0.4ms)[0m   [0;1mINSERT INTO "realms" ("name", "created_at", "updated_at", "region_id") VALUES('Gorefiend', '2009-10-22 19:24:38', '2009-10-22 19:24:38', NULL)[0m
+  [4;35;1mCharacter Create (0.1ms)[0m   [0mINSERT INTO "characters" ("name", "race_id", "realm_id", "created_at", "updated_at", "class_id", "level", "gear_score", "faction_id") VALUES('Rexerengeti', 1, 1, '2009-10-22 19:24:38', '2009-10-22 19:24:38', NULL, NULL, NULL, NULL)[0m
