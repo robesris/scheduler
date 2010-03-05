@@ -6,3 +6,15 @@ class RealmTest < ActiveSupport::TestCase
     assert true
   end
 end
+
+# == Schema Information
+#
+# Table name: realms
+#
+#  id         :integer         not null, primary key
+#  name       :string(255)
+#  region_id  :integer
+#  created_at :datetime
+#  updated_at :datetime
+#
+

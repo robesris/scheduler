@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091022180156) do
+ActiveRecord::Schema.define(:version => 20100305043000) do
 
   create_table "character_raid", :id => false, :force => true do |t|
     t.integer "character_id", :null => false
@@ -45,20 +45,14 @@ ActiveRecord::Schema.define(:version => 20091022180156) do
     t.datetime "updated_at"
   end
 
-  create_table "instance_names", :force => true do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "instances", :force => true do |t|
-    t.integer  "instance_name_id"
     t.integer  "size"
     t.integer  "expansion_id"
     t.integer  "level"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "difficulty"
+    t.string   "name"
   end
 
   create_table "races", :force => true do |t|

@@ -9,3 +9,16 @@ two:
   name: MyString
   ability: MyString
   faction_id: 1
+
+# == Schema Information
+#
+# Table name: races
+#
+#  id         :integer         not null, primary key
+#  name       :string(255)
+#  ability    :string(255)
+#  faction_id :integer
+#  created_at :datetime
+#  updated_at :datetime
+#
+

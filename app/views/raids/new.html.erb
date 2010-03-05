@@ -5,7 +5,7 @@
 
   <p>
     <%= f.label :instance_id %><br />
-    <%= f.text_field :instance_id %>
+    <%= f.select :instance_id, Instance.find(:all).collect {|i| [i.name, i.id] }%>
   </p>
   <p>
     <%= f.label :raid_time %><br />

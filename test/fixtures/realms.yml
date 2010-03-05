@@ -7,3 +7,15 @@ one:
 two:
   name: MyString
   region_id: 1
+
+# == Schema Information
+#
+# Table name: realms
+#
+#  id         :integer         not null, primary key
+#  name       :string(255)
+#  region_id  :integer
+#  created_at :datetime
+#  updated_at :datetime
+#
+
