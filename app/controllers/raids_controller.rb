@@ -44,7 +44,7 @@ class RaidsController < ApplicationController
 
     respond_to do |format|
       if @raid.save
-        flash[:notice] = 'Raid was successfully created.'
+        flash[:notice] = 'Raid created successfully!'
         format.html { redirect_to(@raid) }
         format.xml  { render :xml => @raid, :status => :created, :location => @raid }
       else

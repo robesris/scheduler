@@ -1,3 +1,5 @@
+<p><%= @raid.instance.name %></p>
+
 <p>
   <b>Instance:</b>
   <%=h @raid.instance_id %>
@@ -5,7 +7,7 @@
 
 <p>
   <b>Raid time:</b>
-  <%=h @raid.raid_time %>
+  <%=h @raid.raid_time.strftime("%m/%d/%Y %I:%M %p") %>
 </p>
 
 <p>

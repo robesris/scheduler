@@ -8,8 +8,8 @@
     <%= f.select :instance_id, Instance.find(:all).collect {|i| [i.name, i.id] }%>
   </p>
   <p>
-    <%= f.label :raid_time %><br />
-    <%= f.datetime_select :raid_time %>
+    <%= f.label :raid_time, "Raid Start Date and Time" %><br />
+    <%= calendar_date_select_tag :raid_raid_time, nil, :time => true, :name => "raid[raid_time]" %>
   </p>
   <p>
     <%= f.label :raid_end_time %><br />

@@ -13,7 +13,7 @@ class Raid < ActiveRecord::Base
   end
   
   validates_each :raid_end_time do |record, attr, value|
-    record.errors.add attr, 'End time must be later than start time.' if (record.raid_time != nil) && (value <= record.raid_time)
+    record.errors.add attr, 'End time must be later than start time.' if (record.raid_end_time != nil) && (value <= record.raid_time)
   end
 
   def full?
