@@ -23,7 +23,7 @@ describe "/raids/new.html.erb" do
     render
     
     response.should have_tag("form[action=?][method=post]", raids_path) do
-      with_tag("input#raid_instance_id[name=?]", "raid[instance_id]")
+      with_tag("select#raid_instance_id[name=?]", "raid[instance_id]")
       with_tag("input#raid_code[name=?]", "raid[code]")
       with_tag("input#raid_password[name=?]", "raid[password]")
       with_tag("input#raid_searchable[name=?]", "raid[searchable]")

@@ -3,13 +3,11 @@ require File.expand_path(File.dirname(__FILE__) + '/../../spec_helper')
 describe "/raids/show.html.erb" do
   include RaidsHelper
   before(:each) do
-    assigns[:raid] = @raid = stub_model(Raid,
-      :instance_id => 1,
+    assigns[:raid] = Factory.create(:raid,
       :code => "value for code",
       :password => "value for password",
       :searchable => false,
       :protected => false,
-      :creator_id => 1,
       :min_gear_level => 1,
       :tanks => 1,
       :heals => 1,
