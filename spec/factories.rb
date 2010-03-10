@@ -1,6 +1,7 @@
 Factory.define :character do |c|
   c.name 'Rexerengeti'
   c.association :realm, :factory => :realm
+  c.association :faction, :factory => :horde
 end
 
 Factory.define :alliance, :class => Faction do |f|
@@ -14,6 +15,13 @@ end
 Factory.define :instance do |i|
   i.name 'Naxxramas'
   i.size 25
+end
+
+Factory.define :raid do |r|
+  r.raid_time   1.week.since(Time.now)
+  r.code        "1234567"
+  r.association :instance
+  r.association :creator, :factory => :character
 end
 
 Factory.define :realm do |r|
