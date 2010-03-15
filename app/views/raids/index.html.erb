@@ -30,6 +30,7 @@
     <td><%=h raid.tanks %></td>
     <td><%=h raid.heals %></td>
     <td><%=h raid.dps %></td>
+    <td><%= link_to 'join', sign_up_raid_path(raid), :method => :put %></td>
     <td><%= link_to 'Show', raid %></td>
     <td><%= link_to 'Edit', edit_raid_path(raid) %></td>
     <td><%= link_to 'Destroy', raid, :confirm => 'Are you sure?', :method => :delete %></td>

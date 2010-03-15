@@ -6,6 +6,10 @@ describe RaidsController do
     @mock_raid ||= mock_model(Raid, stubs)
   end
   
+  def factory_raid
+    @factory_raid ||= Factory.create(:raid)
+  end
+  
   describe "GET index" do
     it "assigns all raids as @raids" do
       Raid.stub!(:find).with(:all).and_return([mock_raid])
@@ -69,6 +73,18 @@ describe RaidsController do
     end
     
   end
+
+  describe "PUT join" do
+    
+    describe "with valid params" do
+      it "displays a join form" do
+        Raid.should_receive(:find).with("10").and_return(factory_raid)
+        put :join, :id => "10"
+        response.should render_template('join')
+      end
+    end
+  end
+        
 
   describe "PUT update" do
     

@@ -9,7 +9,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :realms
 
-  map.resources :raids
+  map.resources :raids, :member => { :sign_up => :put }
 
   map.resources :expansions
 
