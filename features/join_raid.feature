@@ -15,7 +15,7 @@ Feature: Join Raid
     When I follow "join"
     #And I fill in raid slot number "1" with "Rexerengeti"
     And I fill in "Character Name" with "Rexerengeti"
-    And I press "Save"
+    And I press "Sign Up"
     Then I should see "You successfully signed up for the raid!"
     And I should see "Rexerengeti"
     

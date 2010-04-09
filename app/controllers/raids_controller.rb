@@ -1,9 +1,10 @@
 class RaidsController < ApplicationController
   
   # PUT /raids/1/sign_up
-  def sign_up
-    @raid = Raid.find(params[:id])
-  end
+  # def sign_up
+  #   @raid = Raid.find(params[:id])
+  #   @sign_up = SignUp.new(:raid => @raid)
+  # end
   
   # GET /raids
   # GET /raids.xml

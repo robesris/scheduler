@@ -60,6 +60,14 @@
   <%=h @raid.dps %>
 </p>
 
+<p>
+  <b>Members:</b>
+  <% @raid.sign_ups.each do |sign_up| %>
+    <%= sign_up.character.name %>
+  <% end %>
+</p>
+    
+
 
 <%= link_to 'Edit', edit_raid_path(@raid) %> |
 <%= link_to 'Back', raids_path %>

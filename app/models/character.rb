@@ -1,6 +1,7 @@
 class Character < ActiveRecord::Base
   has_and_belongs_to_many :raids
   has_and_belongs_to_many :roles
+  has_many :sign_ups
   belongs_to :race
   belongs_to :realm
   belongs_to :faction
