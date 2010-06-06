@@ -13,6 +13,10 @@ describe "/raids/show.html.erb" do
       :heals => 1,
       :dps => 1
     )
+    
+    assigns[:sign_up] = Factory.create(:sign_up,
+      :raid_id => assigns[:raid].id
+    )
   end
 
   it "renders attributes in <p>" do
