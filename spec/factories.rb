@@ -12,6 +12,10 @@ Factory.define :horde, :class => Faction do |f|
   f.name 'Horde'
 end
 
+Factory.define :role do |r|
+  r.name 'Tank'
+end
+
 Factory.define :instance do |i|
   i.name 'Naxxramas'
   i.size 25
@@ -22,6 +26,12 @@ Factory.define :raid do |r|
   r.code        "1234567"
   r.association :instance
   r.association :creator, :factory => :character
+end
+
+Factory.define :sign_up do |s|
+  s.association :character
+  s.association :role
+  s.association :raid
 end
 
 Factory.define :realm do |r|
