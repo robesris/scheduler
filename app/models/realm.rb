@@ -1,6 +1,8 @@
 class Realm < ActiveRecord::Base
   belongs_to :region
   has_many :characters
+  
+  validates_uniqueness_of :name
 end
 
 # == Schema Information

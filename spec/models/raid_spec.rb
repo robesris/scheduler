@@ -23,7 +23,7 @@ describe Raid do
     
     @open_raid_attributes = {
       :instance_id => 1,
-      :raid_time => now + 5.days,
+      :raid_time => DateTime.now + 5.days,
       :searchable => true,
       :protected => false,
       :creator_id => 1,

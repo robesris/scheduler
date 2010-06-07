@@ -6,6 +6,8 @@ class Character < ActiveRecord::Base
   belongs_to :realm
   belongs_to :faction
   
+  validates_uniqueness_of :name, :scope => [:realm_id]
+  
   attr_reader :doc
   
   def get_remote_xml

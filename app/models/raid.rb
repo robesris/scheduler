@@ -3,9 +3,10 @@ class Raid < ActiveRecord::Base
   belongs_to :realm
   belongs_to :creator, :class_name => "Character"
   has_many :sign_ups
-  has_and_belongs_to_many :characters
+  has_many :characters, :through => :sign_ups
   
   validates_presence_of :instance_id
+  validates_presence_of :realm_id
   validates_presence_of :raid_time
   validates_presence_of :code
   
@@ -21,18 +22,18 @@ class Raid < ActiveRecord::Base
     self.characters.size >= self.instance.size
   end
 
-  # def signup(character_name)
-  #   if signup_character = Character.find_by_name(character_name)
-  #     if !self.full?
-  #       self.characters += [signup_character]
-  #       :success
-  #     else
-  #       :full
-  #     end
-  #   else
-  #     :character_not_found
-  #   end
-  # end
+  def signup(character_name)
+    if signup_character = Character.find_by_name(character_name)
+      if !self.full?
+        self.characters += [signup_character]
+        :success
+      else
+        :full
+      end
+    else
+      :character_not_found
+    end
+  end
 end
 
 # == Schema Information

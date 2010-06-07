@@ -1,6 +1,6 @@
 Factory.define :character do |c|
   c.name 'Rexerengeti'
-  c.association :realm, :factory => :realm
+  c.association :realm
   c.association :faction, :factory => :horde
 end
 
@@ -24,7 +24,9 @@ end
 Factory.define :raid do |r|
   r.raid_time   1.week.since(Time.now)
   r.code        "1234567"
+  
   r.association :instance
+  r.association :realm
   r.association :creator, :factory => :character
 end
 
@@ -35,5 +37,5 @@ Factory.define :sign_up do |s|
 end
 
 Factory.define :realm do |r|
-  r.name 'Gorefiend'
+  r.name "Gorefiend"
 end
