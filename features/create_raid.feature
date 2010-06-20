@@ -10,6 +10,7 @@ Feature: Create Raid
     Given I am on "raids"
     And "<character_name>" from "<realm_name>" is a "<faction_name>" character
     When I follow "New Raid"
+    And I select "<realm_name>" from "Realm"
     And I select "<raid_name>" from "Instance"
     And I fill in "Raid Start Date and Time" with "<raid_date> <raid_time>"
     And I fill in "Creator" with "1"

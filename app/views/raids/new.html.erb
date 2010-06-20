@@ -2,7 +2,10 @@
 
 <% form_for(@raid) do |f| %>
   <%= f.error_messages %>
-
+  <p>
+    <%= f.label :realm_id %><br />
+    <%= f.select :realm_id, Realm.find(:all).collect {|i| [i.name, i.id] }%>
+  </p>
   <p>
     <%= f.label :instance_id %><br />
     <%= f.select :instance_id, Instance.find(:all).collect {|i| [i.name, i.id] }%>
