@@ -1,0 +1,12 @@
+<h1>Signup for Raid <%= @raid.code %></h1>
+
+<% form_for([@raid, @sign_up], :action => :create) do |f| %>
+  <p>
+    <%= label_tag "character_name", "Character Name" %><br />
+    <%= text_field_tag "character_name" %>
+  </p>
+  
+  <p>
+    <%= f.submit "Sign Up" %>
+  </p>
+<% end %>

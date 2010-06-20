@@ -1,0 +1,12 @@
+<h1>Editing sign_up</h1>
+
+<% form_for([@raid, @sign_up], :action => :update) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', raid_sign_up_path(@raid.id, @sign_up.id) %> |
+<%= link_to 'Back', raid_sign_ups_path(@raid) %>
