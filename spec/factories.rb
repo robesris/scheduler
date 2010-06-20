@@ -1,7 +1,15 @@
 Factory.define :character do |c|
-  c.name 'Rexerengeti'
+  c.sequence(:name) { |n| "Character#{n}"}
   c.association :realm
   c.association :faction, :factory => :horde
+end
+
+Factory.define :race do |r|
+  r.sequence(:name) { |n| "Tauren#{n}"}
+end
+
+Factory.define :faction do |f|
+  f.sequence(:name) { |n| "Horde#{n}" }
 end
 
 Factory.define :alliance, :class => Faction do |f|
@@ -17,13 +25,13 @@ Factory.define :role do |r|
 end
 
 Factory.define :instance do |i|
-  i.name 'Naxxramas'
+  i.sequence(:name) { |n| "Naxxramas#{n}" }
   i.size 25
 end
 
 Factory.define :raid do |r|
   r.raid_time   1.week.since(Time.now)
-  r.code        "1234567"
+  r.sequence(:code) { |n| "raid#{n}" }
   
   r.association :instance
   r.association :realm
@@ -37,5 +45,5 @@ Factory.define :sign_up do |s|
 end
 
 Factory.define :realm do |r|
-  r.name "Gorefiend"
+  r.sequence(:name) { |n| "Gorefiend#{n}" }
 end

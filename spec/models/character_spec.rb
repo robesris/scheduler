@@ -1,21 +1,16 @@
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe Character do
-  before(:all) do
-    race = Race.new(:name => "Tauren")
-    race.save!
-    faction = Faction.new(:name => "Horde")
-    faction.save!
-    realm = Realm.new(:name => "Gorefiend")
-    realm.save!
-  end
-  
   before(:each) do
     @valid_attributes = {
+      :race => Factory(:race),
+      :faction => Factory(:faction),
+      :realm => Factory(:realm)
     }
   end
 
   it "should create a new instance given valid attributes" do
+    puts @valid_attributes
     Character.create!(@valid_attributes)
   end
   
