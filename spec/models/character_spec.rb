@@ -2,28 +2,31 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe Character do
   before(:each) do
-    @valid_attributes = {
-      :race => Factory(:race),
-      :faction => Factory(:faction),
-      :realm => Factory(:realm)
-    }
+    # @valid_attributes = {
+    #   :race => Factory(:race),
+    #   :faction => Factory(:faction),
+    #   :realm => Factory(:realm)
+    # }
+    realm = Factory(:realm)
+    #race = Factory(:race)
+    #faction = Factory(:faction)
+    
   end
 
   it "should create a new instance given valid attributes" do
-    puts @valid_attributes
-    Character.create!(@valid_attributes)
+    #Factory(:character, @valid_attributes)
   end
   
-  it "should get character info from the WoW armory site as XML" do
-    c = Character.new
-    c.name = "Rexerengeti"
-    c.realm = Realm.new
-    c.realm.name = "Gorefiend"
-    c.get_remote_xml
-    c.race.name.should == "Tauren"
-    c.faction.name.should == "Horde"
-    c.realm.name.should == "Gorefiend"
-  end
+  # it "should get character info from the WoW armory site as XML" do
+  #   c = Character.new
+  #   c.name = "Rexerengeti"
+  #   c.realm = Realm.new
+  #   c.realm.name = "Gorefiend"
+  #   c.get_remote_xml
+  #   c.race.name.should == "Tauren"
+  #   c.faction.name.should == "Horde"
+  #   c.realm.name.should == "Gorefiend"
+  # end
 end
 
 # == Schema Information

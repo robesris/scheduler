@@ -1,7 +1,12 @@
+Factory.define :realm do |r|
+  r.sequence(:name) { |n| "Gorefiend#{n}" }
+end
+
 Factory.define :character do |c|
   c.sequence(:name) { |n| "Character#{n}"}
   c.association :realm
   c.association :faction, :factory => :horde
+  c.association :race
 end
 
 Factory.define :race do |r|
@@ -44,6 +49,4 @@ Factory.define :sign_up do |s|
   s.association :raid
 end
 
-Factory.define :realm do |r|
-  r.sequence(:name) { |n| "Gorefiend#{n}" }
-end
+

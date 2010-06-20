@@ -2,7 +2,7 @@ class SignUpsController < ApplicationController
   # GET /sign_ups
   # GET /sign_ups.xml
   def index
-    @sign_ups = SignUp.all
+    @sign_ups = SignUp.find_all_by_raid_id(params[:raid_id])
 
     respond_to do |format|
       format.html # index.html.erb
@@ -50,7 +50,6 @@ class SignUpsController < ApplicationController
     #raise params[:character_name].inspect + " **** " + realm.inspect
 
     @sign_up.character = Character.find_by_name(params[:character_name])
-    raise @sign_up.character.inspect + " **** " + realm.inspect
     respond_to do |format|
       if @sign_up.save
         flash[:notice] = 'You successfully signed up for the raid!'
@@ -89,7 +88,7 @@ class SignUpsController < ApplicationController
     @sign_up.destroy
 
     respond_to do |format|
-      format.html { redirect_to(raid_sign_ups_path(@raid)) }
+      format.html { redirect_to(raid_sign_ups_path(@raid), :method => :get) }
       format.xml  { head :ok }
     end
   end

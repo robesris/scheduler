@@ -72,19 +72,7 @@ describe RaidsController do
       end
     end
     
-  end
-
-  describe "PUT join" do
-    
-    describe "with valid params" do
-      it "displays a raid signup form" do
-        mock_raid.should_receive(:find).with("10").and_return(factory_raid)
-        put :join, :id => "10"
-        response.should render_template('join')
-      end
-    end
-  end
-        
+  end   
 
   describe "PUT update" do
     

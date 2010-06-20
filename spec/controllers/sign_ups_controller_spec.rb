@@ -11,34 +11,38 @@ describe SignUpsController do
   end
 
   describe "GET index" do
-    it "assigns all sign_ups as @sign_ups" do
-      SignUp.stub(:find).with(:all).and_return([mock_sign_up])
-      get :index
-      assigns[:sign_ups].should == [mock_sign_up]
+    it "assigns all sign_ups for a raid as @sign_ups" do
+      sign_up = Factory(:sign_up)
+      SignUp.stub(:find_all_by_raid_id).with(sign_up.raid_id).and_return([sign_up])
+      get :index, :raid_id => "#{sign_up.raid_id}"
+      assigns[:sign_ups].should == [sign_up]
     end
   end
 
   describe "GET show" do
     it "assigns the requested sign_up as @sign_up" do
-      SignUp.stub(:find).with("37").and_return(mock_sign_up)
-      get :show, :id => "37"
-      assigns[:sign_up].should equal(mock_sign_up)
+      sign_up = Factory(:sign_up)
+      SignUp.stub(:find).with("#{sign_up.id}").and_return(sign_up)
+      get :show, :id => "#{sign_up.id}", :raid_id => "#{sign_up.raid_id}"
+      assigns[:sign_up].should equal(sign_up)
     end
   end
 
   describe "GET new" do
     it "assigns a new sign_up as @sign_up" do
-      SignUp.stub(:new).and_return(mock_sign_up)
-      get :new, :raid_id => "1"
-      assigns[:sign_up].should equal(mock_sign_up)
+      sign_up = Factory(:sign_up)
+      SignUp.stub(:new).and_return(sign_up)
+      get :new, :raid_id => "#{sign_up.raid_id}"
+      assigns[:sign_up].should equal(sign_up)
     end
   end
 
   describe "GET edit" do
     it "assigns the requested sign_up as @sign_up" do
-      SignUp.stub(:find).with("37").and_return(mock_sign_up)
-      get :edit, :id => "37"
-      assigns[:sign_up].should equal(mock_sign_up)
+      sign_up = Factory(:sign_up)
+      SignUp.stub(:find).with("#{sign_up.id}").and_return(sign_up)
+      get :edit, :id => "#{sign_up.id}", :raid_id => "#{sign_up.raid_id}"
+      assigns[:sign_up].should equal(sign_up)
     end
   end
 
@@ -62,16 +66,15 @@ describe SignUpsController do
         post :create, :raid_id => @raid.id, :character_name => @character.name, :realm_name => @realm.name
         assigns[:sign_up].raid.should == @raid
         assigns[:sign_up].character.should == @character
-        assigns[:sign_up].realm.should == @realm
       end
 
-      it "redirects to the created sign_up" do
-        #SignUp.stub(:new).and_return(mock_sign_up(:save => true))
-        #mock_sign_up.should_receive(:raid)
-        #mock_sign_up.should_receive(:raid=)
-        #mock_sign_up.should_receive(:character=)
-        post :create, :raid_id => "1", :sign_up => { :raid_id => "1"}
-        response.should redirect_to(sign_up_url(mock_sign_up))
+      it "redirects to the raid" do
+        sign_up = Factory(:sign_up)
+        realm = Factory(:realm)
+        character = Factory(:character)
+        SignUp.stub(:new).and_return(sign_up)
+        post :create, :raid_id => "#{sign_up.raid_id}", :character_name => character.name, :realm_name => realm.name
+        response.should redirect_to(raid_path(sign_up.raid))
       end
     end
 
@@ -101,61 +104,46 @@ describe SignUpsController do
 
     describe "with valid params" do
       it "updates the requested sign_up" do
-        SignUp.should_receive(:find).with("37").and_return(mock_sign_up)
-        mock_sign_up.should_receive(:update_attributes).with({'these' => 'params'})
-        put :update, :id => "37", :raid_id => "1", :sign_up => {:these => 'params'}
+        sign_up = Factory(:sign_up)
+        SignUp.should_receive(:find).with("#{sign_up.id}").and_return(sign_up)
+        sign_up.should_receive(:update_attributes).with({'raid_id' => '100'})
+        put :update, :id => "#{sign_up.id}", :raid_id => "#{sign_up.raid_id}", :sign_up => {:raid_id => '100'}
       end
 
       it "assigns the requested sign_up as @sign_up" do
-        SignUp.stub(:find).and_return(mock_sign_up(:update_attributes => true))
-        put :update, :id => "1", :raid_id => "1"
-        assigns[:sign_up].should equal(mock_sign_up)
+        sign_up = Factory(:sign_up)
+        SignUp.stub(:find).and_return(sign_up)
+        put :update, :id => "#{sign_up.id}", :raid_id => "#{sign_up.raid_id}"
+        assigns[:sign_up].should equal(sign_up)
       end
 
       it "redirects to the sign_up" do
-        SignUp.stub(:find).and_return(mock_sign_up(:update_attributes => true))
-        SignUp.stub(:raid).and_return(mock_model(Raid))
-        put :update, :id => "1", :raid_id => "1"
-        response.should redirect_to(raid_sign_up_url(1, mock_sign_up))
+        sign_up = Factory(:sign_up)
+        SignUp.stub(:find).and_return(sign_up)
+        put :update, :id => "#{sign_up.id}", :raid_id => "#{sign_up.raid_id}"
+        response.should redirect_to(raid_sign_up_url(sign_up.raid, sign_up))
       end
     end
 
-    describe "with invalid params" do
-      it "updates the requested sign_up" do
-        SignUp.should_receive(:find).with("37").and_return(mock_sign_up)
-        mock_sign_up.should_receive(:update_attributes).with({'these' => 'params'})
-        put :update, :id => "37", :raid_id => 1, :sign_up => {:these => 'params'}
-      end
 
-      it "assigns the sign_up as @sign_up" do
-        SignUp.stub(:find).and_return(mock_sign_up(:update_attributes => false))
-        put :update, :id => "1", :raid_id => "1"
-        assigns[:sign_up].should equal(mock_sign_up)
-      end
-
-      it "re-renders the 'edit' template" do
-        SignUp.stub(:find).and_return(mock_sign_up(:update_attributes => false))
-        put :update, :id => "1", :raid_id => "1"
-        response.should render_template('edit')
-      end
-    end
 
   end
 
   describe "DELETE destroy" do
     it "destroys the requested sign_up" do
-      SignUp.stub(:find).and_return(mock_sign_up)
-      SignUp.should_receive(:find).with("37").and_return(mock_sign_up)
-      mock_sign_up.should_receive(:raid)
-      mock_sign_up.should_receive(:destroy)
-      delete :destroy, :id => "37"
+      sign_up = Factory.create(:sign_up)
+      SignUp.stub(:find).and_return(sign_up)
+      SignUp.should_receive(:find).with(sign_up.id.to_s).and_return(sign_up)
+      sign_up.should_receive(:raid)
+      sign_up.should_receive(:destroy)
+      delete :destroy, :id => sign_up.id, :raid_id => sign_up.raid_id
     end
 
     it "redirects to the sign_ups list" do
-      SignUp.stub(:find).and_return(mock_sign_up(:destroy => true))
-      mock_sign_up.should_receive(:raid).at_least(1).times
-      delete :destroy, :id => "1"
-      response.should redirect_to(raid_sign_ups_url(mock_sign_up.raid))
+      sign_up = Factory.create(:sign_up)
+      SignUp.stub(:find).and_return(sign_up)
+      delete :destroy, :id => "#{sign_up.id}", :raid_id => "#{sign_up.raid_id}"
+      response.should redirect_to(raid_sign_ups_url(sign_up.raid))
     end
   end
 
