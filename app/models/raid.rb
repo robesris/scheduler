@@ -9,9 +9,13 @@ class Raid < ActiveRecord::Base
   validates_presence_of :realm_id
   validates_presence_of :raid_time
   validates_presence_of :code
+  validates_presence_of :creator_id
+  validates_associated :creator
   
   validates_each :creator_id do |record, attr, value|
-    record.errors.add attr, 'Alliance players cannot create raids.' if record.creator.faction.name == "Alliance"
+    if record.creator && record.creator.faction.name == "Alliance"
+      record.errors.add attr, 'Alliance players cannot create raids.'
+    end
   end
   
   validates_each :raid_end_time do |record, attr, value|
@@ -22,10 +26,10 @@ class Raid < ActiveRecord::Base
     self.characters.size >= self.instance.size
   end
 
-  def signup(character_name)
-    if signup_character = Character.find_by_name(character_name)
+  def signup(character_name, role_name)
+    if (signup_character = Character.find_by_name(character_name)) && (role = Role.find_by_name(role_name))
       if !self.full?
-        self.characters += [signup_character]
+        self.sign_ups << SignUp.new(:character => signup_character, :role => role)
         :success
       else
         :full

@@ -13,7 +13,7 @@ Feature: Create Raid
     And I select "<realm_name>" from "Realm"
     And I select "<raid_name>" from "Instance"
     And I fill in "Raid Start Date and Time" with "<raid_date> <raid_time>"
-    And I fill in "Creator" with "1"
+    And I fill in "Raid Creator" with "<character_name>"
     And I fill in "Code" with "My New Raid"
     And I press "Create"
     Then I should see "Raid created successfully!"

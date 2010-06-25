@@ -7,6 +7,11 @@
   </p>
   
   <p>
+    <%= f.label :role_id %><br />
+    <%= f.select :role_id, Role.find(:all).collect {|i| [i.name, i.id] } %>
+  </p>
+  
+  <p>
     <%= f.submit "Sign Up" %>
   </p>
 <% end %>

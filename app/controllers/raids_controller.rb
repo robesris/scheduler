@@ -47,7 +47,9 @@ class RaidsController < ApplicationController
   # POST /raids
   # POST /raids.xml
   def create
-    @raid = Raid.new(params[:raid])
+    creator = Character.fetch(:name => params[:creator_name])
+    creator_id = creator && creator.id
+    @raid = Raid.new(params[:raid].merge(:creator_id => creator_id))
 
     respond_to do |format|
       if @raid.save

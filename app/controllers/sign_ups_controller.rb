@@ -44,12 +44,12 @@ class SignUpsController < ApplicationController
   # POST /sign_ups
   # POST /sign_ups.xml
   def create
-    @sign_up = SignUp.new
-    @sign_up.raid = Raid.find_by_id(params[:raid_id])   # using this format instead of Raid.find, which throws an AR error if not found
-    realm = Realm.find_by_name(params[:realm_name])
-    #raise params[:character_name].inspect + " **** " + realm.inspect
-
-    @sign_up.character = Character.find_by_name(params[:character_name])
+    @sign_up = SignUp.new(params[:sign_up])
+    raid = Raid.find_by_id(params[:raid_id])   # using this format instead of Raid.find, which throws an AR error if not found
+    @sign_up.raid = raid
+    character = Character.fetch(:name => params[:character_name], :realm_id => raid && raid.realm_id)
+    @sign_up.character = character
+    
     respond_to do |format|
       if @sign_up.save
         flash[:notice] = 'You successfully signed up for the raid!'

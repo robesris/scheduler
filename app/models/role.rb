@@ -1,5 +1,5 @@
 class Role < ActiveRecord::Base
-  has_many :characters
+  has_many :sign_ups
 end
 
 # == Schema Information

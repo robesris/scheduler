@@ -49,20 +49,15 @@ describe SignUpsController do
   describe "POST create" do
    
     before(:each) do
-      @character = Factory.create(:character)
       @realm = Factory.create(:realm)
-      @raid = Factory.create(:raid)
-      
+      @character = Factory.create(:character, :realm_id => @realm.id)
+      @raid = Factory.create(:raid, :realm_id => @realm.id)     
     end
     
     describe "with valid params" do
       
       
       it "assigns a newly created sign_up as @sign_up" do
-        #SignUp.stub(:new).with({'these' => 'params'}).and_return(mock_sign_up(:save => true))
-        #mock_sign_up.should_receive(:raid)
-        #mock_sign_up.should_receive(:raid=)
-        #mock_sign_up.should_receive(:character=)
         post :create, :raid_id => @raid.id, :character_name => @character.name, :realm_name => @realm.name
         assigns[:sign_up].raid.should == @raid
         assigns[:sign_up].character.should == @character
@@ -70,10 +65,8 @@ describe SignUpsController do
 
       it "redirects to the raid" do
         sign_up = Factory(:sign_up)
-        realm = Factory(:realm)
-        character = Factory(:character)
         SignUp.stub(:new).and_return(sign_up)
-        post :create, :raid_id => "#{sign_up.raid_id}", :character_name => character.name, :realm_name => realm.name
+        post :create, :raid_id => @raid.id, :character_name => @character.name, :realm_name => @realm.name
         response.should redirect_to(raid_path(sign_up.raid))
       end
     end
@@ -93,7 +86,7 @@ describe SignUpsController do
         # SignUp.stub(:new).and_return(mock_sign_up(:save => false))
         # mock_sign_up.should_receive(:raid=)
         # mock_sign_up.should_receive(:character=)
-        post :create, :raid_id => @raid.id, :sign_up => { :character_name => @character.name, :realm_name => @realm.name }
+        post :create, :raid_id => -1, :character_name => @character.name
         response.should render_template('new')
       end
     end

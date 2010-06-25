@@ -1,4 +1,4 @@
-<h1>Listing raids</h1>
+<h1>Upcoming Raids</h1>
 
 <table>
   <tr>
@@ -30,7 +30,7 @@
     <td><%=h raid.tanks %></td>
     <td><%=h raid.heals %></td>
     <td><%=h raid.dps %></td>
-    <td><%= link_to 'join', new_raid_sign_up_path(raid) %></td>
+    <td><%= link_to 'join', new_raid_sign_up_path(raid), :id => "join_#{raid.id}" %></td>
     <td><%= link_to 'Show', raid %></td>
     <td><%= link_to 'Edit', edit_raid_path(raid) %></td>
     <td><%= link_to 'Destroy', raid, :confirm => 'Are you sure?', :method => :delete %></td>

@@ -5,8 +5,19 @@ end
 Factory.define :character do |c|
   c.sequence(:name) { |n| "Character#{n}"}
   c.association :realm
+  c.association :faction, :factory => :faction
+  c.association :race
+end
+
+Factory.define :horde_character, :class => :character do |c|
+  c.sequence(:name) { |n| "HordeCharacter#{n}"}
+  c.association :realm
   c.association :faction, :factory => :horde
   c.association :race
+end
+
+Factory.define :invalid_character, :class => :character do |c|
+  c.name "Not a real name"
 end
 
 Factory.define :race do |r|
@@ -27,6 +38,18 @@ end
 
 Factory.define :role do |r|
   r.name 'Tank'
+end
+
+Factory.define :tank, :class => :role do |r|
+  r.name 'Tank'
+end
+
+Factory.define :dps, :class => :role do |r|
+  r.name 'DPS'
+end
+
+Factory.define :healer, :class => :role do |r|
+  r.name 'Healer'
 end
 
 Factory.define :instance do |i|

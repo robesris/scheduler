@@ -1,6 +1,6 @@
 class Character < ActiveRecord::Base
   has_and_belongs_to_many :raids
-  has_and_belongs_to_many :roles
+  has_many :roles
   has_many :sign_ups
   belongs_to :race
   belongs_to :realm
@@ -22,6 +22,10 @@ class Character < ActiveRecord::Base
       self.update_attribute(:faction, Faction.find_by_name(faction_name))
       self.update_attribute(:realm, Realm.find_by_name(realm_name))
     end
+  end
+  
+  def self.fetch(conditions)
+    first(:conditions => conditions)
   end
 
 end

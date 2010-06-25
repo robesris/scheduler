@@ -46,7 +46,7 @@ describe RaidsController do
     
     describe "with valid params" do
       it "assigns a newly created raid as @raid" do
-        Raid.stub!(:new).with({'these' => 'params'}).and_return(mock_raid(:save => true))
+        Raid.stub!(:new).and_return(mock_raid(:save => true))
         post :create, :raid => {:these => 'params'}
         assigns[:raid].should equal(mock_raid)
       end
@@ -60,7 +60,8 @@ describe RaidsController do
     
     describe "with invalid params" do
       it "assigns a newly created but unsaved raid as @raid" do
-        Raid.stub!(:new).with({'these' => 'params'}).and_return(mock_raid(:save => false))
+        Raid.stub!(:new).and_return(mock_raid(:save => false))
+        Character.stub!(:find).and_return(Factory(:character))
         post :create, :raid => {:these => 'params'}
         assigns[:raid].should equal(mock_raid)
       end
@@ -71,6 +72,27 @@ describe RaidsController do
         response.should render_template('new')
       end
     end
+    
+    describe "validate the raid creator" do
+      before :each do
+        @c = Factory.create(:horde_character)
+        @r = Factory.build(:raid)
+        @raid_attribs = @r.attributes
+        @raid_attribs['creator_id'] = nil
+        @raid_attribs['realm_id'] = @c.realm_id
+      end
+      
+      it "redirects to the newly created raid for a valid creator" do
+        post :create, :creator_name => @c.name, :raid => @raid_attribs
+        created_raid = Raid.find_by_code(@r.code)
+        response.should redirect_to(raid_url(created_raid))
+      end
+      
+      it "re-renders the new template for an invalid creator" do
+        post :create, :creator_name => @c.name + "bad", :raid => @raid_attribs
+        response.should render_template('new')
+      end
+    end  
     
   end   
 

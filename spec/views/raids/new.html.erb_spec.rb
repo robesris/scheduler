@@ -28,7 +28,7 @@ describe "/raids/new.html.erb" do
       with_tag("input#raid_password[name=?]", "raid[password]")
       with_tag("input#raid_searchable[name=?]", "raid[searchable]")
       with_tag("input#raid_protected[name=?]", "raid[protected]")
-      with_tag("input#raid_creator_id[name=?]", "raid[creator_id]")
+      with_tag("input#creator_name")
       with_tag("input#raid_min_gear_level[name=?]", "raid[min_gear_level]")
       with_tag("input#raid_tanks[name=?]", "raid[tanks]")
       with_tag("input#raid_heals[name=?]", "raid[heals]")

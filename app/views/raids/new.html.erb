@@ -35,8 +35,8 @@
     <%= f.check_box :protected %>
   </p>
   <p>
-    <%= f.label :creator_id %><br />
-    <%= f.text_field :creator_id %>
+    <%= label_tag :creator_name, "Raid Creator (Your Character's Name)" %><br />
+    <%= text_field_tag :creator_name %>
   </p>
   <p>
     <%= f.label :min_gear_level %><br />

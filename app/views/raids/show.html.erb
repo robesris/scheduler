@@ -1,3 +1,5 @@
+<p><%= @raid.title %></p>
+
 <p><%= @raid.instance.name %></p>
 
 <p>
@@ -62,12 +64,14 @@
 
 <p>
   <b>Members:</b>
+  
   <% @raid.sign_ups.each do |sign_up| %>
-    <%= sign_up.character.name %>
+    <%= sign_up.character.name %> - 
+    <%= sign_up.role.name %>
   <% end %>
 </p>
     
 
-
-<%= link_to 'Edit', edit_raid_path(@raid) %> |
+<%= link_to 'Join Raid', new_raid_sign_up_path(@raid) %>
+<%= link_to 'Edit Raid', edit_raid_path(@raid) %> |
 <%= link_to 'Back', raids_path %>

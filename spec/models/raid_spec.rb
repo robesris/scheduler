@@ -3,7 +3,7 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 describe Raid do
   
   before(:each) do
-    @r = Raid.new
+    @r = Factory(:raid)
     
     now = Time.now
     @valid_attributes = {
@@ -34,21 +34,22 @@ describe Raid do
     }
     
     @missing_required_attributes = {
-      #:instance_id => 1,
+      :instance_id => nil,
       :raid_time => nil,
       :raid_end_time => now + 5.days + 3.hours,
       :code => "",
       :password => "mynewraid",
       :searchable => true,
       :protected => false,
-      :creator_id => 1,
+      :creator_id => nil,
       :min_gear_level => 2000,
       :tanks => 2,
       :heals => 3,
       :dps => 5
     }
     
-    @r.stub!(:creator).and_return(mock_horde_character)
+    @horde_character = Factory(:horde_character)
+    @r.stub!(:creator).and_return(@horde_character)
   end
 
   it "should create a new instance given valid attributes" do
@@ -61,10 +62,16 @@ describe Raid do
     @r.should have(1).error_on(:instance_id)
     @r.should have(1).error_on(:raid_time)
     @r.should have(1).error_on(:code)
+    @r.should have(1).error_on(:creator_id)
+  end
+  
+  it "should allow a Horde player to create a raid" do
+    @r.stub!(:creator).and_return(Factory(:character, :faction => Factory(:horde)))
+    @r.should have(0).errors_on(:creator_id)
   end
   
   it "should not allow an Alliance player to create a raid" do
-    @r.stub!(:creator).and_return(mock_alliance_character)
+    @r.stub!(:creator).and_return(Factory(:character, :faction => Factory(:alliance)))
     @r.should have(1).error_on(:creator_id)
   end
   
@@ -78,11 +85,11 @@ describe Raid do
     it "should allow a Horde player to signup to a non-full, non-class-restricted raid" do
       @r.attributes = @open_raid_attributes
       Character.should_receive(:find_by_name).
-                with(@mock_horde_character.name).
-                and_return(@mock_horde_character)
+                with(@horde_character.name).
+                and_return(@horde_character)
       @r.should_receive(:full?).and_return(false)
       lambda {
-        @r.signup(@mock_horde_character.name)
+        @r.signup(@horde_character.name, Factory(:role).name)
       }.should change(@r.characters, :size).by(1)
     end
   end

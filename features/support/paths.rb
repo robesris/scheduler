@@ -12,6 +12,8 @@ module NavigationHelpers
       '/'
     when /raids/
       '/raids'
+    when /the raid details page for "(.*)"/
+      raid_path(:id => Raid.find_by_title($1).id)
     
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
