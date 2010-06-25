@@ -1,4 +1,7 @@
 class Race < ActiveRecord::Base
+  belongs_to :faction
+  
+  validates_presence_of :faction, :name
 end
 
 # == Schema Information

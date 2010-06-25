@@ -22,6 +22,7 @@ end
 
 Factory.define :race do |r|
   r.sequence(:name) { |n| "Tauren#{n}"}
+  r.association :faction
 end
 
 Factory.define :faction do |f|

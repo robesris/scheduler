@@ -2,15 +2,24 @@ require 'spec_helper'
 
 describe Race do
   before(:each) do
-    @valid_attributes = {
-      :name => "value for name",
-      :ability => "value for ability",
-      :faction_id => 1
-    }
+
+  end
+
+  it "should have a faction" do
+    race = Factory.build(:race, :faction => nil)
+    race.should have(1).error_on(:faction)
+  end
+  
+  it "should have a name" do
+    race = Factory.build(:race, :name => "")
+    race.should have(1).error_on(:name)
+    
+    race = Factory.build(:race, :name => nil)
+    race.should have(1).error_on(:name)
   end
 
   it "should create a new instance given valid attributes" do
-    Race.create!(@valid_attributes)
+    Factory(:race)
   end
 end
 
