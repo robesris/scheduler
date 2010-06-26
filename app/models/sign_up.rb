@@ -8,4 +8,8 @@ class SignUp < ActiveRecord::Base
   
   validates_presence_of :raid
   validates_associated :raid
+  
+  def role_name
+    role && role.name
+  end
 end

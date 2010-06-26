@@ -66,8 +66,10 @@
   <b>Members:</b>
   
   <% @raid.sign_ups.each do |sign_up| %>
-    <%= sign_up.character.name %> - 
-    <%= sign_up.role.name %>
+    <div class="sign_up">
+      <%= sign_up.character.name %> - 
+      <%= sign_up.role_name %>
+    </div>
   <% end %>
 </p>
     

@@ -9,8 +9,7 @@ class RaidsController < ApplicationController
   # GET /raids
   # GET /raids.xml
   def index
-    @raids = Raid.all
-
+    @raids = Raid.find_all_by_searchable(true)
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @raids }

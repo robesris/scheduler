@@ -11,10 +11,23 @@ describe RaidsController do
   end
   
   describe "GET index" do
+    before :each do
+      @searchable_1 = Factory(:raid, :searchable => true)
+      @searchable_2 = Factory(:raid, :searchable => true)
+      @unsearchable = Factory(:raid, :searchable => false) 
+    end
+    
     it "assigns all raids as @raids" do
-      Raid.stub!(:find).with(:all).and_return([mock_raid])
+      Raid.stub(:find_all_by_searchable).and_return(@searchable_1)
       get :index
-      assigns[:raids].should == [mock_raid]
+      assigns[:raids].should == @searchable_1
+    end
+    
+    it "should only find searchable raids" do
+      get :index
+      assigns[:raids].should include(@searchable_1)
+      assigns[:raids].should include(@searchable_2)
+      assigns[:raids].should_not include(@unsearchable)
     end
   end
 
