@@ -9,7 +9,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :realms
 
-  map.connect 'raids/view/:code', :controller => "raids", :action => "show"
+  map.raid 'raids/view/:code', :controller => "raids", :action => "show"
   map.resources :raids, :except => [:show] do |raid|
     raid.resources :sign_ups
   end

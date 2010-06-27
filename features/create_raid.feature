@@ -14,7 +14,7 @@ Feature: Create Raid
     And I select "<raid_name>" from "Instance"
     And I fill in "Raid Start Date and Time" with "<raid_date> <raid_time>"
     And I fill in "Raid Creator" with "<character_name>"
-    And I fill in "Code" with "My New Raid"
+    And I fill in "Code" with "MyNewRaid"
     And I press "Create"
     Then I should see "Raid created successfully!"
     And I should see "<raid_name>"
