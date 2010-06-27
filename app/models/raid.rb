@@ -9,6 +9,9 @@ class Raid < ActiveRecord::Base
   validates_presence_of :realm_id
   validates_presence_of :raid_time
   validates_presence_of :code
+  validates_uniqueness_of :code
+  validates_format_of :code, :with => /\A[A-Za-z0-9]+\Z/
+  validates_length_of :code, :within => 1..20
   validates_presence_of :creator_id
   validates_associated :creator
   

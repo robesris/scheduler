@@ -61,8 +61,53 @@ describe Raid do
     @r.attributes = @missing_required_attributes
     @r.should have(1).error_on(:instance_id)
     @r.should have(1).error_on(:raid_time)
-    @r.should have(1).error_on(:code)
+    @r.should have(3).errors_on(:code)
     @r.should have(1).error_on(:creator_id)
+  end
+  
+  it "should only allow alphanumeric characters in the code" do
+    @r.code = "ABC123"
+    @r.should have(0).errors_on(:code)
+    
+    @r.code = "123ABC1A"
+    @r.should have(0).errors_on(:code)
+    
+    @r.code = "A"
+    @r.should have(0).errors_on(:code)
+    
+    @r.code = "ABC 123"
+    @r.should have(1).error_on(:code)
+    
+    @r.code = "ABC !23"
+    @r.should have(1).error_on(:code)
+    
+    @r.code = "ABC_123"
+    @r.should have(1).error_on(:code)
+    
+    @r.code = nil
+    @r.should have_at_least(1).error_on(:code)
+    
+    @r.code = ""
+    @r.should have_at_least(1).error_on(:code)
+  end
+  
+  it "should not allow duplicate codes" do
+    first_raid = Factory.create(:raid, :code => "ABCDEFG")
+    second_raid = Factory.build(:raid, :code => "ABCDEFG")
+    lambda {
+      second_raid.save!
+    }.should raise_exception
+  end
+  
+  it "should only allow codes from 1 to 20 characters in length" do
+    @r.code = "12345678901234567890"
+    @r.should have(0).errors_on(:code)
+    
+    @r.code = ""
+    @r.should have_at_least(1).error_on(:code)
+    
+    @r.code = "12345678901234567890A"
+    @r.should have(1).error_on(:code)
   end
   
   it "should allow a Horde player to create a raid" do
