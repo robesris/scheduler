@@ -11,7 +11,7 @@ describe RaidsController do
     end
   
     it "maps #show" do
-      route_for(:controller => "raids", :action => "show", :id => "1").should == "/raids/1"
+      route_for(:controller => "raids", :action => "show", :code => "1A1A1A").should == "/raids/view/1A1A1A"
     end
   
     it "maps #edit" do
@@ -45,7 +45,9 @@ describe RaidsController do
     end
   
     it "generates params for #show" do
-      params_from(:get, "/raids/1").should == {:controller => "raids", :action => "show", :id => "1"}
+      { :get => "/raids/1"}.should_not be_routable
+      { :get => "/raids/view/1"}.should route_to(:controller => "raids", :action => "show", :code => "1")
+      { :get => "/raids/view/ABCD1234"}.should route_to(:controller => "raids", :action => "show", :code => "ABCD1234")
     end
   
     it "generates params for #edit" do

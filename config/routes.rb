@@ -9,7 +9,8 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :realms
 
-  map.resources :raids do |raid|
+  map.connect 'raids/view/:code', :controller => "raids", :action => "show"
+  map.resources :raids, :except => [:show] do |raid|
     raid.resources :sign_ups
   end
 
@@ -62,4 +63,5 @@ ActionController::Routing::Routes.draw do |map|
   # consider removing the them or commenting them out if you're using named routes and resources.
   # map.connect ':controller/:action/:id'
   # map.connect ':controller/:action/:id.:format'
+  
 end

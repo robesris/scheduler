@@ -19,7 +19,7 @@ class RaidsController < ApplicationController
   # GET /raids/1
   # GET /raids/1.xml
   def show
-    @raid = Raid.find(params[:id])
+    @raid = Raid.find_by_code(params[:code])
 
     respond_to do |format|
       format.html # show.html.erb

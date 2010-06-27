@@ -33,8 +33,8 @@ describe RaidsController do
 
   describe "GET show" do
     it "assigns the requested raid as @raid" do
-      Raid.stub!(:find).with("37").and_return(mock_raid)
-      get :show, :id => "37"
+      Raid.stub!(:find_by_code).with("myraid37").and_return(mock_raid)
+      get :show, :code => "myraid37"
       assigns[:raid].should equal(mock_raid)
     end
   end
